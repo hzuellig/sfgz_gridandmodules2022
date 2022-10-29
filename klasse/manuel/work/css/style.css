@@ -1,0 +1,97 @@
+/*Config CSS*/
+html,body{
+  margin:0;
+  padding: 0;
+}
+p{
+  margin:0;
+  padding: 0;
+}
+/*Elements*/
+.container{
+  width: 66vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.basic{
+  font-size: 3em;
+}
+/*Style*/
+.part1{
+  height: 60vh;
+  background-color: #0b0f17;
+  padding-top: 30vh;
+  text-align: center;
+}
+.part1 .logisch{
+  font-size: 8.1em;
+  font-family: 'Abril Fatface';
+  margin-top: -25px;
+  margin-left: -20px;
+}
+.part2{
+  text-align: center;
+  background: #0b0f17;
+}
+.binoc-inner{
+  -webkit-mask-image: url(../img/binoc-mask.png);
+  mask-image: url(../img/binoc-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  position: relative;
+
+}
+.binoc-inner{
+  height:80vh;
+  background:#fff;
+}
+.logik{
+  font-size: 20em;
+  font-family: 'Staatliches';
+  text-align: center;
+  padding-top:110px;
+}
+.container-binoc{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ichgse{
+
+}
+.part1, .part2{
+  color: #fff;
+}
+.logik1{
+  position: absolute;
+  color: #fff;
+  opacity: 100%;
+  top:0;
+  left: calc(50% - 315px);
+  z-index: 9;
+}
+.logik2{
+  position: absolute;
+  top:-10px;
+  left: calc(50% - 305px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,0,255,0.5);
+  opacity: 50%;
+}
+.logik3{
+  position: absolute;
+  top:10px;
+  left: calc(50% - 330px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,168,255,0.5);
+  opacity: 50%;
+}
+.logik4{
+  position: absolute;
+  top:5px;
+  left: calc(50% - 305px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,255,0,0.5);
+  opacity: 50%;
+}
