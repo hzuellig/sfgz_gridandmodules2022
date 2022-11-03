@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiel mit Boxen</title>
+    <style>
+        div, span{
+            background-color: aqua;
+            margin: 2em;
+            padding: 2em;
+            border: 6px dotted rgb(76, 0, 255);
+            display: block
+            left: 300px 
+        }
+        .fixed {
+            position: fixed;
+            color: blueviolet;
+        }
+        .bla{
+            position: absolute;
+            top: 200px;
+            left: 100px
+        }
+        .mat {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed"> Box1</div>
+    <div class="bla"> Box2
+        <div class="mat">Box4</div>
+    </div>
+    <div> Box3</div>
+
+    <span>Ich bin ein Span 1</span>
+    <span>Ich bin ein Span 2</span>
+</body>
+</html>
