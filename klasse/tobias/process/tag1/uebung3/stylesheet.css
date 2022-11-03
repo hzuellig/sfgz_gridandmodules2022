@@ -1,0 +1,67 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #050717;
+    color: #E0F7FE;
+    background-image: url(/process/tag1/uebung3/sources/186490.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 8vw;
+    font-weight: 700;
+    text-transform:uppercase;
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+h2{
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+
+.span-thinfont{
+    font-weight: 100;
+}
+
+.refrain{
+    padding-left: 3em;
+}
+
+.section1{
+    margin: auto;
+    margin-top:40%;
+    margin-bottom: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.section2{
+    background-color: #050717;
+    margin: auto;
+    padding: 3em;
+    padding-bottom: 6em;
+    
+
+}
+
+.img-astronaut{
+position:absolute;
+margin-top: 20px;
+padding-left: 300px;
+height: 40%;
+}
