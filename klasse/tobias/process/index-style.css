@@ -1,0 +1,77 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: rgb(245, 245, 245);
+    margin: 5em;
+    background:
+        linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+        linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+        linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(-90deg, #aaa 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(#aaa 1px, transparent 1px),
+        #f2f2f2;
+    background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+    }
+
+.tag{
+    margin-left: 0em;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 200;
+}
+
+
+h2{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h2 span{
+    background-color: rgb(18, 18, 18);
+    color: #f2f2f2; 
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.links{
+    position: block;
+    margin: 0em;
+    font-size: 2em;
+    list-style-type: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #121212;
+
+}
+
+a:hover{
+    color: #f2f2f2;
+    background-color: #121212;
+}
+
+
+
+
+/*Tobis Neon Green: #cdff00;*/
+

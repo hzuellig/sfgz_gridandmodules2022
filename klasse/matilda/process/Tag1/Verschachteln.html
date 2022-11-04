@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH HI!</title>
+    <style>
+        div, span{
+            background-color: rgba(23, 23, 23, 0.305);
+            width: 500px;
+            height: 500px;
+            margin: 2em;
+            padding: 2em;
+            border: 2px solid rgb(234, 255, 0);
+            display: block
+            left: 300px 
+        }
+        .fixed{ position: fixed;
+            background-color: rgb(255, 255, 255);
+             border: 2px solid rgb(234, 255, 0);
+             width: 50px;
+            height: 50px;
+            display: block;
+            z-index: 5;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            right: 40px;
+
+            }
+            .absolute {position: absolute;
+            border: 2px solid rgb(234, 255, 0);
+            display: block
+            left: 200px;
+            z-index: 1;
+            }
+    </style>
+</head>
+<body>
+    <div class=" fixed">OH HI!</div>
+    <div class=" absolute">
+        <div class="absolute">
+            <div class="absolute">
+                <div class="absolute">
+                    <div class="absolute">
+                        <div class="absolute">
+                            <div class="absolute">
+                                <div class="absolute"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+/* ------------------ PHRASE 01 ------------------ */
+
+.textblock1 {
+float: center;
+text-align: center;
+}
+
+.row1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 6.4em;
+    width: 100vw;
+    margin-top: 1em;
+}
+
+.row2 {
+    width: 100vw;
+    margin-top: 3em;
+    height: 500px;
+}
+
+.col1 {
+    width: 40vw;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 18em;
+    line-height: 0.8em;
+    text-align: left;
+    padding-left: 10vw;
+}
+
+.col2 {
+    width: 40vw;
+    float: right;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16em;
+    line-height: 0.85em;
+    text-align: right;
+    padding-right: 10vw;
+}
+
+.textblock2 {
+    text-align: center;
+    margin-top: 1em;
+    }
+
+.row3 {
+    width: 100vw; 
+    margin-top: 2em;
+}
+
+.col3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 3.5em;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.col4 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-weight: 100;
+    font-size: 4.5em;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}

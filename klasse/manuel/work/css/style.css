@@ -40,6 +40,7 @@ p{
   mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   position: relative;
+  -webkit-mask-position: center;
 
 }
 .binoc-inner{

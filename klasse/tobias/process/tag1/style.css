@@ -1,0 +1,27 @@
+body {
+    background-color: #cdff00;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+
+h1 {
+    font-size: 18em;
+    font-weight: 600;
+    border-color: black;
+    color: rgb (0, 0, 0, 0);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    mix-blend-mode: luminosity;
+
+}
