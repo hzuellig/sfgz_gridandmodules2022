@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parentcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* 3 Spalten fr für fraction */
+            grid-template-rows: 1fr 1fr 1fr;
+            /* 3 Zeilen */
+        }
+        
+        .child {
+            border: 1px dotted blue;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        
+        .child:nth-of-type(1) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            background-color: rgba(0, 0, 255, 0.3)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentcontainer">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+</body>
+
+</html>
