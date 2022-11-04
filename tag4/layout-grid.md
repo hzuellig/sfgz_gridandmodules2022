@@ -11,15 +11,15 @@ Es gibt mehrere Arten, Mehrspaltigkeit und Flexibilität in HTML und CSS zu baue
 # Übersicht Konzepte
 ## Flexbox
 Grundsätzlich erlaubt euch Flexbox, Elemente in eine Richtung anzuordnen: Entweder in Zeilen oder in Spalten. Flexbox bietet euch viele Möglichkeiten flexibel (daher der Name) mit dem vorhandenen Platz umzugehen und einfach responsive Layouts zu bauen. <br/><br/>
-<img src="assets/flexboxdir.png" width="300"/><br/>
+<img src="../assets/flexboxdir.png" width="300"/><br/>
 
 ## Grid
 Im Unterschied zu Flexbox ist bei Grid die Alignierung über Zeilen und Spalten möglich – also in zwei Richtungen. 
 <br/><br/>
-<img src="assets/grid.png" width="300"/><br/>
+<img src="../assets/grid.png" width="300"/><br/>
 Mit Grid sind auch Überlagerungen von Elementen möglich (mit Flexbox alleine nicht). 
 <br/><br/>
-<img src="assets/grid-ueberlagerung.png" width="300"/><br/>
+<img src="../assets/grid-ueberlagerung.png" width="300"/><br/>
 
 # Einführung Grid 
 In unserem Modul werden wir uns etwas ausführlicher mit Grid als mit Flexbox beschäftigen, da das Konzept im Rahmen unserer gestalterisch-typografischen Aufgabe viel Möglichkeiten bietet.
@@ -45,7 +45,7 @@ Die Property `display:grid` wird für das Parent Element gesetzt. Dann wird der 
 </div
 ```
 <br/>
-<img src="assets/grid-chrome.png" width="600"/><br/>
+<img src="../assets/grid-chrome.png" width="600"/><br/>
 Standardmässig werden die Kindelemente von links nach rechts und oben nach unten eingefüllt. 
 Im Chrome und im Firefox kann man sich den Grid anzeigen lassen. Die Spalten und Zeilen sind durchnummeriert, die Nummern beginnen bei 1. Die Kindelemente können aber auch explizit platziert werden. Die Angaben `grid-column: 1 / 3;` und `grid-row: 1 / 3;` beziehen sich auf die Nummern der Spalten und Zeilen. Das Element soll den Grid von Spalte 1 bis 3 ausfüllen. Der sogenannte Pseudo-Selektor `:nth-of-type(n)` erlaubt, ein Kindelement nach seiner Reihenfolge auszuwählen, ohne dass man spezielle Klassen erstellen muss.
 
@@ -58,7 +58,9 @@ Im Chrome und im Firefox kann man sich den Grid anzeigen lassen. Die Spalten und
         }
 ```
 <br/>
-<img src="assets/grid-chrome2.png" width="600"/><br/>
+<img src="../assets/grid-chrome2.png" width="600"/><br/>
 
-Kurzübung: Erstellt dieses Bild von Piet Mondrian mit einem Grid. 
+Kurzübung: Erstellt ein Grid Layout und färbt die unterschiedlichen Bereiche im Grid ein. 
+Allenfalls nochmals in der Dokumentation nachlesen: https://www.w3schools.com/css/css_grid.asp <br/>
+Inspiration: https://labs.jensimmons.com/2017/01-011B.html <br/>
 

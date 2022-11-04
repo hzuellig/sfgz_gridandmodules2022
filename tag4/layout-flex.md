@@ -26,7 +26,7 @@ Richtung des Layouts: standardmässig werden die Elemente in der Schreibrichtung
 Mit `flex-direction:column` (beim parentcontainer) ändert ihr die Hauptachse und die Elemente werden in einer Spalte von oben nach unten dargestellt. Die Querachse ist entsprechend von links nach rechts (in der westlichen Schreibrichtung).
 
 <br/><br/>
-<img src="assets/flex-direction.png" width="300"/><br/>
+<img src="../assets/flex-direction.png" width="300"/><br/>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Mozilla Referenz</a>
 
