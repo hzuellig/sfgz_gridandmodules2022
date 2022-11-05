@@ -51,6 +51,7 @@ h3{
 .links{
     position: block;
     margin: 0em;
+    padding-bottom: 3em;
     font-size: 2em;
     list-style-type: none;
 }
