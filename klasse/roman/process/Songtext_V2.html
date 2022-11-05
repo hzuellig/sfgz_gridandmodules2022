@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songtext 1. Version</title>
+    <title>Songtext 2. Version</title>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
@@ -12,18 +12,19 @@
     <style>
 
 body {
-    font-size: 100%;
     text-align: center;
     width:100%;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     font-family: 'Monoton', cursive;
-    font-size: 12em;
+    font-size: 15vw;
     text-transform: uppercase;
     font-weight: 400;
     text-align: center;
-    line-height: 1em;
+    line-height: 13vw;
     width:100%;
 }
 
@@ -33,7 +34,7 @@ h2 {
     font-weight: 400;
     font-style: italic;
     color: rgb(255, 231, 189);
-    text-align: left;
+    text-align: center;
     line-height: 1em;
     width:100%;
 }
@@ -61,18 +62,20 @@ h3 {
     background-color: rgb(242, 138, 15);
     width:100%;
     height:150%;
-    text-align: left;
-    padding: 50px;
+    text-align: center;
+    padding-bottom: 2em;
 }
 
-.cupimage {
-    float: right;
+#Cupimage {
     position: absolute;
+    display: block;
+    right: 0;
+    left: auto;
+    viewport-fit: auto;
 }
 
 #ambi {
     color: rgb(157, 90, 10);
-    text-align: left;
 }
 
 #pump {
@@ -97,7 +100,7 @@ h3 {
     </div>
 
     <div class="ambition">
-    <img id="Cupimage" src="/process/Images/Songtext/Cup.png">
+    <div id="Cupimage"><img src="/process/Images/Songtext/Cup.png"></div>
     <h2>Pour myself a cup of</h2>
     <h1 id="ambi">Ambition</h1>
     <h2>And yawn and stretch<br> and try to come to life</h2>
