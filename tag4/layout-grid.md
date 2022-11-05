@@ -161,6 +161,8 @@ Dort findest du die Properties, um Inhalt mittig oder am unteren Rand auszuricht
 
 ## Talk von Jen Simmons zu Grid
 https://www.youtube.com/watch?v=t0b3uBoDkBs&t=13s
+## Lab von Jen Simmons 
+https://labs.jensimmons.com/
 
 ## Aufgabe auf 11.11.
 Entwirf einen Auszug aus deinem Song und platziere ihn im Grid, so dass interessante Verhältnisse und Räume enstehen (Übung von Brigitte). <br/>
