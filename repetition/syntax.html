@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax</title>
+    <style>
+        div {
+            background-color: rgb(199, 189, 155);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Syntax</h1>
+    <p>Es gibt drei verschiedene Arten html mit CSS zu ergänzen und somit zu Stylen.</p>
+    <p>Inline CSS, Internal CSS und External CSS.</p><br><br>
+
+
+    <h2>Diese zwei Zeilen können mit allen drei Varianten erstellt werden:</h2>
+    <div>
+        <h1 style="color:rgb(5, 86, 34);">Das ist eine grüne Headline</h1>
+        <p style="color:rgb(8, 0, 255);">Das ist ein blauer Paragraph</p>
+    </div>
+    <br><br>
+    <h2>Inline CSS</h2>
+    <pre>
+        <code>
+        &lt;h1 style="color:rgb(5, 86, 34);"&gt;Das ist eine grüne Headline&lt;/h1&gt;
+        &lt;p style="color:rgb(8, 0, 255);"&gt;Das ist ein blauer Paragraph&lt;/p&gt;
+        </code>
+    </pre>
+    <h2>Internal CSS</h2>
+    <pre>
+        <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt;
+    h1   {rgb(5, 86, 34);}
+    p    {rgb(8, 0, 255);}
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    &lt;h1&gt;Das ist eine grüne Headline&lt;/h1&gt;
+    &lt;p&gt;Das ist ein blauer Paragraph&lt;/p&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code>
+</pre>
+
+    <h2>External CSS</h2>
+    <p>Beim External CSS wird ein zusätzliches CSS-File erstellt. Dieses nennt sich styles.css</p>
+
+    <pre>
+
+    <code>
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;Das ist eine grüne Headline&lt;/h1&gt;
+    &lt;p&gt;Das ist ein blauer Paragraph&lt;/p&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+<br><br><br><br>
+    h1 {
+    color: rgb(5, 86, 34);
+    }
+    p {
+    color: rgb(8, 0, 255);
+    }
+
+    </code>
+    </pre>
+
+
+</body>
+
+</html>
