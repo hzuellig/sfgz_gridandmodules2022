@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30pt;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+    color: white;
+}
+
+.mark2 {
+background-color: orange;
+width: fit-content;
+}
+
+
+del {
+color: red;
+}
+
+
+q {
+font-style: oblique;
+}
+
+.section {
+    background-color: rgb(255, 0, 179);
+    border: dashed;
+    border-color: black;
+    padding: 50pt;
+}
+
+
+.section2 {
+background-color: rgb(135, 135, 246);
+padding: 20pt;
+margin: 20pt;
+width: 50%;
+}

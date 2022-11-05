@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid – Übung1</title>
+
+<style>
+
+/*
+.parentcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 Spalten fr für fraction */
+    /* grid-template-rows: 1fr 1fr 1fr; /* 3 Zeilen 
+} */ 
+
+/*
+.parentcontainer{
+    display:grid; 
+    grid-template-columns: 200px 1fr 1fr; 
+    grid-template-rows: 200px 1fr 1fr; /* 3 Zeilen */
+   /* min-height: 90vh;
+}*/ 
+
+.parentcontainer{
+    display:grid; 
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
+    min-height: 90vh;
+}
+
+.child{
+    border:5px double rgb(0, 0, 0);
+    border-radius: 20px;
+    padding:1rem;
+    margin:1rem;
+}
+
+.child:nth-of-type(1) /* .child:nth-of-type(1) : dieses (1) sagt welches Kind es anspricht */{
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+            /* grid-area: 1 / 3 / 1 / 3; Kurzschreibweise Area, 1/3 geht von Linie 1 (ganz links) bis Linie 3 über (2 Spalten) */
+            background-color:rgba(0,0,255,0.3);
+        
+        }
+
+        .child:nth-of-type(2) /* .child:nth-of-type(1) : dieses (1) sagt welches Kind es anspricht */{
+            grid-column: 6 / 8;
+            grid-row: 2 / 4;
+            /* grid-area: 1 / 3 / 1 / 3; Kurzschreibweise Area, 1/3 geht von Linie 1 (ganz links) bis Linie 3 über (2 Spalten) */
+            background-color:rgba(255, 180, 18, 0.3);
+        }
+
+        .child:nth-of-type(3) /* .child:nth-of-type(1) : dieses (1) sagt welches Kind es anspricht */{
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            /* grid-area: 1 / 3 / 1 / 3; Kurzschreibweise Area, 1/3 geht von Linie 1 (ganz links) bis Linie 3 über (2 Spalten) */
+            background-color:rgba(255, 0, 85, 0.3);
+        }
+
+        .child:nth-of-type(4) /* .child:nth-of-type(1) : dieses (1) sagt welches Kind es anspricht */{
+            grid-column: 3 / 6;
+            grid-row: 3 / 4;
+            /* grid-area: 1 / 3 / 1 / 3; Kurzschreibweise Area, 1/3 geht von Linie 1 (ganz links) bis Linie 3 über (2 Spalten) */
+            background-color:rgba(242, 255, 171, 0.3);
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20pt;
+            color: brown;
+        }
+
+</style>
+
+</head>
+<body>
+
+    <div class="parentcontainer">
+        <div class="child">1</div>
+        <div class="child">
+            <h1>Wird dieser Text umbrochen?</h1> </div>
+        <div class="child">3</div>
+        <div class="child">
+            <h1>Geht das?</h1>
+            </div>
+    </div>
+    
+</body>
+</html>
