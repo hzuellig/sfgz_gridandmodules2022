@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    background-color: yellow;
+}
