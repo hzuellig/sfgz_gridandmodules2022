@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/process/css/reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+       .parentgrid {
+            display: grid;
+            grid-template-columns: repeat(8, 14vw);
+            grid-template-rows: repeat(12, 10vh);
+        }
+
+        .child {
+            grid-column: 3 / 6;
+        }
+        .child2{
+            grid-column: 3 / 7;
+            grid-row: 3 / 8;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentgrid">
+        <div class="child">
+            <p>can't abide the</p>
+        </div>
+        <div class="child2">
+            <h1>sun</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
