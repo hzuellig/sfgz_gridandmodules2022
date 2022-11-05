@@ -5,8 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grids & Modules</title>
+    <style>
+        @font-face {
+            font-family: Other Special Font;
+            src: url(../process/tag2/Sligoil-Micro.otf);
+        }
+
+        h1 {
+            font-family: Other Special Font;
+            font-size: 56px;
+            color: rgb(255, 255, 255)
+        }
+
+        button {
+            background-color: rgb(191, 233, 0);
+            border: none;
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            font-family: Other Special Font;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.326);
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        button:hover {
+            background-color: rgb(125, 153, 2);
+        }
+
+        .absolute {
+            top: 50px;
+            left: 50px;
+        }
+
+        .fixed {
+            top: 50px;
+            left: 200px;
+        }
+
+        span {
+            background-color: none;
+            margin: 1rem;
+            padding: 1rem;
+            display: inline-flex;
+            align-content: center;
+        }
+
+        body {
+            background-color: rgb(19, 21, 31);
+        }
+    </style>
 </head>
+
+
 <body>
-    <a href="/process">Link</a>
+    <span class="absolute">
+        <h1>Index-File</h1>
+    </span>
+    <span class="fixed">
+        <button>
+            <a href="process/index.html">Link zum Prozess</a>
+        </button>
+    </span>
 </body>
+
 </html>
