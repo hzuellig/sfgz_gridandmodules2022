@@ -52,7 +52,7 @@ Die Property `display:grid` wird für das Parent Element gesetzt. Dann wird der 
     <div class="child">2</div>
     <div class="child">3</div>
     <div class="child">4</div>
-</div
+</div>
 ```
 <br/>
 <img src="../assets/grid-chrome.png" width="600"/><br/>
@@ -106,7 +106,7 @@ body{
 .brockmanngrid{
     display:grid;
     grid-template-columns: repeat(7,14vw); /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns*/
-    grid-template-columns: repeat(7,10.75vw);
+    grid-template-rows: repeat(7,10.75vw);
 }
 .der {
     grid-column: 1 / 5;
