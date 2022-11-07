@@ -21,6 +21,9 @@
         line-height: 20px;
     }
 
+    section{margin: 60px;
+}
+
     img {
         width: 80vw;
     }
@@ -31,105 +34,72 @@
 
     .parentcontainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(13, 1fr);
-        min-height: 100vh;
+        grid-template-columns: 22vw 22vw 22vw 22vw;
+        grid-template-rows: 22vw 22vw 22vw 22vw;
     }
 
     .child {
-        border: 1px dotted blue;
-        padding: 2rem;
-        margin: 1rem;
+        padding: 0rem;
+        margin: 0rem;
+        font-family: 'Comfortaa', cursive;
+        font-size: 4vw;
+        align-self: end;
     }
-    .section1 .child:nth-of-type(1) {
-        grid-column: 1 / 5;
+    .child:nth-of-type(1) {
+        grid-column: 1 / 4;
         grid-row: 1 / 2;
+        font-size: 4vw;
     }
 
     .child:nth-of-type(2) {
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         grid-row: 2 / 3;
+        font-size: 12vw;
     }
 
     .child:nth-of-type(3) {
-        grid-column: 1 / 5;
+        grid-column: 2 / 4;
         grid-row: 3 / 4;
+        font-size: 4vw;
     }
 
     .child:nth-of-type(4) {
-        grid-column: 1 / 5;
+        grid-column: 2 / 4;
         grid-row: 4 / 5;
-    }
-
-    .child:nth-of-type(5) {
-        grid-column: 1 / 5;
-        grid-row: 5 / 6;
-    }
-
-    .child:nth-of-type(6) {
-        grid-column: 1 / 5;
-        grid-row: 6 / 7;
-    }
-
-    .child:nth-of-type(7) {
-        grid-column: 1 / 5;
-        grid-row: 7 / 8;
-    }
-
-    .child:nth-of-type(8) {
-        grid-column: 1 / 5;
-        grid-row: 8 / 9;
-    }
-
-    .child:nth-of-type(9) {
-        grid-column: 1 / 5;
-        grid-row: 9 / 10;
-    }
-
-    .child:nth-of-type(10) {
-        grid-column: 1 / 5;
-        grid-row: 10 / 11;
-    }
-
-    .child:nth-of-type(11) {
-        grid-column: 1 / 5;
-        grid-row: 11 / 12;
-    }
-
-    .child:nth-of-type(12) {
-        grid-column: 1 / 5;
-        grid-row: 12 / 13;
+        font-size: 12vw;
     }
 
 
 </style>
 
-<body><div class="parentcontainer">
-    <div class="child">
+<body>
+    <section>
     <p>Wir fahren nach Süden, in den</p>
     <p style="font-family:'Caveat', cursive;font-size: 11vw;">Sonnenuntergang</p>
    <img src="/Data/Sonnenuntergang.png" alt="Sonnenuntergang"><br><br><br><br><br><br><br><br>
-</div>
+</section>
 
-<div class="child">
+<section>
    <p>Das spricht nicht gerade für unsere</p>
     <p style="font-family:'Caveat', cursive;font-size: 11vw;">Orientierung</p><br><br><br>
-</div>
+</section>
 
-<div class="child">
-    <p style="text-align: left;">Ziel ist</p>
-    <p style="font-size: 11vw; text-align: left;">Sizilien,</p>
-    <p> dort spricht man</p>
-    <p style="font-size: 11vw; text-align: right;">italienisch</p><br><br><br><br><br>
-</div>
+<section>
+    <div class="parentcontainer">
+        <div class="child">Ziel ist</div>
+        <div class="child">Sizilien,</div>
+        <div class="child">dort spricht man</div>
+        <div class="child">italienisch</div>
+    </div>
+</section>
 
-<div class="child">
+<section>
     <p>Das spricht hier <span style="font-family:'Caveat', cursive;font-size: 11vw;text-decoration-line: underline;">keiner,</span></p>
     <p>doch wir haben eine</p>
     <img src="/Data/App.png" alt="AppIcon" style="width:20vw;"><br><br><br><br><br><br><br>
-</div>
+</section>
 
-<div class="child">
+<section>
     <div style="font-size: 8vw; text-align:left; margin:0px;line-height:20px;">
         <p>Spontane 
         <p>Urlaube</p>
@@ -140,39 +110,39 @@
         <p>das Auto alt</p>
         <p>und viel zu voll</p>
     </div>
-</div>
+</section>
 
-<div class="child">
+<section>
     <p>Es ist <span style="font-family:'Caveat', cursive; font-size: 8vw;">eng</span> und wir zu viert</p>
     <p>Die Fenster klemmen und </p>
     <p>Selbstverständlich ist hier nicht klimatisiert</p>
-</div>
+</section>
 
-<div class="child">
+<section>
     <img src="../Data/Ford Fiesta Kontur.png" alt="FordFiesta">
     <br>
     <br>
     <p>Im <strong>Ford Fiesta</strong> von meiner Schwester</p>
-</div>
+</section>
 
-<div class="child">  
+<section>  
     <p>bis zum Meer ein gutes Stück</p>
     <p>und danach hoffentlich zurück</p>
-</div>
+</section>
 
-<div class="child">  
+<section>  
     <p>Im <strong>Ford Fiesta</strong> von meiner Schwester</p>
-</div>
+</section>
 
-<div class="child">  
+<section>  
     <p>es läuft hier</p>
     <p>Non-Stop Bravo Hits, weil keiner mehr CD's besitzt.</p>
-</div>
+</section>
 
-<div class="child">  
+<section>  
     <h1><strong>Im Ford Fiesta, im Ford Fiesta!</strong></p>
     </h1>
-</div>
+</section>
 
 </div>
 </body>
