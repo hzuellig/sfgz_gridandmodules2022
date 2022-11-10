@@ -17,17 +17,16 @@ h1 {
     text-align: center;
 }
 h2{
-    font-family: Happy Times Italic;
+    font-family: Happy Times;
     font-size: 192px;
     font-weight: lighter;
-    -webkit-text-stroke: 3px rgb(255, 255, 255);
-    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 h3{
-    font-family: Happy Times Italic;
+    font-family: Happy Times;
     font-size: 120px;
-    color: rgba(255, 255, 255, 0.4);
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.2);
 }
 h4{ 
     font-family: Happy Times Italic;
@@ -35,9 +34,9 @@ h4{
     color: rgba(255, 255, 255, 0.4);
 }
 h5{
-    font-family: Happy Times Italic;
+    font-family: Happy Times;
     font-size: 48px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgb(159, 119, 93);
 }
 p {
     font-family: Happy Times Italic;
