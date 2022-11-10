@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite mit Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'songname songname songname '
+            'nine picture five'
+            'songtext songtext songtext';
+            background-color:rgb(180, 17, 54);
+            gap: 10px;
+            padding: 0;
+        }
+
+        .grid-container > div {
+            border: 0 solid black;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .songname {
+            grid-area: songname;
+            justify-content: center;
+        }
+
+        .nine {
+            grid-area: nine;
+            text-align: center;
+        }
+
+        .picture {
+            grid-area: picture;
+            width: 400px;
+            align-self: center;
+            align-content: center;
+        }
+
+        .five {
+            grid-area: five;
+            text-align: center;
+        }
+
+        .songtext {
+            grid-area: songtext;
+            text-align: center;
+            align-self: baseline;
+        }        
+
+        h1 {
+            font-family: 'Monoton', cursive;
+            font-weight: 400;
+            color: rgb(255, 231, 189);
+            font-size:24vw;
+        }
+
+        h2 {
+            font-family: 'Abril Fatface', cursive;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            font-size: 3em;
+            text-align: center;
+            grid-area: songtext;
+        }
+
+        h3 {
+            font-family: 'DM Serif Display', serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 3em;
+            }
+
+        h4 {
+            font-family: 'Abril Fatface', cursive;
+            font-weight: 400;
+            color: white;
+            font-size: 1em;
+            }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 231, 189);
+            }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="songname>"><h2>Dolly Parton's 9 to 5</h2></div>
+        <div class="nine"><h1>9</h1></div>
+        <div class="picture"><a><img src="images/songtext/dolly.svg" alt=""></a></div>
+        <div class="five"><h1>5</h1></div>
+        <div class="songtext"><h3><a href="songtext_v1.html"target=”_blank>Play Song</a></h3><br> <h4>Coded and Styled by Roman Marty</h4></div>
+    </div>
+</body>
+</html>
