@@ -1,0 +1,230 @@
+/*Config CSS*/
+html,body{
+  margin:0;
+  padding: 0;
+}
+p{
+  margin:0;
+  padding: 0;
+}
+/*Elements*/
+.container{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.basic{
+  font-size: 4em;
+  font-weight: 800;
+}
+/*Style*/
+.part1{
+  height: 80vh;
+  background-color: #0b0f17;
+  padding-top: 30vh;
+  text-align: center;
+}
+.part1 .logisch{
+  font-size: 13em;
+  font-family: 'Permanent Marker';
+  margin-top: -25px;
+  margin-left: -20px;
+}
+.part1 .eins{
+  text-align: left;
+margin-left: 200px;
+margin-bottom: -90px;
+}
+.part1 .drei{
+  text-align: center;
+    margin-left: 350px;
+    font-size: 13em;
+    font-family: 'Permanent Marker';
+    margin-top: -150px;
+}
+.part2{
+  text-align: center;
+  background: #0b0f17;
+  box-shadow: 0px 50px 100px 100px #0b0f17;
+  margin-bottom: 300px;
+  z-index: 99;
+  position: relative;
+}
+.part2 .ichgse{
+  text-transform: uppercase;
+  margin:-40px 0;
+  font-size: 8em;
+}
+.part2 .gse1{
+  margin-left: -350px;
+}
+.part2 .gse3{
+  margin-left: 350px;
+}
+.binoc-inner{
+  -webkit-mask-image: url(../img/binoc-mask.png);
+  mask-image: url(../img/binoc-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  position: relative;
+  -webkit-mask-position: center;
+
+}
+.binoc-inner{
+  height:80vh;
+  background:#fff;
+}
+.logik{
+  font-size: 20em;
+  font-family: 'Staatliches';
+  text-align: center;
+  padding-top:110px;
+}
+.container-binoc{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ichgse{
+
+}
+.part1, .part2{
+  color: #fff;
+}
+.logik1{
+  position: absolute;
+  color: #fff;
+  opacity: 100%;
+  top:0;
+  left: calc(50% - 315px);
+  z-index: 9;
+}
+.logik2{
+  position: absolute;
+  top:-10px;
+  left: calc(50% - 305px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,0,255,0.5);
+  opacity: 50%;
+}
+.logik3{
+  position: absolute;
+  top:10px;
+  left: calc(50% - 330px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,168,255,0.5);
+  opacity: 50%;
+}
+.logik4{
+  position: absolute;
+  top:5px;
+  left: calc(50% - 305px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,255,0,0.5);
+  opacity: 50%;
+}
+.noed{
+  z-index: 11;
+  color: black;
+  font-family: 'Permanent Marker';
+  position: relative;
+  top:-20px;
+}
+.binoculars{
+  margin-bottom: 20vh;
+  margin-top: 20vh;
+}
+.container-binoc{
+  padding-bottom: 20vh;
+}
+.part3{
+  height: 130vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: -300px;
+  z-index: -1;
+  position: relative;
+}
+.part3 .dumitmir{
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    width: 80vw;
+}
+.part3 .container{
+  position: relative;
+}
+.part3 .dumitmir .du{
+  font-size: 32em;
+  font-weight: 800;
+}
+.part3 .basic:first-child{
+  font-family: 'Staatliches';
+}
+.part3 .mitmir1{
+    margin-top:-100px;
+}
+.part3 .mitmir2{
+    margin-top:-32px;
+}
+.part4{
+  background-color: #fff;
+}
+.part4 .oderohne{
+  width: 80vw;
+  text-align: center;
+}
+.part4 .oder{
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: -100px;
+  margin-top: 100px;
+}
+.part4 .bisch{
+  font-size: 4em;
+  font-weight: 800;
+  margin-top: -120px;
+  margin-bottom: -100px;
+}
+.part4 .ohne{
+  font-size: 32em;
+  font-family: 'Staatliches';
+}
+.part4{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.part4 .shit{
+  font-family: 'Permanent Marker';
+  font-size: 32em;
+  text-shadow:
+    -3px -3px 0 #0b0f17,
+    3px -3px 0 #0b0f17,
+    -3px 3px 0 #0b0f17,
+    3px 3px 0 #0b0f17;
+  color: #fff;
+}
+.part4 .shitglow{
+  position: relative;
+  margin-top: -600px;
+}
+.part4 .shitmain{
+  z-index: 99;
+  position: relative;
+  opacity: 0.6;
+}
+.part4 .glow1{
+  color: #ffcaff;
+  top:0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  margin-left: -20px;
+  margin-bottom: -15px;
+  text-shadow: none;
+  opacity: 50%;
+}
