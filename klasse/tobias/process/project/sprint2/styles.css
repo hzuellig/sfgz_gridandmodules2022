@@ -30,17 +30,18 @@ h2{
 
 h4{
     text-transform: uppercase;
-    font-size: 3em;
-    line-height: 1.1;
-    font-weight: 300;
-    color: #D5D3D0;
+    font-size: 5em;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #D5D3D0; 
     text-align: left;
 }
 
-h5{
-    font-size: 2em;
+p{
+    text-transform: uppercase;
+    font-size: 5em;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 900;
     color: #D5D3D0;
     text-align: left;
 }
@@ -49,6 +50,11 @@ h5{
     font-size: 10vw;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.outline{
+    color: #06090D; 
+    text-shadow: 0 0 5px white;
 }
 
 .title{
