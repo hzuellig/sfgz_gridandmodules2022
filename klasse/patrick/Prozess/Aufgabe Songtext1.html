@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Song Text</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Rubik+Mono+One&family=Syne+Mono&display=swap");
+
+    
+
+      body{ 
+        background-color: rgb(255, 231, 176);
+      }
+
+      .adiv {
+        display: grid;
+        grid-template-columns: repeat(10, clamp(70px, 10vw, 300px));
+        grid-template-rows: repeat(
+          10,
+          clamp(3em, 10vh, 11vh)
+        ); /*Minimumwert auf 3em und unendlich vergrösserbar (Fallback: repeat(10, 10vh)*/
+        
+      }
+
+      .title {
+        grid-column: 2 / 3;
+        grid-row: 2 / 8;
+        border: 1px solid black;
+        margin: 0;
+      }
+
+      .title-format {
+        font-family: "Rubik Mono One", sans-serif;
+        font-weight: 600;
+        font-size: clamp(3em, 10vh, 20em); /*clamp(minimum-wert, standard-wert, maximum-wert)*/
+        transform: rotate(180deg);
+        line-height: 100%;
+        padding: 0px;
+        writing-mode: vertical-rl;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        text-align: left;
+        padding-top: 7%;
+      }
+
+      .text1 {
+        grid-column: 3 / 5;
+        grid-row: 5 / 8;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, clamp(100px, calc(100%/3), 170px)); /*Minimal-Wert auf 100px, 1/3 der verfügbaren Breite, Maximal-Wert 170px*/
+        background-color: rgba(70, 175, 148, 0.5);
+        min-width: 350px;/*Minimal-Breite des Containers*/
+      
+        
+        
+
+      }
+
+      .text1-1{
+        grid-column: 1 / 3;
+        
+      }
+
+      .text1-1-f{
+        font-family: 'Anton', sans-serif;
+        font-weight: 200;
+        font-size: clamp(3em, 25vh, 200em);
+        display: flex;
+        align-items: flex-end;  /*vertikal unten*/
+        justify-content: flex-start; /*horizontal links*/
+        line-height: 100%;
+        color: rgb(70, 175, 148);
+        
+        
+        
+        
+      }
+
+      .text1-2{
+        grid-column: 3 / 4;
+      }
+
+      .text1-2-f{
+        font-family: 'Anton', sans-serif;
+        font-weight: 200;
+        font-size: clamp(1em, 2vh, 300em);
+        display: flex;
+        align-items: flex-end; /*aufgrund 180° Rotation horizontal links*/
+        justify-content: flex-start; /*aufgrund 180° Rotation vertikal unten*/
+        line-height: 100%;
+        writing-mode: vertical-rl; /*stellt den Text vertikal und orientiert von rechts nach links*/
+        text-align: left;
+        transform: rotate(180deg); /*schreibt von unten nach oben*/
+        mix-blend-mode: darken;
+        color: purple;
+        padding-top: 15%;
+        
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="adiv">
+      <div class="title title-format">
+        Mutter
+      </div>
+      <div class="text1">
+        <div class="text1-1 text1-1-f">
+          DIE
+        </div>
+        <div class="text1-2 text1-2-f">
+          Tränen greiser Kinderschar<br>
+          Ich zieh sie auf ein weißes Haar<br>
+          Werf in die Luft die nasse Kette<br>
+          Und wünsch mir, dass ich eine Mutter hätte
+        </div>
+    </div>
+  </div>
+  </body>
+</html>
