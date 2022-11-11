@@ -6,145 +6,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford Fiesta</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 200;
+            font-size: 5vw;
+            text-align: center;
+            margin: 20px;
+        }
+
+        p {
+            font-size: 5vw;
+        }
+
+        h1 {
+            font-weight: 400;
+        }
+
+        .parentcontainer {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(37, 150px);
+            margin: 20px;
+            margin-top: 80px;
+            min-height: 150px;
+        }
+
+        .child {
+            /*border: 1px dotted blue;*/
+        }
+
+        .childhead {
+           /* border: 1px dotted greenyellow;*/
+            font-weight: 400;
+            font-size: 7vw;
+        }
+
+        .child:nth-of-type(1) {
+            grid-column: 1 / 13;
+            grid-row: 1 / 2;
+            text-align: right;
+        }
+
+        .childhead:nth-of-type(2) {
+            grid-column: 1 / 13;
+            grid-row: 2 / 3;
+            text-align: left;
+        }
+
+        .child:nth-of-type(3) {
+            grid-column: 1 / 13;
+            grid-row: 6 / 7;
+            text-align: right;
+        }
+
+        .childhead:nth-of-type(4) {
+            grid-column: 1 / 13;
+            grid-row: 7 / 8;
+            text-align: left;
+        }
+
+
+        .child:nth-of-type(5) {
+            grid-column: 1 / 13;
+            grid-row: 11 / 12;
+            text-align: center;
+        }
+
+        .childhead:nth-of-type(6) {
+            grid-column: 1 / 13;
+            grid-row: 12 / 13;
+            text-align: center;
+        }
+
+        .child:nth-of-type(7) {
+            grid-column: 1 / 13;
+            grid-row: 15 / 16;
+            text-align: center;
+        }
+
+        .childhead:nth-of-type(8) {
+            grid-column: 1 / 13;
+            grid-row: 16 / 17;
+            text-align: center;
+        }
+
+        .child:nth-of-type(9) {
+            grid-column: 1 / 13;
+            grid-row: 20 / 21;
+            text-align: right;
+        }
+
+        .childhead:nth-of-type(10) {
+            grid-column: 1 / 13;
+            grid-row: 21 / 22;
+            text-align: left;
+        }
+
+        .child:nth-of-type(11) {
+            grid-column: 1 / 13;
+            grid-row: 25 / 26;
+            text-align: right;
+        }
+
+        .childhead:nth-of-type(12) {
+            grid-column: 1 / 13;
+            grid-row: 26 / 27;
+            text-align: left;
+        }
+        
+        .child:nth-of-type(13) {
+            grid-column: 1 / 13;
+            grid-row: 30 / 31;
+            text-align: right;
+        }
+
+        .childhead:nth-of-type(14) {
+            grid-column: 1 / 13;
+            grid-row: 31 / 32;
+            text-align: left;
+        }
+        .child:nth-of-type(15) {
+            grid-column: 1 / 13;
+            grid-row: 32 / 33;
+            text-align: right;
+        }
+
+        .childhead:nth-of-type(16) {
+            grid-column: 1 / 13;
+            grid-row: 33 / 34;
+            text-align: left;
+        }
+        
+    </style>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-    body {
-        background-image: url(https://img.freepik.com/fotos-kostenlos/strukturierter-hintergrund-des-designraumes-papier_53876-42312.jpg?w=2000);
-        position: relative;
-        text-align: center;
-        font-family: 'Comfortaa', cursive;
-        font-size: 3vw;
-        line-height: 20px;
-    }
-
-    section{margin: 60px;
-}
-
-    img {
-        width: 80vw;
-    }
-
-    h1 {
-        font-family: 'Caveat', cursive;
-    }
-
-    .parentcontainer {
-        display: grid;
-        grid-template-columns: 22vw 22vw 22vw 22vw;
-        grid-template-rows: 22vw 22vw 22vw 22vw;
-    }
-
-    .child {
-        padding: 0rem;
-        margin: 0rem;
-        font-family: 'Comfortaa', cursive;
-        font-size: 4vw;
-        align-self: end;
-    }
-    .child:nth-of-type(1) {
-        grid-column: 1 / 4;
-        grid-row: 1 / 2;
-        font-size: 4vw;
-    }
-
-    .child:nth-of-type(2) {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-        font-size: 12vw;
-    }
-
-    .child:nth-of-type(3) {
-        grid-column: 2 / 4;
-        grid-row: 3 / 4;
-        font-size: 4vw;
-    }
-
-    .child:nth-of-type(4) {
-        grid-column: 2 / 4;
-        grid-row: 4 / 5;
-        font-size: 12vw;
-    }
-
-
-</style>
 
 <body>
-    <section>
-    <p>Wir fahren nach Süden, in den</p>
-    <p style="font-family:'Caveat', cursive;font-size: 11vw;">Sonnenuntergang</p>
-   <img src="/Data/Sonnenuntergang.png" alt="Sonnenuntergang"><br><br><br><br><br><br><br><br>
-</section>
-
-<section>
-   <p>Das spricht nicht gerade für unsere</p>
-    <p style="font-family:'Caveat', cursive;font-size: 11vw;">Orientierung</p><br><br><br>
-</section>
-
-<section>
     <div class="parentcontainer">
-        <div class="child">Ziel ist</div>
-        <div class="child">Sizilien,</div>
-        <div class="child">dort spricht man</div>
-        <div class="child">italienisch</div>
+        <div class="child">Wir fahren nach Süden, in den</div>
+        <div class="childhead">SONNENUNTERGANG</div>
+        <div class="child">Das spricht nicht gerade für unsere</div>
+        <div class="childhead"><span style="color:rgb(255, 255, 255);">S</span>ORIENTIERUNG</div>
+        <div class="child">Es ist</div>
+        <div class="childhead">ENG</div>
+        <div class="child">und wir zu</div>
+        <div class="childhead">VIERT</div>
+        <div class="child">die Fenster</div>
+        <div class="childhead">KLEMMEN</div>
+        <div class="child">und selbstverständlich ist hier nichts</div>
+        <div class="childhead">KLIMATISIERT</div>
+        <div class="child">Im</div>
+        <div class="childhead">FORD FIESTA</div>
+        <div class="child">von meiner</div>
+        <div class="childhead">SCHWESTER</div>
     </div>
-</section>
-
-<section>
-    <p>Das spricht hier <span style="font-family:'Caveat', cursive;font-size: 11vw;text-decoration-line: underline;">keiner,</span></p>
-    <p>doch wir haben eine</p>
-    <img src="/Data/App.png" alt="AppIcon" style="width:20vw;"><br><br><br><br><br><br><br>
-</section>
-
-<section>
-    <div style="font-size: 8vw; text-align:left; margin:0px;line-height:20px;">
-        <p>Spontane 
-        <p>Urlaube</p>
-        <p>sind</p>
-        <p>toll,</p>
-    </div>  
-    <div style="font-family:'Caveat', cursive;font-size: 11vw;">
-        <p>das Auto alt</p>
-        <p>und viel zu voll</p>
-    </div>
-</section>
-
-<section>
-    <p>Es ist <span style="font-family:'Caveat', cursive; font-size: 8vw;">eng</span> und wir zu viert</p>
-    <p>Die Fenster klemmen und </p>
-    <p>Selbstverständlich ist hier nicht klimatisiert</p>
-</section>
-
-<section>
-    <img src="../Data/Ford Fiesta Kontur.png" alt="FordFiesta">
-    <br>
-    <br>
-    <p>Im <strong>Ford Fiesta</strong> von meiner Schwester</p>
-</section>
-
-<section>  
-    <p>bis zum Meer ein gutes Stück</p>
-    <p>und danach hoffentlich zurück</p>
-</section>
-
-<section>  
-    <p>Im <strong>Ford Fiesta</strong> von meiner Schwester</p>
-</section>
-
-<section>  
-    <p>es läuft hier</p>
-    <p>Non-Stop Bravo Hits, weil keiner mehr CD's besitzt.</p>
-</section>
-
-<section>  
-    <h1><strong>Im Ford Fiesta, im Ford Fiesta!</strong></p>
-    </h1>
-</section>
-
-</div>
 </body>
 
 </html>
