@@ -1,0 +1,280 @@
+
+body{
+    margin: 0;
+}
+
+
+.parentcontainer {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+    padding-bottom: 6vw;
+    margin-bottom: 6vw;
+
+}
+
+.parentcontainer2 {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+
+}
+
+.parentcontainer3 {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+}
+
+.h1 {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 7vw;
+}
+
+
+.h2 {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 25vw;
+
+}
+
+.h3 {
+    font-family: 'Germania One', cursive;
+    color: black;
+    font-size: 3vw;
+    margin-bottom: 1.6vw;
+    letter-spacing: 0.1vw;
+}
+
+.h4 {
+    font-family: 'Germania One', cursive;
+    color: black;
+    font-size: 25vw;
+    letter-spacing: 3vw;
+    animation: fadeIn 5s;
+
+}
+
+.h5 {
+    font-family: 'Germania One', cursive;
+    color: black;
+    font-size: 7vw;
+    margin-bottom: 2.1vw;
+}
+
+
+.h6 {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+
+
+.font_vertical {
+    writing-mode: vertical-rl;
+    margin-left: -7vw;
+    position: relative;
+
+}
+
+
+.row1 {
+    grid-column: 4 / 10;
+    text-align: center;
+
+}
+
+.row2 {
+    grid-column: 4 / 10;
+    text-align: center;
+
+}
+
+/* CONTROL */
+
+.row3 {
+    grid-column: 1 / 13;
+    text-align: center;
+
+}
+
+.row4 {
+    grid-row: 7 / 10;
+}
+
+.row5 {
+    grid-column: 3 / 6;
+    text-align: right;
+    margin-top: 0.6vw;
+    margin-right: 3vw;
+}
+
+.row6 {
+    grid-column: 6 / 8;
+    text-align: center;
+}
+
+.row7 {
+    grid-column: 8 / 12;
+    text-align: left;
+    grid-row: 1/2;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+
+.row8 {
+    grid-row: 2 / 3;
+    grid-column: 2/13;
+}
+
+.row9 {
+    grid-row: 2 / 13;
+    grid-column: 9 / 12;
+    align-self: flex-end;
+padding-bottom: 3.9vw;
+}
+
+.row10 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 13;
+}
+
+.row11 {
+    grid-column: 1 / 12;
+    text-align: right;
+    margin-top: -45px;
+    margin-right: 5vw;
+}
+
+
+.section_orange {
+background-color: rgb(255, 128, 0);
+padding-top: 5vw;
+padding-bottom: 5vw;
+    }
+
+    .section_black {
+        background-color: black;
+        padding-top: 3vw;
+
+            }
+
+
+            .control {
+                display: flex;
+                margin: 0 auto;
+                position: relative;
+                margin-top: -4%;
+            }
+        
+            .control p {
+                margin: 0;
+
+            }
+
+            .control .odd {
+                margin-bottom: -20px;
+                position: relative;
+                top: 10vw;
+            }
+
+
+             /* The animation code */
+@keyframes rotate1 {
+    0% {rotate: 0deg;}
+    50% {rotate: 1080deg;}
+    100% {rotate: 1080deg;}
+  }
+  
+  /* The element to apply the animation to */
+ .rotate1 {
+    animation-name: rotate1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;   
+     
+  } 
+
+
+  @keyframes rotate2 {
+    0% {rotate: 0deg;}
+    50% {rotate: -1080deg;}
+    100% {rotate: -1080deg;}
+  }
+  
+ .rotate2 {
+    animation-name: rotate2;
+    animation-duration: 2s;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;            
+
+  } 
+
+
+  @keyframes rotate3 {
+    0% {rotate: 0deg;}
+    50% {rotate: 1080deg;}
+    100% {rotate: 1080deg;}
+  }
+  
+ .rotate3 {
+    animation-name: rotate3;
+    animation-duration: 2s;
+    animation-delay: 3.3s;
+    animation-iteration-count: infinite;            
+  } 
+
+
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+
+  }
+
+  .fadeIn1 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite; 
+}
+
+.fadeIn2 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite; 
+}
+
+.fadeIn3 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    animation-iteration-count: infinite; 
+}
+
+.fadeIn4 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite; 
+}
+
+
+
+
+
+
+
+
+
+
+

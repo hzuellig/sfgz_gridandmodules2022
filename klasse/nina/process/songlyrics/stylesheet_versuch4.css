@@ -9,6 +9,9 @@ body{
     grid-template-columns: repeat(12, 8.3%); 
     grid-template-rows: repeat(10, 10%); 
     width: 100%;
+    padding-bottom: 6vw;
+    margin-bottom: 6vw;
+
 }
 
 .parentcontainer2 {
@@ -16,6 +19,7 @@ body{
     grid-template-columns: repeat(12, 8.3%); 
     grid-template-rows: repeat(10, 10%); 
     width: 100%;
+
 }
 
 .parentcontainer3 {
@@ -27,50 +31,53 @@ body{
 
 .h1 {
     font-family: 'Germania One', cursive;
-    color: black;
-    font-size: 10vw;
+    color: rgb(255, 128, 0);
+    font-size: 7vw;
 }
 
 
 .h2 {
     font-family: 'Germania One', cursive;
-    color: black;
-    font-size: 20vw;
+    color: rgb(255, 128, 0);
+    font-size: 25vw;
 
 }
 
 .h3 {
     font-family: 'Germania One', cursive;
-    color: rgb(255, 128, 0);
-    font-size: 5vw;
+    color: black;
+    font-size: 3vw;
     margin-bottom: 1.6vw;
+    letter-spacing: 0.1vw;
 }
 
 .h4 {
     font-family: 'Germania One', cursive;
-    color: rgb(255, 128, 0);
-    font-size: 20vw;
-    letter-spacing: 2vw;
+    color: black;
+    font-size: 25vw;
+    letter-spacing: 3vw;
 }
 
 .h5 {
     font-family: 'Germania One', cursive;
-    color: rgb(255, 128, 0);
+    color: black;
     font-size: 7vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2.1vw;
 }
 
 
 .h6 {
     font-family: 'Germania One', cursive;
-    color: black;
-    font-size: 7vw;
+    color: rgb(255, 128, 0);
+    font-size: 5vw;
     margin-bottom: 1vw;
 }
 
+
+
 .font_vertical {
     writing-mode: vertical-rl;
-    margin-left: 20vw;
+    margin-left: 22vw;
 }
 
 
@@ -99,8 +106,10 @@ body{
 }
 
 .row5 {
-    grid-column: 2 / 6;
+    grid-column: 3 / 6;
     text-align: right;
+    margin-top: 0.6vw;
+    margin-right: 3vw;
 }
 
 .row6 {
@@ -113,6 +122,7 @@ body{
     text-align: left;
     grid-row: 1/2;
     align-self: flex-end;
+    margin-left: 2vw;
 }
 
 .row8 {
@@ -122,10 +132,9 @@ body{
 
 .row9 {
     grid-row: 2 / 13;
-    grid-column: 7 / 11;
+    grid-column: 9 / 12;
     align-self: flex-end;
-margin-left: 5vw;
-padding-bottom: 2.3vw;
+padding-bottom: 3.9vw;
 }
 
 .row10 {
@@ -134,9 +143,10 @@ padding-bottom: 2.3vw;
 }
 
 .row11 {
-    grid-column: 1 / 11;
+    grid-column: 1 / 12;
     text-align: right;
-    margin: -45px;
+    margin-top: -45px;
+    margin-right: 5vw;
 }
 
 
@@ -144,16 +154,33 @@ padding-bottom: 2.3vw;
 background-color: rgb(255, 128, 0);
 padding-top: 5vw;
 padding-bottom: 5vw;
-
     }
 
     .section_black {
         background-color: black;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
-
+        padding-top: 3vw;
 
             }
+
+
+            .control {
+                display: flex;
+                margin: 0 auto;
+                position: relative;
+                margin-top: -4%;
+            }
+        
+            .control p {
+                margin: 0;
+
+            }
+
+            .control .odd {
+                margin-bottom: -20px;
+                position: relative;
+                top: 10vw;
+            }
+
 
 
 
