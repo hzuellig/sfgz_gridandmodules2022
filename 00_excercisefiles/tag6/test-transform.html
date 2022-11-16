@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        /* beide elemente liegen ursprünglich übereinander */
+        
+        .not_transformed,
+        .transformed,
+        .letter {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+            font-size: 20rem;
+            mix-blend-mode: multiply;
+        }
+        /* zur unterscheidung zwei unterschiedliche stile zuweisen */
+        
+        .not_transformed {
+            background-color: black;
+        }
+        
+        .transformed {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+        
+        .verschoben {
+            transform: translate(100px, 200px);
+        }
+        
+        .letter:nth-of-type(1) {
+            color: rgb(255, 0, 255);
+            transform: translate(-20px, 0);
+        }
+        
+        .letter:nth-of-type(2) {
+            color: rgb(255, 255, 0);
+        }
+        
+        .letter:nth-of-type(3) {
+            color: rgb(0, 255, 255);
+            transform: translate(20px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Name der Transformation</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschoben">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Name der Transformation</h1>
+        <div class="group">
+            <div class="letter">
+                S
+            </div>
+            <div class="letter">
+                S
+            </div>
+            <div class="letter">
+                S
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
