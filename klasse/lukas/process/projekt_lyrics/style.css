@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Happy Times;
+    src: url(happy-times-NG_regular_master.otf);
+}
+
+@font-face {
+    font-family: Happy Times Italic;
+    src: url(happy-times-NG_italic_master.otf);
+}
+h1 {
+    font-family: Happy Times;
+    font-size: 312px;
+    font-weight: lighter;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+h2{
+    font-family: Happy Times;
+    font-size: 192px;
+    font-weight: lighter;
+    text-align: center;
+}
+h3{
+    font-family: Happy Times;
+    font-size: 120px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.2);
+}
+h4{ 
+    font-family: Happy Times Italic;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.4);
+}
+h5{
+    font-family: Happy Times;
+    font-size: 48px;
+    color: rgb(159, 119, 93);
+}
+p {
+    font-family: Happy Times Italic;
+    font-size: 24px; 
+    color: rgba(255, 255, 255, 0.4);
+    text-align: left;
+    line-height: 3rem;
+}
+
+body {
+    background-color: rgb(12, 13, 19);
+}
