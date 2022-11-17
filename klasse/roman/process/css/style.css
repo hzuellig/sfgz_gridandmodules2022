@@ -1,0 +1,140 @@
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap" rel="stylesheet">
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    line-height: 13vw;
+    width: 100%;
+    letter-spacing: 0;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(255, 231, 189);
+    text-align: center;
+    line-height: 1.25em;
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 17vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    line-height: 13vw;
+    width: 100%;
+}
+
+.stumble {
+    display:flex; 
+    flex-direction:column;
+    width: 100%;
+    height:auto;
+    text-align: center;
+    background-color: rgb(11, 8, 53);
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.childstumble {
+    align-self:center;
+    height: fit-content;
+    flex: auto;
+}
+
+#stumble {
+    font-size: 23vw;
+}
+
+.ambition {
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 1fr 200px 200px 200px;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background-color: rgb(11, 8, 53);
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pour {
+    grid-column: 6 / 8;
+    grid-row: 1 / 2;
+    transform: rotate(-90deg);
+    letter-spacing: 3em;
+    
+}
+
+.myself {
+    grid-column: 2 / 12;
+    grid-row: 2 / 4;
+}
+
+.childambition {
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+}
+
+.yawn {
+    grid-column: 2 / 12;
+    grid-row: 5 / 7;
+    align-self: center;
+}
+
+
+#ambi {
+    color: rgb(180, 17, 54)
+}
+
+#stretch {
+    color: rgb(180, 17, 54);
+    letter-spacing: 12vw;
+    align-self: center;
+}
+
+
+.shower {
+    background-color: rgb(180, 17, 54);
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    height: 400%;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    margin: 0;
+}
+
+#pump {
+    color: rgb(255, 231, 189);
+    text-align: center;
+    transform: scale(2);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.80);
+    }
+
+    60% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(0.80);
+    }
+}
