@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parentcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px dotted rgb(0, 255, 68);
+            flex-direction: row;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .child {
+            border: 1px dotted blue;
+            padding: 1rem;
+            margin: 1rem;
+            flex-basis: min-content;
+            flex-grow: 1;
+        }
+        .child:nth-of-type{
+            flex-grow: 2;
+            flex-color: blue;
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentcontainer">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>
+    </div>
+
+</body>
+
+</html>
