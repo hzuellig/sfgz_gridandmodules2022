@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Botanist', sans-serif;
+}
+body{
+  margin: 25px 0;
+  background-color: #f9f9f9;
+}
+.titel{
+  width: calc(100% - 3vw);
+  padding: 0px 1.5vw;
+  margin-bottom: 3vh;
+}
+.container{
+  width: 50vw;
+  margin:0 auto;
+}
+.plakat{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 25px;
+}
+.plakat .titel h1{
+  text-transform: lowercase;
+  font-size: 7vw;
+  line-height: 6.5vw;
+  margin-bottom: 3vh;
+}
+.intro{
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.dots{
+  display: flex;
+  flex-direction: row;
+  background-color: #f38397;
+  padding: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.circle{
+  border-radius: 50%;
+  flex-basis: 130px;
+  height: 130px;
+  background-color: #fff;
+  margin:15px;
+}
+.first .circle:nth-child(2),
+.second .circle:nth-child(1),
+.third .circle:nth-child(4){
+  background-color: #b63149;
+}
+.first .circle:nth-child(3),
+.second .circle:nth-child(4),
+.third .circle:nth-child(2){
+  background-color: #722634;
+}
+.text{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 25px;
+}
+.text p:odd{
+  color: red;
+}
