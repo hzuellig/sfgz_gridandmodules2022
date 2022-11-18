@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 4 – Lyrics Transition</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+
+
+.group_orange {
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    padding: 3vw;
+    background-color: rgb(255, 94, 0);
+}
+
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 160vh;
+    width: 100vw;
+    font-family: 'Germania One', cursive;
+    color: black;
+ /*    writing-mode: vertical;*/
+    font-size: 50vh;
+    text-align: center;
+}
+
+.group_black {
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    padding: 3vw;
+    background-color: black;
+}
+
+.not_transformed2,
+.transformed2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Germania One', cursive;
+    color: white;
+ /*    writing-mode: vertical;*/
+    font-size: 50vh;
+    text-align: center center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    margin: 5vw;
+    border: 2px solid white;
+}
+
+/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        
+
+/* 
+
+.first:hover {
+    transform: translate(0px, 200px);
+    transition-delay: 0.2s;
+    transition-duration: 3s;
+
+}
+
+.second:hover {
+    transform: translate(0px, 400px);
+    transition-delay: 3s;
+    transition-duration: 3s;
+
+}
+
+.third:hover {
+    transform: translate(0px, 600px);
+    transition-delay: 6s;
+    transition-duration: 3s;
+
+}
+
+ */
+        
+
+@keyframes first {
+    0% {transform:translate(0px, 0px);}
+    30% {transform:translate(0px, 300px);}
+    95% {transform:translate(0px, 300px);}
+    100% {transform:translate(0px, 0px);}
+  }
+  
+ .first {
+    animation-name: first;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;            
+
+  } 
+
+  @keyframes second {
+    0% {transform:translate(0px, 0px);}
+    30% {transform:translate(0px, 600px);}
+    95% {transform:translate(0px, 600px);}
+    100% {transform:translate(0px, 0px);}
+  }
+  
+ .second {
+    animation-name: second;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;            
+
+  } 
+
+  @keyframes third {
+    0% {transform:translate(0px, 0px);}
+    30% {transform:translate(0px, 900px);}
+    95% {transform:translate(0px, 900px);}
+    100% {transform:translate(0px, 0px);}
+  }
+  
+ .third {
+    animation-name: third;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;            
+
+  } 
+
+  @keyframes doppelung1 {
+    0% {transform:translate(0px, 0px);}
+    100% {transform:translate(3px, 3px);} }
+  
+ .doppelung1 {
+    animation-name: doppelung1;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  } 
+
+  @keyframes doppelung2 {
+    0% {transform:translate(0px, 0px);}
+    100% {transform:translate(6px, 6px);} }
+  
+ .doppelung2 {
+    animation-name: doppelung2;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  } 
+
+  @keyframes doppelung3 {
+    0% {transform:translate(0px, 0px);}
+    100% {transform:translate(9px, 9px);} }
+  
+ .doppelung3 {
+    animation-name: doppelung3;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+  } 
+
+  @keyframes rotation1 {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(3deg); }
+ }
+
+ .rotation1 {
+    animation-name: rotation1;
+    animation-duration: 2s;
+  /*  animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+  }
+
+  @keyframes rotation2 {
+    0% {transform:rotate(0deg); }
+    100% {transform:rotate(6deg); }
+ }
+
+ .rotation2 {
+    animation-name: rotation2;
+    animation-duration: 2s;
+  /*  animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+  }
+
+  @keyframes rotation3 {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(9deg); }
+ }
+
+ .rotation3 {
+    animation-name: rotation3;
+    animation-duration: 2s;
+  /*  animation-delay: 7s; */
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+
+  }
+
+
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="group_orange">
+            <div class="not_transformed">
+                d
+            </div>
+            <div class="transformed first">
+                o
+            </div>
+            <div class="transformed second">
+                w
+            </div>
+            <div class="transformed third">
+                n
+            </div>
+        </div>
+    </section>
+<br>
+    <section>
+        <div class="group_black">
+            <div class="not_transformed2">
+                cards
+            </div>
+            <div class="transformed2 doppelung1 ">
+                cards
+            </div>
+            <div class="transformed2 doppelung2 ">
+                cards
+            </div>
+            <div class="transformed2 doppelung3 ">
+                cards
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <section>
+        <div class="group_black">
+            <div class="not_transformed2">
+                cards
+            </div>
+            <div class="transformed2 rotation1">
+                cards
+            </div>
+            <div class="transformed2 rotation2">
+                cards
+            </div>
+            <div class="transformed2 rotation3">
+                cards
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
