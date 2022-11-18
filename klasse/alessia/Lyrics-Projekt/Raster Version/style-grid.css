@@ -24,11 +24,22 @@ p {
     background-color: #1E1E1E;
 }
 
+.brownbg {
+    background-color: #C97D68;
+}
+
 .parentcontainer {
     display: grid;
     grid-template-columns: repeat(14, 1fr); /* 3 Spalten fr für fraction */
     grid-template-rows: repeat(8, 1fr); /* 3 Zeilen */
     height: 800px;
+}
+
+.parentcontainerhalf {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr); /* 3 Spalten fr für fraction */
+    grid-template-rows: repeat(4, 1fr); /* 3 Zeilen */
+    height: 400px;
 }
 
 .playfairitalic2 {
@@ -45,6 +56,14 @@ p {
     font-style: italic;
     font-weight: 600;
     color: #EADED5;
+}
+
+.playfairitalic2red {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #C97D68;
 }
 
 .playfair10 {
@@ -72,6 +91,14 @@ p {
     transform: rotate(180deg);
 }
 
+.playfair4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 8rem;
+    font-weight: 300;
+    line-height: 14rem;
+    color: #C97D68;
+}
+
 .playfair6red {
     font-family: 'Playfair Display', serif;
     font-size: 10rem;
@@ -82,18 +109,47 @@ p {
     transform: rotate(180deg);
 }
 
+.playfair6beige {
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;
+    font-weight: 300;
+    line-height: 14rem;
+    color: #EADED5;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.roboto10 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32vw;
+    line-height: 14rem;
+    font-weight: 800;
+    color: #EADED5;
+    text-shadow: -3px -3px 0 #1E1E1E, 3px -3px 0 #1E1E1E, -3px 3px 0 #1E1E1E, 3px 3px 0 #1E1E1E;
+}
+
 .roboto8 {
     font-family: 'Roboto', sans-serif;
     font-size: 16rem;
     line-height: 14rem;
     font-weight: 800;
     color: #1E1E1E;
-    transform: rotate(180deg);
+    transition-property: all;
+    transition-duration: 1000ms;
+}
+
+.roboto8:hover {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16rem;
+    line-height: 14rem;
+    font-weight: 800;
+    color: #1E1E1E;
+    transform: rotate(-540deg);
 }
 
 .roboto6 {
     font-family: 'Roboto', sans-serif;
-    font-size: 10rem;
+    font-size: 9rem;
     line-height: 14rem;
     font-weight: 800;
     color: #1E1E1E;
@@ -103,7 +159,7 @@ p {
 
 .roboto6beige {
     font-family: 'Roboto', sans-serif;
-    font-size: 10rem;
+    font-size: 9rem;
     line-height: 14rem;
     font-weight: 800;
     color: #EADED5;
@@ -120,11 +176,42 @@ p {
     align-self: center;
 }
 
+.line-right2 {
+    border: none;
+    background: #1E1E1E;
+    width: 28vw;
+    height: 5px;
+    grid-column: 11 / 15; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-row: 4 / 6;
+    text-align: right;
+    align-self: center;
+}
+
+.line-right-long {
+    border: 3px solid #1E1E1E;
+    width: 70vw;
+    grid-column: 6 / 15; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-row: 2 / 3;
+    text-align: right;
+    align-self: center;
+}
+
 .line-left {
     border: 3px solid #1E1E1E;
     width: 70vw;
     grid-column: 1 / 11; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
     grid-row: 7 / 8;
+    text-align: left;
+    align-self: center;
+}
+
+.line-left2 {
+    border: none;
+    background: #EADED5;
+    width: 25vw;
+    height: 5px;
+    grid-column: 1 / 5; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-row: 4 / 6;
     text-align: left;
     align-self: center;
 }
@@ -144,6 +231,15 @@ p {
     grid-column: 8 / 9; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
     grid-row: 3 / 7;
     text-align: right;
+    align-self: center;
+}
+
+.dotsmall {
+    border-radius: 50%;
+    flex-basis: 15px;
+    height: 15px;
+    background-color: #C97D68;
+    margin: 20px;
     align-self: center;
 }
 
@@ -179,7 +275,7 @@ p {
 }
 
 .row5 {
-    grid-column: 2 / 8; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-column: 5 / 11; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
     grid-row: 4 / 6;
     text-align: left;
     align-self: center;
@@ -187,16 +283,46 @@ p {
 }
 
 .row6 {
-    grid-column: 9 / 12; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-column: 2 / 5; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-row: 1 / 9;
+    text-align: center;
+    align-self: center;
+}
+
+.row6right {
+    grid-column: 11 / 14; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
     grid-row: 1 / 9;
     text-align: center;
     align-self: center;
 }
 
 .row7 {
-    grid-column: 11 / 14; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-column: 3 / 6; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
     grid-row: 1 / 9;
     text-align: center;
     align-self: center;
-    margin-top: -0.2em;
+
+}
+
+.row8 {
+    margin-left: 0;
+    grid-column: 2 / 6; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-row: 2 / 3;
+    text-align: left;
+    align-self: center;
+}
+
+.row9 {
+    grid-column: 2 / 14; /* von Trennlinie 1 bis 3 (nicht Spalten!) */
+    grid-row: 3 / 9;
+    text-align: center;
+    align-self: center;
+}
+
+.row10 {
+    display: flex;
+    justify-content: center;
+    flex-wrap:  wrap;
+    flex-direction: row (default);
+    overflow:hidden;
 }
