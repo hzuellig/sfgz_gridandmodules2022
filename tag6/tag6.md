@@ -1,8 +1,7 @@
 # Programm
 Morgen
 * Repetition Flexbox (Anna)
-* Repetition Grid (Patrick)
-* Stand Layout
+* Stand Layout (Pushes!)
 * CSS Transformationen
 * CSS Transitions
 
