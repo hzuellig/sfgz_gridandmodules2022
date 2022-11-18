@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yo do me</title>
+    
+    <style>
+        div {
+  background-color: rgb(255, 225, 225);
+  width: 50%;
+  border: 15px solid rgb(206, 255, 206);
+  padding: 50px;
+  margin: auto;
+  color: aqua;
+}
+.brockmanngrid{
+    display:grid;
+    grid-template-columns: repeat(7,14vw); /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns*/
+    grid-template-rows: repeat(7,10.75vw);
+}
+.yo {
+    grid-column: 1 / 5;
+    grid-row: 3 / 6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 32vw;
+    color: #62a792;
+    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width:100%;
+            font-size: 10em;
+        }
+        .blog-image {
+            width: 100%;
+            border-radius: 1%;
+        }
+        .headline
+        {
+            color: rgb(0, 0, 0);
+            animation: c 0.8s  ;
+  }
+  
+  @keyframes shake
+    0%{
+      transform: translateX(0)
+    }
+    25%{
+      transform: translateX(25px);
+    }
+      
+    50%{
+      transform: translateX(-25px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+        }
+        p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: #1a1229;
+}
+
+html 
+{ 
+background: greenyellow;
+}
+
+    </style>
+
 </head>
 <body>
+    <div class="brockmangrid" ></div>
+
+    <div class="yo"></div>Yo Do Me>
+        <h1 class="headline">
+         Power</h1>
     
 </body>
 </html>
