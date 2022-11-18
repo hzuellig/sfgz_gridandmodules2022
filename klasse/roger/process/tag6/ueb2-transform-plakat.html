@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 80vw;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        div {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            mix-blend-mode: multiply;
+        }
+
+        .erstes {
+            transform: translate(-150px, 0);
+            color: magenta;
+        }
+
+        .zweites {
+            color: yellow;
+        }
+
+        .drittes {
+            transform: translate(150px, 0);
+            color: cyan;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="erstes">S</div>
+    <div class="zweites">S</div>
+    <div class="drittes">S</div>
+</body>
+
+</html>

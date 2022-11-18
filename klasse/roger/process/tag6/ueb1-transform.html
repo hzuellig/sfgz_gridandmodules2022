@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        body {
+            margin: 15vw;
+        }
+
+        section {
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+        }
+
+        .not_transformed {
+            background-color: black;
+        }
+
+        .transformed {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+
+        .verschieben {
+            transform: translate(10vw, 10vw);
+        }
+
+        .drehen {
+            transform: rotate(45deg);
+            transform-origin: bottom;
+        }
+
+        .skalieren {
+            transform: scale(1.5, 0.5);
+            color: white;
+            font-size: 5em;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .verzerren{
+            transform: skew(10deg, -20deg);
+            transform-origin: top left;
+        }
+        .mehrere{
+            transform: scale(1.4, 0.4) rotate(-60deg) skew(4deg, -12deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Transform</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschieben">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Rotate</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed drehen">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>Scale</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed skalieren">
+                SCALE
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Skew</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verzerren">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Mehrere Transformationen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed mehrere">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
