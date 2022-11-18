@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    background-color: rgba(222, 198, 43, 15%);
+    text-align: center;
+}
+
+.group{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    align-self: center;
+        }
+
+.group:hover .bigletter:nth-last-of-type(1){
+    color: rgb(255, 0, 0);
+    transform: translate(24vw);
+    mix-blend-mode: multiply;
+
+}
+
+.group:hover .bigletter:nth-last-of-type(2){
+    color: yellow;
+    mix-blend-mode: multiply;
+}
+
+.group:hover .bigletter:nth-last-of-type(3){
+    color: blue;
+    transform: translate(-34vw);
+    mix-blend-mode: multiply;
+}
+
+
+.child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.bigletter {
+    font-size: 50vw;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    transform-origin: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="group">
+            <div class="child bigletter">
+                H
+            </div>
+            <div class="child bigletter">
+                O
+            </div>
+            <div class="child bigletter">
+                I
+            </div>
+        </div>
+    </section>
+</body>
+</html>
