@@ -7,43 +7,50 @@
     font-family: Happy Times Italic;
     src: url(happy-times-NG_italic_master.otf);
 }
-h1 {
-    font-family: Happy Times;
-    font-size: 312px;
+h1{
+    font-family: Happy Times Italic;
+    font-size: 504px;
     font-weight: lighter;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
-    -webkit-text-fill-color: transparent;
-    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
 }
 h2{
     font-family: Happy Times;
-    font-size: 192px;
+    font-size: 312px;
     font-weight: lighter;
-    text-align: center;
+    color: rgba(255, 255, 255, 0.15);
 }
 h3{
+    font-family: Happy Times Italic;
+    font-size: 312px;
+    font-weight: lighter;
+}
+h4{
+    font-family: Happy Times;
+    font-size: 192px;
+    font-weight: lighter;
+}
+h5{ 
     font-family: Happy Times;
     font-size: 120px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.2);
 }
-h4{ 
-    font-family: Happy Times Italic;
-    font-size: 72px;
-    color: rgba(255, 255, 255, 0.4);
-}
-h5{
+h6{
     font-family: Happy Times;
     font-size: 48px;
-    color: rgb(159, 119, 93);
+    font-weight: lighter;
 }
-p {
+title{
     font-family: Happy Times Italic;
-    font-size: 24px; 
-    color: rgba(255, 255, 255, 0.4);
-    text-align: left;
-    line-height: 3rem;
+    font-size: 48px;
+    font-weight: lighter ;
 }
+p{
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+}
+
 
 body {
     background-color: rgb(12, 13, 19);
