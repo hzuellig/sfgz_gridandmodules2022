@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            margin: 15vw;
+        }
+
+        section {
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+
+        .transformed {
+            height: 500px;
+            background-color: lightblue;
+
+        }
+
+        .transformed:hover {
+            /* Veränderter Zustand */
+            background-color: black;
+            transform: translate(100px, 200px);
+        }
+
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+        }
+
+        /* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+
+        .not_transformed {
+            background-color: black;
+        }
+
+        .transformed {
+            background-color: rgba(0, 0, 255, 0.5);
+            transition-property: all;
+            transition-duration: 800ms;
+            transition-timing-function: cubic-bezier(.05, .87, .88, .67);
+        /*Auch so möglich: transition: all 0.5s ease-out 1s;*/
+        }
+
+
+        .transformed:hover {
+            background-color: aqua;
+            transform: translate(100px, 100px);
+            border-radius: 400px;
+            height: 200px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Hover</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
