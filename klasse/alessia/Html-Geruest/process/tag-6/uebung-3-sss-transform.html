@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS Transform</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .group{
+            display:grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+        }
+        
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40em;
+            font-weight: bolder;
+            transition-property: all;
+            transition-duration: 800ms;
+        }
+
+        .left {
+            color: magenta;
+            mix-blend-mode: multiply;
+            transform: translate(-80px, 0);
+        }
+
+        .middle {
+            color: yellow;
+            mix-blend-mode: multiply;
+        }
+
+        .right {
+            color: cyan;
+            mix-blend-mode: multiply;
+            transform: translate(80px, 0);
+        }
+
+        .right:hover {
+            color: rgb(26, 138, 138);
+            mix-blend-mode: multiply;
+            transform: translate(80px, 0);
+        }
+
+
+    </style>
+</head>
+<body>
+        <section>
+        <div class="group">
+            <div class="not_transformed middle">
+                S
+            </div>
+            <div class="transformed left">
+                S
+            </div>
+            <div class="transformed right">
+                S
+            </div>
+        </div>
+    </section>
+</body>
+</html>

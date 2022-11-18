@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+        }
+
+        /* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+
+        .not_transformed {
+            background-color: black;
+        }
+
+        .transformed {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+
+        .verschieben{
+            transform: translate(10vw, 10vw);
+        }
+
+        .rotate{
+            transform: rotate(45deg);
+
+        }
+
+        .rotate-transform-origin{
+            transform: rotate(45deg);
+            transform-origin: bottom right;
+        }
+
+        .scale{
+            transform: scale(0.5, 0.5);
+            transform-origin: 0 0; /*Transform Origin beschreibt den Punkt, von wo aus die Transformierung stattfinden soll // Default ist mittig */
+        }
+        .verzerrung{
+            transform: skewX(45deg);
+            transform: skewY(20deg);
+            transform-origin: top left;
+
+        }
+        .mehrere-transformationen{
+            transform: rotate(45deg) scale(0.5);
+            transform-origin: bottom left;
+        }
+
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+</body>
+<section>
+    <h1>Translate</h1>
+    <div class="group">
+        <div class="not_transformed">
+        </div>
+        <div class="transformed verschieben">
+        </div>
+    </div>
+</section>
+<section>
+    <h1>Rotate</h1>
+    <div class="group">
+        <div class="not_transformed">
+        </div>
+        <div class="transformed rotate">
+        </div>
+    </div>
+</section>
+<section>
+    <h1>Transform Origin</h1>
+    <div class="group">
+        <div class="not_transformed">
+        </div>
+        <div class="transformed rotate-transform-origin">
+        </div>
+    </div>
+</section>
+<section>
+    <h1>Scale</h1>
+    <div class="group">
+        <div class="not_transformed">
+        </div>
+        <div class="transformed scale">
+        </div>
+    </div>
+</section>
+<section>
+    <h1>Verzerrung (Skew)</h1>
+    <div class="group">
+        <div class="not_transformed">
+        </div>
+        <div class="transformed verzerrung">
+        </div>
+    </div>
+</section>
+<section>
+    <h1>Mehrere Transformationen</h1>
+    <div class="group">
+        <div class="not_transformed">
+        </div>
+        <div class="transformed mehrere-transformationen">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+</html>
