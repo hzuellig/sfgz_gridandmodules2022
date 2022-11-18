@@ -12,7 +12,7 @@ body {
 }
 
 .parentcontainer1:nth-child(1) {
-    align-items: flex-start;
+    align-items: flex-start ;
     text-align: left;
 }
 
@@ -110,7 +110,7 @@ body {
 
 .parentcontainer6:nth-child(1) {
     text-align: left;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .parentcontainer6:nth-child(2) {
@@ -123,12 +123,42 @@ body {
     text-align: right;
 }
 
+.quadratcontainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.quadrat{
+    height: 4em;
+    width: 4em;
+    background-color: black;
+    transition-property: all;
+    transition-duration: 2s;
+
+}
+
+.quadrat:hover{
+    border-radius: 8em;
+    transform: scale(10);
+}
+
 
 
 .child1-pos {
     color: black;
     padding: 1rem;
     margin: 1rem;
+}
+
+.child1-pos:hover {
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+
 }
 
 .child1-neg {
@@ -138,7 +168,16 @@ body {
 }
 
 p {
-    font-size: 100px;
+    font-size: 8.3vw;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.ani-scale{
+transition-property: all;
+transition-duration: 1000ms;
+}
+
+.ani-scale:hover{
+transform: scale(1.5);
 }
