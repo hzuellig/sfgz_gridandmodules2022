@@ -1,0 +1,56 @@
+.group{
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    padding: 3vw;
+}
+
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 400px;
+    width: 400px;
+}
+/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        
+.not_transformed {
+    background-color: black;
+}
+.transformed {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.verschieben {
+    transform: translate(10vw, 10vw);
+}
+
+.drehen {
+    transform: rotate(45deg);
+    color: white;
+    transform-origin: bottom right;
+}
+
+.skalieren {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    color: white;
+    font-size: 3vw;
+}
+
+.verzerren {
+    transform: skew(10deg, 30deg);
+    transform-origin: bottom right
+    ;
+
+}
+
+.mehrere {
+    transform:scale(120%) rotate(45deg);
+}
+
+.mehrere2 {
+    transform: translate(10vw, 10vw) skew(10deg, -20deg);
+}
+
