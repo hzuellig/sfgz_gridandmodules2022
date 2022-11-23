@@ -5,6 +5,6 @@
 * Fluides Layout, CSS Grid
 * Fluides Layout, CSS Flexbox
 * <a href="tag6/tag6.md">CSS Transformationen und Transitions</a>
-* CSS Animationen
+* <a href="tag7/tag7.md">CSS Animationen, Events, DOM und JavaScript</a>
 
 
