@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSock Test1</title>
+
+    <style>
+
+        html{
+            --myColor: green;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+        }
+
+        h1{
+            color: var(--myColor);
+        }
+
+        .box {
+            margin: 4em;
+        }
+
+        .green {
+            background-color: green;
+            width: 20vw;
+            height: 20vw;
+        }
+
+        .red{
+            background-color: red;
+            width: 20vw;
+            height: 20vw;
+            mix-blend-mode: multiply;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div><h1>ScrollTrigger von GreenSock</h1></div>
+    <div>
+        <div class="box green"></div>
+    </div>
+
+    <div>
+        <div class="box red"></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+    
+    <script> TweenMax.to("html", 1, {"--myColor":"yellow", yoyo:true, repeat:-1});
+    </script>
+    
+    <script>gsap.to(".green", { 
+        rotation: 900,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '.box',
+          scrub: 2,
+        }
+      });
+    </script>
+    <script>gsap.to(".red", { 
+        scale: 4,
+        rotation: 900,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '.box',
+          scrub: 2,
+        }
+      });
+    </script>
+</body>
+
+</html>
