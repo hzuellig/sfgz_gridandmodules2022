@@ -29,16 +29,22 @@
         
         .transformed {
             background-color: rgba(0, 0, 255, 0.5);
-            /*transition-property: all;
-            transition-duration: 500ms;
-            transition-timing-function: ease-in-out;
-            transition-delay: 1s;*/
-            transition: all 500ms ease-in-out;
+            animation-name: anim;
+            animation-duration: 3s;
         }
         
-        .transformed:hover {
-            background-color: aqua;
-            transform: translate(200px, 200px);
+        @keyframes anim {
+            0% {
+                background-color: rgba(0, 0, 255, 0.5);
+                transform: translate(200px, 200px) rotate(10deg);
+            }
+            25% {
+                background-color: rgba(255, 0, 140, 0.9);
+                transform: translate(0px, 500px) rotate(-10deg);
+            }
+            50% {
+                background-color: rgba(0, 255, 123, 0.1);
+            }
         }
     </style>
 </head>
