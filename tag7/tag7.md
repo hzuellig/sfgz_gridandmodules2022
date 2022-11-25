@@ -6,6 +6,7 @@ Morgen
 Nachmittag
 * Arbeitszeit und Support
 * Besprechungen und Feedbacks in Gruppen 
+* Inspirierende Projekte, Sharing (Scrollytelling)
 * Putzen: Gesamtprojekt aufräumen, Übungen verlinken, Push auf Github
 
 Beispiel Studentenarbeit animierte Plakate: <br/>
