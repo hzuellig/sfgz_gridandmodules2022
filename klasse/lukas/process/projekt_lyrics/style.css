@@ -7,50 +7,675 @@
     font-family: Happy Times Italic;
     src: url(happy-times-NG_italic_master.otf);
 }
-h1{
-    font-family: Happy Times Italic;
-    font-size: 504px;
-    font-weight: lighter;
-    color: rgba(0, 0, 0, 0.5);
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr max-content;
+    row-gap: 48px;
+    margin-top: 150px;
 }
-h2{
-    font-family: Happy Times;
-    font-size: 312px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 0.15);
-}
-h3{
-    font-family: Happy Times Italic;
-    font-size: 312px;
-    font-weight: lighter;
-}
-h4{
-    font-family: Happy Times;
-    font-size: 192px;
-    font-weight: lighter;
-}
-h5{ 
-    font-family: Happy Times;
-    font-size: 120px;
-    font-weight: lighter;
-}
-h6{
-    font-family: Happy Times;
-    font-size: 48px;
-    font-weight: lighter;
-}
-title{
-    font-family: Happy Times Italic;
-    font-size: 48px;
-    font-weight: lighter ;
-}
-p{
+
+.gulls {
+    grid-column: 2 / 6;
+    grid-row: 1;
+    align-self: start;
+    justify-self: start;
     font-family: Happy Times Italic;
     font-size: 24px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.4);
+
 }
 
+.drumming {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    margin-left: 3em;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.wind {
+    /*
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr;
+    align-self: center;*/
+    text-align: center;
+    font-family: Happy Times Italic;
+    font-size: 312px;
+    font-weight: lighter;
+    letter-spacing: 8rem;
+    background: linear-gradient(90.13deg, #FFFFFF -297.33%, rgba(255, 255, 255, 0) 118.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.5em;
+}
+
+.onlylovers {
+    font-family: Happy Times Italic;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 96px;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+}
+
+.dark {
+    font-family: Happy Times;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+}
+
+.anna {
+    text-align: center;
+    font-family: Happy Times;
+    font-size: 192px;
+    font-weight: lighter;
+    background: linear-gradient(180deg, #0D476A 41.08%, #111B38 84.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.awaygrid {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 120px;
+}
+
+.letter01 {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+
+}
+
+.letter02 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+}
+
+.letter03 {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+}
+
+.letter04 {
+    grid-column: 4;
+    grid-row: 1;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+}
+
+.letter05 {
+    grid-column: 5;
+    grid-row: 2;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter06 {
+    grid-column: 6;
+    grid-row: 1;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter07 {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter08 {
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter09 {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter10 {
+    grid-column: 4;
+    grid-row: 4;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter11 {
+    grid-column: 5;
+    grid-row: 3;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter12 {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: start;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.letter13 {
+    grid-column: 6;
+    grid-row: 4;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+}
+
+.letter14 {
+    grid-column: 6;
+    grid-row: 2;
+    justify-self: end;
+    font-family: Happy Times;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(159, 119, 93, 1);
+
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr max-content;
+    row-gap: 48px;
+    margin-top: 450px;
+}
+
+.saidwenever {
+    grid-column: 2 / 6;
+    grid-row: 1;
+    align-self: start;
+    justify-self: start;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.justa {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr max-content;
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+.warp__placeholder {
+    position: absolute;
+    color: transparent;
+    font-size: 120px;
+}
+
+.warp {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    font-family: Happy Times Italic;
+    font-weight: lighter;
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+[class*='warp__'] {
+    display: block;
+    position: absolute;
+}
+
+.warp__0 {
+    transform-origin: 50% 103px;
+    transform: translate(-48.5606px, 96.8082px) rotate(-0.304663rad);
+}
+
+.warp__1 {
+    transform-origin: 50% 103px;
+    transform: translate(2.6054999999999993px, 81.5761px) rotate(-0.22772rad);
+}
+
+.warp__2 {
+    transform-origin: 50% 103px;
+    transform: translate(64.8504px, 71.3631px) rotate(-0.171049rad);
+}
+
+.warp__3 {
+    transform-origin: 50% 103px;
+    transform: translate(105.0836px, 65.2296px) rotate(-0.132247rad);
+}
+
+.warp__4 {
+    transform-origin: 50% 103px;
+    transform: translate(146.2986px, 59.66319999999999px) rotate(-0.089421rad);
+}
+
+.warp__5 {
+    transform-origin: 50% 103px;
+    transform: translate(205.5592px, 55.82169999999999px) rotate(-0.046536rad);
+}
+
+.warp__6 {
+    transform-origin: 50% 103px;
+    transform: translate(258.7025px, 54.30420000000001px) rotate(-0.00854rad);
+}
+
+.warp__7 {
+    transform-origin: 50% 103px;
+    transform: translate(317.6778px, 54.987300000000005px) rotate(0.030331rad);
+}
+
+.warp__8 {
+    transform-origin: 50% 103px;
+    transform: translate(381.2188px, 58.489000000000004px) rotate(0.071504rad);
+}
+
+.warp__9 {
+    transform-origin: 50% 103px;
+    transform: translate(454.944px, 64.26419999999999px) rotate(0.109287rad);
+}
+
+.warp__10 {
+    transform-origin: 50% 103px;
+    transform: translate(507.90520000000004px, 70.23079999999999px) rotate(0.138407rad);
+}
+
+.warp__11 {
+    transform-origin: 50% 103px;
+    transform: translate(550.6194px, 74.89099999999999px) rotate(0.158123rad);
+}
+
+.warp__12 {
+    color: rgba(255, 255, 255, 1);
+    transform-origin: 50% 103px;
+    transform: translate(571.2808px, 81.2841px) rotate(0.182872rad);
+}
+
+.warp__13 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(624.302px, 93.28049999999999px) rotate(0.225962rad);
+}
+
+.warp__14 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(686.8131px, 106.1953px) rotate(0.271464rad);
+}
+
+.warp__15 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(725.5875px, 117.85910000000001px) rotate(0.314438rad);
+}
+
+.warp__16 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(764.265px, 135.1514px) rotate(0.381332rad);
+}
+
+.warp__17 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(819.1145px, 155.82659999999998px) rotate(0.370681rad);
+}
+
+.warp__18 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(868.5258px, 175.6492px) rotate(0.358585rad);
+}
+
+.warp__19 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(922.8958px, 196.4866px) rotate(0.34349rad);
+}
+
+.warp__20 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(982.6386px, 218.93990000000002px) rotate(0.323626rad);
+}
+
+.warp__21 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(1053.6207px, 238.6753px) rotate(0.301755rad);
+}
+
+.warp__22 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(1105.4044px, 252.7532px) rotate(0.282398rad);
+}
+
+.warp__23 {
+    color: rgba(255, 255, 255, 1);
+
+    transform-origin: 50% 103px;
+    transform: translate(1147.526px, 261.4076px) rotate(0.268258rad);
+}
+
+.warp__24 {
+    transform-origin: 50% 103px;
+    transform: translate(1166.3366px, 270.7791px) rotate(0.250238rad);
+}
+
+.warp__25 {
+    transform-origin: 50% 103px;
+    transform: translate(1218.4828px, 284.3907px) rotate(0.216278rad);
+}
+
+.warp__26 {
+    transform-origin: 50% 103px;
+    transform: translate(1281.2925px, 294.7046px) rotate(0.179199rad);
+}
+
+.warp__27 {
+    transform-origin: 50% 103px;
+    transform: translate(1322.2217px, 301.3908px) rotate(0.14359rad);
+}
+
+.warp__28 {
+    transform-origin: 50% 103px;
+    transform: translate(1363.0563px, 307.2998px) rotate(0.090269rad);
+}
+
+.warp__29 {
+    transform-origin: 50% 103px;
+    transform: translate(1421.1992px, 310.2587px) rotate(0.011859rad);
+}
+
+.warp__30 {
+    transform-origin: 50% 103px;
+    transform: translate(1474.1441px, 308.0527px) rotate(-0.098122rad);
+}
+
+.warp__31 {
+    transform-origin: 50% 103px;
+    transform: translate(1535.1441px, 305.0527px) rotate(-0.098122rad);
+}
+
+.warp__32 {
+    transform-origin: 50% 103px;
+    transform: translate(1597.1442px, 298.0527px) rotate(-0.158122rad);
+}
+
+.warp__33 {
+    transform-origin: 50% 103px;
+    transform: translate(1670.1442px, 285.0527px) rotate(-0.2122rad);
+}
+
+.warp__34 {
+    transform-origin: 50% 103px;
+    transform: translate(1723.1442px, 278.0527px) rotate(-0.2522rad);
+}
+
+.warp__35 {
+    transform-origin: 50% 103px;
+    transform: translate(1765.1442px, 278.0527px) rotate(-0.2522rad);
+}
+
+.ourlovewasnever {
+    grid-column: 3 / 5;
+    grid-row: 1;
+    justify-self: end;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 3fr max-content;
+    margin-bottom: 100px;
+    row-gap: 80px;
+}
+
+.sugarforthepill {
+    grid-column: 2 / 11;
+    grid-row: 1;
+    justify-self: start;
+    font-family: Happy Times;
+    font-size: 120px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.youknow {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    justify-self: start;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    line-height: 2.2rem;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.cantabide {
+    grid-column: 7 / 12;
+    grid-row: 3;
+    justify-self: end;
+    font-family: Happy Times Italic;
+    text-align: right;
+    font-size: 24px;
+    line-height: 2.2rem;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.sun {
+    font-family: Happy Times;
+    font-size: 312px;
+    font-weight: lighter;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.jealousy {
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+
+.section5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr max-content;
+    row-gap: 48px;
+    margin-top: 150px;
+}
+
+.cutacross {
+    grid-column: 2 / 6;
+    grid-row: 1;
+    justify-self: start;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    line-height: 2.2rem;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.andmove {
+    grid-column: 2 / 6;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    font-family: Happy Times Italic;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: 3em;
+
+}
+
+.closer {
+    grid-column: 1 / 6;
+    grid-row: 3;
+    justify-self: center;
+    align-self: end;
+    font-family: Happy Times Italic;
+    font-size: 504px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.now {
+    grid-column: 4 / 5;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 72px;
+
+
+}
+
+.lying {
+    font-family: Happy Times Italic;
+    font-size: 48px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 96px;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+}
+
+.dream {
+    font-family: Happy Times;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+
+}
 
 body {
     background-color: rgb(12, 13, 19);
