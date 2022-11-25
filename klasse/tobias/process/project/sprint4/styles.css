@@ -1,0 +1,74 @@
+body {
+    font-family: 'Montserrat';
+    width: 100%;
+}
+
+/* FONTS */
+p {
+    font-size: 8.3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.spacing1{
+    height: 100vh;
+}
+
+
+.par-songtitel {
+    display: flex;
+    justify-content: space-between;
+    height: 33vh;
+    flex-wrap: wrap;
+}
+
+.ani-songtitel{
+    transition-property: all;
+    transition-duration: 800ms;
+}
+
+.ani-songtitel:hover{
+    transform:scale(1.2);
+}
+
+.par-songtitel:nth-child(1) {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.par-songtitel:nth-child(2) {
+    align-items: center;
+    text-align: center;
+}
+
+.par-songtitel:nth-child(3) {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.par-artist {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+}
+
+.par-artist:nth-child(1) {
+    align-items: flex-start;
+    text-align: left;
+
+}
+
+.par-artist:nth-child(2) {
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+
+
+.child {
+    padding: 2rem;
+    margin: 2rem;
+}
