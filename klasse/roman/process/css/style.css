@@ -30,7 +30,6 @@ h2 {
 h3 {
     font-family: 'Abril Fatface', cursive;
     font-size: 17vw;
-    text-transform: uppercase;
     font-weight: 400;
     text-align: center;
     line-height: 13vw;
@@ -38,33 +37,66 @@ h3 {
 }
 
 .stumble {
-    display:flex;   
-    flex-direction:column;
+    display:grid;   
     justify-content: center;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: 80px 80px 1fr 80px 80px 80px;
     width: 100vw;
-    height:100vh;
     text-align: center;
     background-color: rgb(11, 8, 53);
     align-items: center;
-    padding-top: 20px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 .childstumble:nth-child(1) {
-    align-items: flex-start;
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
 }
 
 .childstumble:nth-child(2) {
-    align-items: center;
-
+    grid-column: 1 / 8;
+    grid-row: 3 / 5;
+    text-align: right;
 }
 
 .childstumble:nth-child(3) {
     align-items: center;
+    grid-column: 8 / 10;
+    grid-row: 3 / 5;
+    text-align: left;
 
 }
 
-#stumble {
-    font-size: 23vw;
-    margin: 0;
+.childstumble:nth-child(4) {
+    align-items: center;
+    grid-column: 10 / 12;
+    grid-row: 3 / 5;
+
+}
+
+.childstumble:nth-child(5) {
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+
+}
+
+.childstumble:nth-child(6) {
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+
+}
+
+.stumblebig {
+    color:rgb(255, 231, 189);
+    font-size: 28vw;
+}
+
+.song {
+    margin: 40px;
+    align-tracks: center;
 }
 
 .ambition {
@@ -81,10 +113,11 @@ h3 {
 }
 
 .pour {
-    grid-column: 6 / 8;
+    grid-column: 7 / 8;
     grid-row: 1 / 2;
     letter-spacing: 3em;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     
 }
 
@@ -106,25 +139,44 @@ h3 {
 
 
 #ambi {
-    color: rgb(180, 17, 54)
+    color: rgb(180, 17, 54);
+    text-transform: uppercase;
+
 }
 
 #stretch {
     color: rgb(180, 17, 54);
-    letter-spacing: 12vw;
     align-self: center;
 }
 
 
 .shower {
-    background-color: rgb(180, 17, 54);
+    display:flex;   
+    flex-direction:column;
+    justify-content: space-evenly;
     width: 100vw;
-    color: rgb(255, 255, 255);
-    height: 400%;
+    height:400%;
     text-align: center;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    margin: 0;
+    background-color: rgb(180, 17, 54);
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.childshower:nth-child(1) {
+    align-items: center;
+}
+
+.childshower:nth-child(2) {
+    align-items: center;
+
+}
+
+.childshower:nth-child(3) {
+    align-items: center;
+
 }
 
 #pump {
@@ -146,4 +198,49 @@ h3 {
     100% {
         transform: scale(0.80);
     }
+}
+
+.refrain-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr 20px;
+    background-color:  rgb(255, 231, 189);
+    align-items: center;
+}
+
+.workin {
+    font-family: 'Abril Fatface', cursive;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    color: rgb(180, 17, 54);
+    text-align: center;
+    font-size: 4vw;
+}
+
+.nine {
+    font-family: 'Monoton', cursive;
+    grid-column: 4 / 9;
+    grid-row: 2 / 4;
+    color: rgb(11, 8, 53);
+    text-align: left;
+    font-size: 55vw;
+}
+
+.to {
+    font-family: 'Abril Fatface', cursive;
+    grid-column: 9 / 10;
+    grid-row: 2 / 4;
+    transform: rotate(-90deg);
+    color: rgb(180, 17, 54);
+    text-align: center;
+    font-size: 4vw;
+}
+
+.five {
+    font-family: 'Monoton', cursive;
+    grid-column: 10 / 13;
+    grid-row: 2 / 4;
+    color: rgb(11, 8, 53);
+    text-align: left;
+    font-size: 55vw;
 }

@@ -20,15 +20,16 @@
         .parentcontainer {
             display: grid;
             justify-content: center;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 33vw 33vw 33vw;
             grid-template-rows: 20vh 60vh 20vh;
-            margin: 20px;
+            height: 100vh;
         }
 
         .songtitel {
-            grid-column: 2 / 3;
+            grid-column: 1 / 4;
             grid-row: 1 / 2;
             align-self: bottom;
+            text-align: center;
                 }
 
         .nine {
@@ -43,6 +44,14 @@
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             align-self: center;
+            transition-property: all;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+            transform-origin: center;
+        }
+
+        .bild:hover {
+            transform: rotate(-15deg) scale(1.35);
         }
 
         .five {
@@ -53,7 +62,7 @@
         }
 
         .song {
-            grid-column: 2 / 3;
+            grid-column: 1 / 4;
             grid-row: 3 / 4;
             text-align: center;
             align-self: auto;
@@ -78,6 +87,7 @@
             font-family: 'Abril Fatface', serif;
             font-weight: 400;
             font-size: 2.5em;
+            color: rgb(255, 231, 189);
                 }
 
         h4 {
@@ -99,9 +109,9 @@
     <div class="parentcontainer">
         <div class="songtitel"><h2>Dolly Parton’s 9 to 5</h2></div>
         <div class="nine"><h1>9</h1></div>
-        <div class="bild"><a><img src="images/songtext/dolly.svg" alt=""></a></div>
+        <div class="bild transormed nottransformed"><a href="/process/songtext_v3.html"><img src="/process/images/songtext/dolly.svg"></a></div>
         <div class="five"><h1>5</h1></div>
-        <div class="song"><h3><a href="songtext_v3.html" target=”_blank>PLAY SONG</a></h3><h4>Coded and Styled by Roman Marty</h4></div>
+        <div class="song"><h3>tickle Dolly to play Song</h3><h4>coded and styled by Roman Marty</h4></div>
     </div>
 </body>
 
