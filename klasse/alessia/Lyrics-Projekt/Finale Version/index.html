@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
 
-    <script>
-        
-        window.addEventListener("scroll", starteAnimation);
 
-        function starteAnimation() {
-            let element = document.getElementById('world');
-            element.style.animationPlayState = "running";
-        }
 
-    </script>
-   
     <div class="outtercontainer beigebg">
-        
+
         <div class="parentcontainer">
             <div class="row1 playfairitalic2">What's wrong with the</div>
             <div class="line-right"></div>
@@ -34,47 +31,47 @@
             <div class="row4 playfairitalic2">mama</div>
         </div>
 
-    </div> 
+    </div>
 
     <div class="outtercontainer blackbg">
-        
+
         <div class="parentcontainer">
             <div class="row5 playfairitalic2beige">people livin like they got no</div>
             <div class="line-right2"></div>
             <div class="row6 roboto6white">MAMAS</div>
         </div>
-    
+
     </div>
-    
+
     <div class="outtercontainer whitebg">
-        
+
         <div class="parentcontainer">
             <div class="row5right playfairitalic2red">I think the whole world's addicted to the</div>
             <div class="line-left2"></div>
             <div class="row6right roboto6">DRAMA</div>
         </div>
 
-    </div>  
+    </div>
 
     <div class="outtercontainer brownbg">
-        
+
         <div class="parentcontainer">
             <div class="row5 playfairitalic2">Only attracted to things that'll bring you</div>
             <div class="line-right3"></div>
             <div class="row6 roboto6beige">TRAUMA</div>
         </div>
 
-    </div>  
+    </div>
 
     <div class="outtercontainer beigebg">
-        
+
         <div class="parentcontainer">
             <div class="row8 playfairitalic2red">Overseas,</div>
             <div class="line-right4"></div>
             <div class="row9 roboto10">YEAH</div>
         </div>
 
-    </div> 
+    </div>
 
     <div class="outtercontainer beigebg">
 
@@ -82,12 +79,12 @@
             <div class="playfair4italic">We tryna stop terrorirsm</div>
 
         </section>
-    
 
-    </div> 
+
+    </div>
 
     <div class="outtercontainer blackbg">
-        
+
         <div class="parentcontainerbigger">
             <div class="row11 playfairitalic2beige">But we still got</div>
             <div class="line-left3"></div>
@@ -102,12 +99,34 @@
             <div class="row19 roboto4">S</div>
             <div class="row20 roboto4">T</div>
             <div class="row21 roboto4">S</div>
-            
+
             <div class="line-right5"></div>
             <div class="row22 playfairitalic2beige">here livin'</div>
         </div>
-    
+
     </div>
 
+    <script>
+        /* window.addEventListener("scroll", starteAnimation);
+
+                                                                                function starteAnimation() {
+                                                                                    let element = document.getElementById('world');
+                                                                                    element.style.animationPlayState = "running";
+                                                                                }*/
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".row12", {
+            x: "-20vw",
+            rotation: 360,
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+    </script>
 </body>
+
 </html>
