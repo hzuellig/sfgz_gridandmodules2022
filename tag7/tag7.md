@@ -91,10 +91,9 @@ Bei jedem Keyframe wird ein weiterer Block über die geschweiften Klammern geöf
 Die CSS-Eigenschaft `animation` ist ein Kürzel für alle Properties `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode` und `animation-play-state`. 
 
 ```css
-/* @keyframes name | duration | easing-function | delay */
-.animierteklasse{
- animation: slidein 3s linear 1s;
- }
+/* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+animation: 3s ease-in 1s 2 reverse both paused slidein; 
 ```
 
 ### Üben
