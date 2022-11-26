@@ -1,0 +1,188 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.container{
+  width: 50vw;
+  margin:0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plakat{
+  background-color: #dbe0d3;
+  padding: 25px;
+  height: 80vh;
+  width: 40vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 15% 15% 70%;
+}
+.first{
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100%;
+  align-self: end;
+}
+.one{
+  grid-column: 1 / 2;
+}
+.two{
+  grid-column: 2 / 3;
+}
+.three{
+  grid-column: 3 / 4;
+}
+.second{
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  align-self: end;
+  font-size: 4vh;
+}
+.third{
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-size: 70vh;
+  line-height: 50vh;
+}
+.third p{
+  mix-blend-mode: multiply;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 0 auto;
+  align-self: end;
+  color: #ff0000;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+.third p:nth-child(2){
+  transform: translate(50px);
+  color: #00ff00;
+}
+.third p:nth-child(3){
+  transform: translate(-50px);
+  color: #56aeff;
+}
+.main .third p:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+.troll .third p{
+  font-size: 60vh;
+  color: black;
+  opacity: 1;
+  position: relative;
+}
+.troll .first{
+  align-self: start;
+}
+.troll .one{
+
+}
+.troll .two{
+font-size: 3.5vh;
+}
+.troll .three{
+  font-size: 6vh;
+  line-height: 4.5vh;
+}
+.troll .third p:after,
+.troll .thrid p{
+    transition: 0.3s ease;
+}
+.troll .third{
+  overflow: hidden;
+}
+.troll .third p{
+  color: #ff0000!important;
+}
+.troll .third p:after{
+  content: "I said NO";
+  font-size: 20vh;
+  line-height: 15vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.troll .third p:hover span{
+  opacity: 0;
+}
+.troll .third:hover p:after{
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.troll .second{
+  position: relative;
+}
+.troll .second h1:after{
+  content: "Can you even read?";
+  font-size: 8vh;
+  line-height: 6vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.troll .second:hover h1:after{
+  opacity: 1;
+}
+.troll .second:hover span{
+  opacity: 0;
+}
+.troll .three{
+  position: relative;
+}
+.troll .three p:after{
+  content: "Stupid";
+  font-size: 4vh;
+  line-height: 3vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.troll .three:hover p:after{
+  opacity: 1;
+}
+.troll .three:hover span{
+  opacity: 0;
+}
+.troll .two{
+  position: relative;
+}
+.troll .two p:after{
+  content: "Not sure anymore";
+  font-size: 3vh;
+  line-height: 2vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.troll .two:hover p:after{
+  opacity: 1;
+}
+.troll .two:hover span{
+  opacity: 0;
+}
+.troll .one{
+  position: relative;
+  z-index: 99;
+}
+.troll .one p:after{
+  content: url('https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif');
+  position: absolute;
+  left: 0;
+  top: -5px;
+  display: none;
+}
+.troll .one:hover p:after{
+  display: block;
+}
