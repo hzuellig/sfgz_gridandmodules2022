@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutter</title>
+    <style>
+        
+        @font-face{
+            font-family: Vektra;
+            src: url("font/Vektra.otf")}
+        
+        
+
+        .white_rock{
+            background: transparent;
+            width: 100vw;
+            display: flex;
+        }
+
+        .main_for_white{
+            height: 100vh;
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(6, 8vw);
+            
+            
+        }
+
+        .text_in_white{
+            grid-column: 3 / 4;
+            vertical-align: bottom;
+            text-align: center;
+            font-family: Vektra;
+            font-size: 2vw;
+            color: white;
+            padding-top: 15vw;
+            padding-left: 15%;
+            padding-right: 15%;
+            overflow: hidden;
+            
+            
+        }
+
+        .black_rock{ /* ;-) */ 
+            background: black;
+            width: 100vw;
+            display: flex;
+        }
+
+        .main_for_black{
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(6, 8vw);
+        }
+
+        .text_in_black{
+            grid-column: 3 / 4;
+            font-family: Vektra;
+            text-align: center;
+            vertical-align: top;
+            color: white;
+            font-size: 2vw;
+            padding: 1vh;
+        }
+
+        .main_traenen{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            margin-top: -100vh;
+        }
+
+        section.traenen {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(6, 8vw);
+            grid-template-rows: 2fr;
+            text-align: center;
+            font-family: Vektra;
+            overflow: hidden;
+            /*font-family: 'Monoton', cursive;*/
+
+        }
+
+        .letters {
+            font-size: 14vw;
+            font-weight: 100;
+            transition-property: all;
+            transition-duration: 1s;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            mix-blend-mode:exclusion;
+        }
+
+        /*---- buchstabengruppen */
+
+        section.traenen:hover .letters {
+            transform: translate(0, 20px);
+        }
+
+        .letters:nth-of-type(2) {
+            transition-delay: 300ms;
+        }
+
+        .letters:nth-of-type(3) {
+            transition-delay: 200ms;
+        }
+
+        .letters:nth-of-type(4) {
+            transition-delay: 300ms;
+        }
+
+        .letters:nth-of-type(5) {
+            transition-delay: 400ms;
+        }
+
+        .letters:nth-of-type(6) {
+            transition-delay: 500ms;
+        }
+
+        /*--- einzelbuchstaben innerhalb der gruppe ----*/
+
+        .buchstabe {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            transition-property: all;
+            transition-duration: 10s;
+            transition-timing-function: cubic-bezier(.98, -0.06, 1, .43);
+        }
+
+        section.traenen:hover .buchstabe {
+            transform: translate(0, 100vh);
+        }
+        /*T*/
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(1) {
+            transition-delay: 500ms;
+        }
+        /*T*/
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(2) {
+            transition-delay: 2500ms;
+        }
+        /*T*/
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(3) {
+            transition-delay: 900ms;
+        }
+        /*R*/
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(1) {
+            transition-delay: 1500ms;
+        }
+        /*R*/
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(2) {
+            transition-delay: 20ms;
+        }
+        /*R*/
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(3) {
+            transition-delay: 600ms;
+        }
+        /*Ä*/
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(1) {
+            transition-delay: 1000ms;
+        }
+        /*Ä*/
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(2) {
+            transition-delay: 6000ms;
+        }
+        /*Ä*/
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(3) {
+            transition-delay: 3000ms;
+        }
+        /*N*/
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(1) {
+            transition-delay: 1500ms;
+        }
+        /*N*/
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(2) {
+            transition-delay: 800ms;
+        }
+        /*N*/
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(3) {
+            transition-delay: 2800ms;
+        }
+        /*E*/
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(1) {
+            transition-delay: 1600ms;
+        }
+        /*E*/
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(2) {
+            transition-delay: 2000ms;
+        }
+        /*E*/
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(3) {
+            transition-delay: 900ms;
+        }
+        /*N*/
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(1) {
+            transition-delay: 4000ms;
+        }
+        /*N*/
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(2) {
+            transition-delay: 700ms;
+        }
+        /*N*/
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(3) {
+            transition-delay: 3500ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="white_rock">
+        <div class="main_for_white">
+            <div class="text_in_white">
+                Ich zieh’ sie auf ein weißes Haar Werf in die Luft die nasse Kette Und wünsch mir, dass
+            </div>
+        </div>
+    </div>
+    <div class="main_traenen">
+    <section class="traenen">
+        <div class="letters">
+            <div class="buchstabe">
+                T
+            </div>
+            <div class="buchstabe">
+                T
+            </div>
+            <div class="buchstabe">
+                T
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                R
+            </div>
+            <div class="buchstabe">
+                R
+            </div>
+            <div class="buchstabe">
+                R
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                Ä
+            </div>
+            <div class="buchstabe">
+                Ä
+            </div>
+            <div class="buchstabe">
+                Ä
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                E
+            </div>
+            <div class="buchstabe">
+                E
+            </div>
+            <div class="buchstabe">
+                E
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <div class="black_rock">
+        <div class="main_for_black">
+            <div class="text_in_black">
+                ich<br>eine<br>Mutter<br>hätte
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
