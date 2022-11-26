@@ -193,7 +193,7 @@ Nun greifen wir über das DOM auf das Element kreis zu und verändern das CSS At
 ```html
 <script>
    function changeProperties(){
-      let kreis = document.getElementbyID('kreis');/* Zugriff auf das Element kreis */
+      let kreis = document.getElementbyId('kreis');/* Zugriff auf das Element kreis */
       kreis.style.backgroundColor = "red";/* Verändern des CSS Attributs */
    }
     
