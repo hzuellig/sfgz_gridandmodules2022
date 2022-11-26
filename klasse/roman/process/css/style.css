@@ -25,6 +25,7 @@ h2 {
     text-align: center;
     line-height: 1.25em;
     width: 100%;
+    text-align: center;
 }
 
 h3 {
@@ -45,7 +46,7 @@ h3 {
     text-align: center;
     background-color: rgb(11, 8, 53);
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 200px;
 }
 .childstumble:nth-child(1) {
@@ -57,14 +58,14 @@ h3 {
 .childstumble:nth-child(2) {
     grid-column: 1 / 8;
     grid-row: 3 / 5;
-    text-align: right;
+    justify-self: end;
 }
 
 .childstumble:nth-child(3) {
     align-items: center;
     grid-column: 8 / 10;
     grid-row: 3 / 5;
-    text-align: left;
+    color: white;
 
 }
 
@@ -72,6 +73,7 @@ h3 {
     align-items: center;
     grid-column: 10 / 12;
     grid-row: 3 / 5;
+    justify-self: ;
 
 }
 
@@ -116,8 +118,7 @@ h3 {
     grid-column: 7 / 8;
     grid-row: 1 / 2;
     letter-spacing: 3em;
-    align-items: left;
-    text-align: left;
+    justify-self: center;
     
 }
 
