@@ -21,18 +21,20 @@ body {
     margin: 2rem;
 }
 
-
 .negativ {
     color: white;
     background-color: black;
 }
 
+
 /* FONTS */
+
 p {
     font-size: 8.3vw;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 
 /* Section 1 Songtitel */
 
@@ -67,6 +69,7 @@ p {
     text-align: right;
 }
 
+
 /* Section 2 Artist */
 
 .par-artist {
@@ -80,10 +83,7 @@ p {
 .par-artist:nth-child(1) {
     align-items: flex-start;
     text-align: left;
-
-
 }
-
 
 .par-artist:nth-child(2) {
     align-items: flex-end;
@@ -112,21 +112,18 @@ p {
 .par-lyrics1:nth-child(1) {
     align-items: flex-start;
     text-align: left;
-
 }
 
 .par-lyrics1:nth-child(2) {
     align-items: center;
     text-align: center;
     justify-content: center;
-
 }
 
 .par-lyrics1:nth-child(3) {
     align-items: flex-end;
     text-align: right;
     justify-content: right;
-
 }
 
 .quadratcontainer {
@@ -136,23 +133,23 @@ p {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    animation-name: containertoblack;
+    /*animation-name: containertoblack;
     animation-duration: 2s;
     animation-delay: 3s;
     animation-iteration-count: 1;
     animation-direction: alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
 }
 
 @keyframes containertoblack {
     0% {
         background-color: white;
     }
-
     100% {
         background-color: black;
     }
 }
+
 
 /* Section 4 Quadrat Schwarz */
 
@@ -160,12 +157,12 @@ p {
     height: 4em;
     width: 4em;
     background-color: black;
-    animation-name: quadrattoblack;
+    /* animation-name: quadrattoblack;
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-direction: alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
 }
 
 @keyframes quadrattoblack {
@@ -173,18 +170,17 @@ p {
         height: 4em;
         width: 4em;
     }
-
     50% {
         height: 20em;
         width: 20em;
         border-radius: 100em;
     }
-
     100% {
         height: 100%;
         width: 100%;
     }
 }
+
 
 /* Section 4 "Nichts hält mich am Boden" */
 
