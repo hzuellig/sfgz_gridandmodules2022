@@ -68,7 +68,7 @@
 <body>
     <section>
         <div class="kreis"></div>
-        <button class="specialbutton" onclick="setzeAnimation()">Animiere den Kreis</button>
+        <button class="specialbutton" onclick="toggleAnimation()">Starte und Stoppe den Kreis</button>
 
     </section>
     <section>
@@ -78,7 +78,21 @@
         <div class="kreis"></div>
     </section>
     <script>
-        document.addEventListener("scroll", listen);
+        // document.addEventListener("scroll", listen);
+
+        let toggle = false;
+
+        function toggleAnimation() {
+            let element = document.getElementsByClassName('kreis')[0];
+            if (toggle == false) {
+                element.style.animationPlayState = "running";
+                toggle = true;
+            } else {
+                element.style.animationPlayState = "paused";
+                toggle = false;
+            }
+
+        }
 
         function listen() {
             let element = document.getElementsByClassName('kreis')[1];

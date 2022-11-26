@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-.group{
-    display:grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr; 
-}
-
-/* beide elemente liegen ursprünglich übereinander */
-.not_transformed,
-.transformed {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    height: 400px;
-    width: 400px;
-}
-/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        /* beide elemente liegen ursprünglich übereinander */
         
-.not_transformed {
-    background-color: rgb(255, 179, 0);
-}
-.transformed {
-    background-color: rgba(223, 68, 117, 0.5);
-}
-.verschieben {
-    transform: translate(200px, 100px);
-}
-
-.drehen {
-    transform: rotate(45deg);
-    transform-origin: top left center;
-}
-.skalieren {
-    transform:scale(0.8); 
-}
-
-.verzerren
-{
-    transform: skew(10deg,30deg);
-}
-
-.mehrere { 
-    transform: rotate(45deg) scale(0.5);
-}
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+        }
+        /* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        
+        .not_transformed {
+            background-color: rgb(255, 179, 0);
+        }
+        
+        .transformed {
+            background-color: rgba(223, 68, 117, 0.5);
+        }
+        
+        .verschieben {
+            transform: translate(200px, 100px);
+        }
+        
+        .drehen {
+            transform: rotate(45deg);
+            transform-origin: top left;
+        }
+        
+        .skalieren {
+            transform: scale(0.8);
+        }
+        
+        .verzerren {
+            transform: skew(10deg, 30deg);
+        }
+        
+        .mehrere {
+            transform: rotate(45deg) scale(0.5);
+        }
     </style>
 </head>
 
@@ -99,4 +102,5 @@
         </div>
     </section>
 </body>
+
 </html>
