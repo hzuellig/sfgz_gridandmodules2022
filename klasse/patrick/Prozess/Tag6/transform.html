@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .group{
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+}
+
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 400px;
+    width: 400px;
+}
+/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        
+.not_transformed {
+    background-color: black;
+}
+.transformed {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.verschieben {
+    transform: translate(200px, 100px);
+}
+.drehen {
+    transform: rotate(45deg);
+    color: antiquewhite;
+    transform-origin: bottom right;
+}
+.skalieren {
+    transform: scale(0.8);
+    color: aliceblue;
+}
+.verzerren {
+    transform: skew(10deg);
+    color: aliceblue;
+}
+.mehrere {
+    transform: rotate(45) scale(0.5) skew(20deg);
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Translate</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschieben">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>rotate</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed drehen">
+                drehen
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>skale</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed skalieren">
+                drehen
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>verzerren</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verzerren">
+                drehen
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>mehrere transformen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed mehrere">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

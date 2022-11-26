@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutter</title>
+    <style>
+        @font-face {
+            font-family: vektra;
+            src: url(/Tag6/vektra.rar);
+        }
+        section.traenen {
+            display: grid;
+            grid-template-columns: repeat(7, 9vw);
+            grid-template-rows: 1f;
+            font-family: vektra
+
+        }
+
+        .letters {
+            font-size: 14vw;
+            font-weight: 800;
+            transition-property: all;
+            transition-duration: 1s;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1f;
+        }
+
+        /*---- buchstabengruppen */
+
+        section.traenen:hover .letters {
+            transform: translate(0, 20px);
+        }
+
+        .letters:nth-of-type(2) {
+            transition-delay: 300ms;
+        }
+
+        .letters:nth-of-type(3) {
+            transition-delay: 200ms;
+        }
+
+        .letters:nth-of-type(4) {
+            transition-delay: 300ms;
+        }
+
+        .letters:nth-of-type(5) {
+            transition-delay: 400ms;
+        }
+
+        .letters:nth-of-type(6) {
+            transition-delay: 500ms;
+        }
+
+        /*--- einzelbuchstaben innerhalb der gruppe ----*/
+
+        .buchstabe {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            transition-property: all;
+            transition-duration: 10s;
+            transition-timing-function: cubic-bezier(.98, -0.06, 1, .43);
+        }
+
+        section.traenen:hover .buchstabe {
+            transform: translate(0, 100vh);
+        }
+
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(2) {
+            transition-delay: 100ms;
+        }
+
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(3) {
+            transition-delay: 300ms;
+        }
+
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(2) {
+            transition-delay: 50ms;
+        }
+
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(3) {
+            transition-delay: 500ms;
+        }
+
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(2) {
+            transition-delay: 50ms;
+        }
+
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(3) {
+            transition-delay: 500ms;
+        }
+
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(2) {
+            transition-delay: 50ms;
+        }
+
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(3) {
+            transition-delay: 500ms;
+        }
+
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(2) {
+            transition-delay: 50ms;
+        }
+
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(3) {
+            transition-delay: 500ms;
+        }
+
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(2) {
+            transition-delay: 50ms;
+        }
+
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(3) {
+            transition-delay: 500ms;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="traenen">
+        <div class="letters">
+            <div class="buchstabe">
+                T
+            </div>
+            <div class="buchstabe">
+                T
+            </div>
+            <div class="buchstabe">
+                T
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                R
+            </div>
+            <div class="buchstabe">
+                R
+            </div>
+            <div class="buchstabe">
+                R
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                Ä
+            </div>
+            <div class="buchstabe">
+                Ä
+            </div>
+            <div class="buchstabe">
+                Ä
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                E
+            </div>
+            <div class="buchstabe">
+                E
+            </div>
+            <div class="buchstabe">
+                E
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
