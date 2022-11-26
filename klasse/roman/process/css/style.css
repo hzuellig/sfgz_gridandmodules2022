@@ -1,8 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-
-body {
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">body {
     margin: 0;
     padding: 0;
 }
@@ -28,6 +24,13 @@ h2 {
     text-align: center;
 }
 
+.pour h2 {
+    writing-mode: vertical-rl;
+    letter-spacing: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h3 {
     font-family: 'Abril Fatface', cursive;
     font-size: 17vw;
@@ -38,7 +41,7 @@ h3 {
 }
 
 .stumble {
-    display:grid;   
+    display: grid;
     justify-content: center;
     grid-template-columns: repeat (12, 1fr);
     grid-template-rows: 80px 80px 1fr 80px 80px 80px;
@@ -49,6 +52,7 @@ h3 {
     margin-top: 100px;
     margin-bottom: 200px;
 }
+
 .childstumble:nth-child(1) {
     align-items: center;
     grid-column: 1 / 13;
@@ -66,7 +70,6 @@ h3 {
     grid-column: 8 / 10;
     grid-row: 3 / 5;
     color: white;
-
 }
 
 .childstumble:nth-child(4) {
@@ -74,25 +77,22 @@ h3 {
     grid-column: 10 / 12;
     grid-row: 3 / 5;
     justify-self: ;
-
 }
 
 .childstumble:nth-child(5) {
     align-items: center;
     grid-column: 1 / 13;
     grid-row: 5 / 6;
-
 }
 
 .childstumble:nth-child(6) {
     align-items: center;
     grid-column: 1 / 13;
     grid-row: 1 / 2;
-
 }
 
 .stumblebig {
-    color:rgb(255, 231, 189);
+    color: rgb(255, 231, 189);
     font-size: 28vw;
 }
 
@@ -102,7 +102,7 @@ h3 {
 }
 
 .ambition {
-    display:grid; 
+    display: grid;
     justify-content: top;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 1fr 200px 200px 200px;
@@ -115,11 +115,10 @@ h3 {
 }
 
 .pour {
-    grid-column: 7 / 8;
+    grid-column: 6 / 8;
     grid-row: 1 / 2;
-    letter-spacing: 3em;
+    /*letter-spacing: 3em;*/
     justify-self: center;
-    
 }
 
 .myself {
@@ -138,11 +137,9 @@ h3 {
     align-self: center;
 }
 
-
 #ambi {
     color: rgb(180, 17, 54);
     text-transform: uppercase;
-
 }
 
 #stretch {
@@ -150,13 +147,12 @@ h3 {
     align-self: center;
 }
 
-
 .shower {
-    display:flex;   
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100vw;
-    height:400%;
+    height: 400%;
     text-align: center;
     background-color: rgb(180, 17, 54);
     align-items: center;
@@ -172,12 +168,10 @@ h3 {
 
 .childshower:nth-child(2) {
     align-items: center;
-
 }
 
 .childshower:nth-child(3) {
     align-items: center;
-
 }
 
 #pump {
@@ -191,11 +185,9 @@ h3 {
     0% {
         transform: scale(0.80);
     }
-
     60% {
         transform: scale(1.5);
     }
-
     100% {
         transform: scale(0.80);
     }
@@ -205,7 +197,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 20px 1fr 1fr 20px;
-    background-color:  rgb(255, 231, 189);
+    background-color: rgb(255, 231, 189);
     align-items: center;
 }
 
