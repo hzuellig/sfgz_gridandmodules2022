@@ -292,7 +292,7 @@ Quelle: https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClie
         document.addEventListener("scroll", listen);
 
         function listen() {
-            let element = document.getElementsByID('kreis');
+            let element = document.getElementById('kreis');
             let rect = element.getBoundingClientRect();
             if (rect.y > 0 && rect.y < window.innerHeight) {
                 console.log('obere kante sichtbar');
