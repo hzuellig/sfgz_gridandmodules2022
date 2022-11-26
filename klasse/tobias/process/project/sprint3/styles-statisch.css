@@ -169,14 +169,27 @@ body {
     height: 4em;
     width: 4em;
     background-color: black;
-    transition-property: all;
-    transition-duration: 2s;
+    animation-name: quadrattoblack;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 
-.quadrat:hover{
-    border-radius: 8em;
-    transform: scale(10);
+
+@keyframes quadrattoblack {
+    0% {
+        height: 4em;
+        width: 4em;
+    }
+
+    100% {
+        height: 100em;
+        width: 100em;
+        border-radius: 100em;
+    }
 }
 
 

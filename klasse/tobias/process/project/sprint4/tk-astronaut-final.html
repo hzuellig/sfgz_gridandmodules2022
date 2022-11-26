@@ -2,134 +2,200 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astronaut by Sido</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronaut by Sido</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
-    <section>
-        <div class="par-songtitel fadeSlideTo">
-            <div class="child ani-songtitel">
-                <p>A</p>
-            </div>
-            <div class="child ani-songtitel">
-                <p>S</p>
-            </div>
-            <div class="child ani-songtitel">
-                <p>T</p>
-            </div>
+  <section>
+    <div class="par-songtitel fadeSlideTo">
+      <div class="child ani-songtitel">
+        <p>A</p>
+      </div>
+      <div class="child ani-songtitel">
+        <p>S</p>
+      </div>
+      <div class="child ani-songtitel">
+        <p>T</p>
+      </div>
+    </div>
+    <div class="par-songtitel fadeSlideTo">
+      <div class="child ani-songtitel">
+        <p>R</p>
+      </div>
+      <div class="child ani-songtitel">
+        <p>O</p>
+      </div>
+      <div class="child ani-songtitel">
+        <p>N</p>
+      </div>
+    </div>
+    <div class="par-songtitel fadeSlideTo">
+      <div class="child ani-songtitel">
+        <p>A</p>
+      </div>
+      <div class="child ani-songtitel">
+        <p>U</p>
+      </div>
+      <div class="child ani-songtitel">
+        <p>T</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacing-half"></div>
+
+  <section>
+
+    <div class="par-artist">
+      <div class="child ani-artist">
+        <p>S</p>
+      </div>
+      <div class="child ani-artist">
+        <p>I</p>
+      </div>
+    </div>
+
+    <div class="par-artist">
+      <div class="child ani-artist">
+        <p>D</p>
+      </div>
+      <div class="child ani-artist">
+        <p>O</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="par-lyrics1">
+        <div class="child">
+            <p>Ich</p>
         </div>
-        <div class="par-songtitel fadeSlideTo">
-            <div class="child ani-songtitel">
-                <p>R</p>
-            </div>
-            <div class="child ani-songtitel">
-                <p>O</p>
-            </div>
-            <div class="child ani-songtitel">
-                <p>N</p>
-            </div>
+    </div>
+
+    <div class="par-lyrics1">
+        <div class="child">
+            <p>Heb</p>
         </div>
-        <div class="par-songtitel fadeSlideTo">
-            <div class="child ani-songtitel">
-                <p>A</p>
-            </div>
-            <div class="child ani-songtitel">
-                <p>U</p>
-            </div>
-            <div class="child ani-songtitel">
-                <p>T</p>
-            </div>
+    </div>
+
+    <div class="par-lyrics1">
+        <div class="child">
+            <p>Ab</p>
         </div>
-    </section>
+    </div>
+    </div>
 
-    <section>
+</section>
 
-        <div class="par-artist">
-            <div class="child">
-                <p>S</p>
-            </div>
-            <div class="child">
-                <p>I</p>
-            </div>
-        </div>
+<div class="quadratcontainer">
+  <div class="quadrat">
+  </div>
+</div>
 
-        <div class="par-artist">
-            <div class="child">
-                <p>D</p>
-            </div>
-            <div class="child">
-                <p>O</p>
-            </div>
-        </div>
+<div class="spacing-zehntel negativ"></div>
 
-    </section>
+<Section>
+  <div class="par-lyrics2">
+      <div class="child negativ">
+          <p>Nichts hält mich am Boden</p>
+      </div>
+  </div>
 
-   <!--Astronaut Opacity Effect--> 
+</Section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="ScrollTrigger.min.js"></script>
-    <script>gsap.to(".ani-songtitel", {
-            opacity: 0,
-            scrollTrigger: {
-          scrub: 0,
-            }
-        });
-    </script>
 
-   <!--Astronaut Pulse Effect--> 
 
-<script>const gsapEffects = [
-  { 
-    id: "fadeSlideTo",  
-    props: { scale: 1.05, yoyo: true, repeat: -1 }
-  },
-  { 
-    id: "fadeSlideFrom", 
-    animate: 'from',
-    props: { opacity: 0.25, x: 300, yoyo: true, repeat: -1  }
-  },
-  { 
-    id: "fadeSlideFromTo", 
-    animate: 'fromTo', 
-    props: { opacity: 0.1, x: 300}, 
-    props2: { opacity: 1, x: 600, yoyo: true, repeat: -1  }
-  }
-];
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
 
-gsapEffects.forEach(effect => {
-  gsap.registerEffect({
-    name: effect.id,
-    defaults: { duration: 1 },
-    extendTimeline: true,
-    effect(targets, config) {
-      if(effect.animate === 'from'){
-        return gsap.from(targets, {...effect.props,...config })
-      } 
-      else if (effect.animate === 'fromTo'){ 
-        return gsap.fromTo(targets, {...effect.props,...config }, {...effect.props2})
-        }
-      else {
-        return gsap.to(targets, {...effect.props,...config })
+    <!--Astronaut Opacity Effect-->
+
+  <!--
+<script>gsap.to(".ani-songtitel", {
+      opacity: 0,
+      scrollTrigger: {
+        scrub: 0,
       }
-    }
-  });
+    });
+  </script>
+
+
+<script>gsap.to(".ani-artist", {
+  opacity: 1.5,
+  scrollTrigger: {
+    scrub: 0,
+  }
+});
+</script>
+-->
+
+  <!--Astronaut Pulse Effect-->
+  <script>
+    const gsapEffects = [
+      {
+        id: "fadeSlideTo",
+        props: { scale: 1.05, yoyo: true, repeat: -1 }
+      },
+      {
+        id: "fadeSlideFrom",
+        animate: 'from',
+        props: { opacity: 0.25, x: 300, yoyo: true, repeat: -1 }
+      },
+      {
+        id: "fadeSlideFromTo",
+        animate: 'fromTo',
+        props: { opacity: 0.1, x: 300 },
+        props2: { opacity: 1, x: 600, yoyo: true, repeat: -1 }
+      }
+    ];
+
+    gsapEffects.forEach(effect => {
+      gsap.registerEffect({
+        name: effect.id,
+        defaults: { duration: 1 },
+        extendTimeline: true,
+        effect(targets, config) {
+          if (effect.animate === 'from') {
+            return gsap.from(targets, { ...effect.props, ...config })
+          }
+          else if (effect.animate === 'fromTo') {
+            return gsap.fromTo(targets, { ...effect.props, ...config }, { ...effect.props2 })
+          }
+          else {
+            return gsap.to(targets, { ...effect.props, ...config })
+          }
+        }
+      });
+    });
+
+    let tl = gsap.timeline();
+    tl.fadeSlideTo(".fadeSlideTo")
+      .fadeSlideFrom(".fadeSlideFrom", 0)
+      .fadeSlideFromTo(".fadeSlideFromTo", 0)
+
+  </script>
+
+  <script>
+const element = document.querySelector('.quadrat');
+const observer = new IntersectionObserver(entries => {
+  element.classList.toggle( 'quadrattoblack', entries[0].isIntersecting );
 });
 
-let tl = gsap.timeline();
-tl.fadeSlideTo(".fadeSlideTo")
-  .fadeSlideFrom(".fadeSlideFrom", 0)
-  .fadeSlideFromTo(".fadeSlideFromTo", 0)</script>
+observer.observe( element );</script>
+
+  
 
 
 </body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Intro</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+            padding: 3em;
+
+        }
+
+        .specialbutton {
+            background-color: #44c767;
+            border-radius: 28px;
+            border: 1px solid #18ab29;
+            display: inline-block;
+            color: #ffffff;
+            font-size: 17px;
+            padding: 16px 31px;
+            margin: 5em;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f6627;
+        }
+
+        .specialbutton:hover {
+            background-color: #5cbf2a;
+        }
+
+        #kreis {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: #000506;
+            animation-name: anim;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes anim {
+            0% {
+                box-shadow: 0px 0px 8px 8px #e803ba;
+            }
+            25% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 8px 16px #e8035b;
+                background-color: #03e8ba;
+            }
+            50% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 8px 24px #e85f03;
+                background-color: #038ce8;
+            }
+            75% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 0px 24px #e85f03, 0px 0px 8px 32px #e8a303;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <button class="specialbutton" onclick="changeProperties()">Mach mich ROT</button>
+    <button class="specialbutton" onclick="starteAnimation()">GO</button>
+    <button class="specialbutton" onclick="stopAnimation()">STOP</button>
+
+    <div id="kreis"></div> 
+
+
+    <script>
+        function changeProperties() {
+            let kreis = document.getElementById("kreis");
+            kreis.style.backgroundColor = "red";
+        }
+
+        function starteAnimation() {
+            let kreis = document.getElementById("kreis");
+            kreis.style.animationPlayState = "running";
+         
+        }
+
+        function stopAnimation() {
+            let kreis = document.getElementById("kreis");
+            kreis.style.animationPlayState = "paused";
+         
+        }
+        
+    </script>
+
+</body>
+
+</html>
