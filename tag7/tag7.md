@@ -257,7 +257,7 @@ Wir werden nun einen Button erstellen und über Klick die Animation starten:
 ```html
     <script>
         function starteAnimation() {
-            let element = document.getElementsByID('kreis');
+            let element = document.getElementsById('kreis2');
             element.style.animationPlayState = "running";
          
         }
