@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+
+        .group{
+            display:grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+        }
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 500px;
+            width: 500px;
+            transition-property: all;
+            transition-duration: 800ms;
+        }
+
+        .not_transformed {
+            background-color: orange;
+        }
+        .transformed {
+            background-color: lightskyblue;
+        }
+
+        .transformed:hover {
+            background-color: darkmagenta;
+            transform: rotate(225deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Transition</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschieben">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
