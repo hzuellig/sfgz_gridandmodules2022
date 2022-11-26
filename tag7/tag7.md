@@ -194,7 +194,7 @@ Nun greifen wir über das DOM auf das Element kreis zu und verändern das CSS At
 ```html
 <script>
    function changeProperties(){
-      let kreis = document.getElementbyID('kreis');/* Zugriff auf das Element kreis */
+      let kreis = document.getElementbyId('kreis');/* Zugriff auf das Element kreis */
       kreis.style.backgroundColor = "red";/* Verändern des CSS Attributs */
    }
     
@@ -258,7 +258,7 @@ Wir werden nun einen Button erstellen und über Klick die Animation starten:
 ```html
     <script>
         function starteAnimation() {
-            let element = document.getElementsByID('kreis');
+            let element = document.getElementById('kreis2');
             element.style.animationPlayState = "running";
          
         }
@@ -293,7 +293,7 @@ Quelle: https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClie
         document.addEventListener("scroll", listen);
 
         function listen() {
-            let element = document.getElementsByID('kreis');
+            let element = document.getElementById('kreis');
             let rect = element.getBoundingClientRect();
             if (rect.y > 0 && rect.y < window.innerHeight) {
                 console.log('obere kante sichtbar');
