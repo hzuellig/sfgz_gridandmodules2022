@@ -1,6 +1,6 @@
 @keyframes frogmined {
-  0%{margin-left: 0px;}
-  100%{margin-left: 200px;}
+  0%{transform: translate(-50px);}
+  100%{transform: translate(50px);}
 }
 .part1 .eins{
   position: relative;
@@ -9,8 +9,8 @@
   animation-iteration-count: infinite;
 }
 @keyframes logisch {
-  0%{margin-right:-150px;}
-  100%{margin-right:50px;}
+  0%{transform: translate(-150px);}
+  100%{transform: translate(50px);}
 }
 .part1 .logisch{
   position: relative;
@@ -19,8 +19,8 @@
   animation-iteration-count: infinite;
 }
 @keyframes isch {
-  0%{margin-left:600px;}
-  100%{margin-left:800px;}
+  0%{transform: translate(-100px);}
+  100%{transform: translate(100px);}
 }
 .part1 .drei{
   position: relative;
