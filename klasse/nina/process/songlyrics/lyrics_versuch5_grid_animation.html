@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Songlyrics – Versuch 5 – Grid</title>
     <link rel="stylesheet" href="stylesheet_versuch5.css">
-    
+
 
 
     <style>
@@ -25,48 +25,48 @@
             <div class="row2 h1">out of </div>
 
             <div class="row3 h2 control">
-               <p class="rotate1"> C</p>
-               <p class="odd rotate2">O</p>
-               <p class="rotate3">  N</p>
-               <p class="odd rotate1">T</p>
-               <p class="rotate2"> R</p>
-               <p class="odd rotate3">O</p>
-               <p class="rotate1">L</p>
+                <p class="rotate1"> C</p>
+                <p class="odd rotate2">O</p>
+                <p class="rotate3"> N</p>
+                <p class="odd rotate1">T</p>
+                <p class="rotate2"> R</p>
+                <p class="odd rotate3">O</p>
+                <p class="rotate1">L</p>
             </div>
         </div>
 
         <div class="section_orange">
-        <div class="parentcontainer2">
+            <div class="parentcontainer2">
 
-<br>
-            <span class="row5 h3"> every second <br> takes me <br> further</span>
-            <span class="row6">
-<p class="h4 font_vertical fadeIn1">D</p>
-  <p class="h4 font_vertical fadeIn2">O</p>
-  <p class="h4 font_vertical fadeIn3">W</p>
-  <p class="h4 font_vertical fadeIn4">N</p>
+                <br>
+                <span class="row5 h3"> every second <br> takes me <br> further</span>
+                <span class="row6">
+<p class="h4 font_vertical " id="fadeIn1">D</p>
+  <p class="h4 font_vertical " id="fadeIn2">O</p>
+  <p class="h4 font_vertical " id="fadeIn3">W</p>
+  <p class="h4 font_vertical " id="fadeIn4">N</p>
 
     
 </span>
-            <br>
+                <br>
 
-            <span class="row7 h5"> the <br> rabbit hole</span>
+                <span class="row7 h5"> the <br> rabbit hole</span>
 
+            </div>
         </div>
-    </div>
 
 
-    <div class="section_black">
-        <div class="parentcontainer3">
+        <div class="section_black">
+            <div class="parentcontainer3">
 
-<br>
-            <span class="row10 h6"> the</span>
-            <span class="row8 h2">DEVIL</span>
-            <span class="row9 h6">now holds all the</span>
-            <span class="row11 h2">CARDS</span>
+                <br>
+                <span class="row10 h6"> the</span>
+                <span class="row8 h2">DEVIL</span>
+                <span class="row9 h6">now holds all the</span>
+                <span class="row11 h2">CARDS</span>
 
+            </div>
         </div>
-    </div>
 
 
 
@@ -76,7 +76,53 @@
     </div>
     </div>
 
+    <script>
+        setInterval(() => {
+            console.log("starte prozedur");
 
+            let element = document.getElementById("fadeIn1");
+            element.style.animation = "none";
+            element = document.getElementById("fadeIn2");
+            element.style.animation = "none";
+            element = document.getElementById("fadeIn3");
+            element.style.animation = "none";
+            element = document.getElementById("fadeIn4");
+            element.style.animation = "none";
+
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            //element.style.animation = "8s 5s 1 forwards fadeIn"
+            setTimeout(() => {
+                element = document.getElementById("fadeIn1");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+
+                element = document.getElementById("fadeIn2");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+
+                element = document.getElementById("fadeIn3");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+
+                element = document.getElementById("fadeIn4");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+            }, 100);
+
+
+
+
+        }, 16000);
+    </script>
 </body>
 
 </html>
