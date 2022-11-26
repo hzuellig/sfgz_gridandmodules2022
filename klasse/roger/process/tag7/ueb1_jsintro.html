@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSIntro</title>
+    <Style>
+        .specialbutton {
+            background-color: #1c51e2;
+            border-radius: 28px;
+            border: 1px solid #d9f40c;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 16px 31px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #302766;
+            margin: 20px;
+        }
+
+        .specialbutton2 {
+            background-color: #44c767;
+            border-radius: 28px;
+            border: 1px solid #18ab29;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 16px 31px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f6627;
+            margin: 20px;
+        }
+
+        .specialbutton:hover {
+            background-color: #2a97bf;
+        }
+
+        .specialbutton2:hover {
+            background-color: #5cbf2a;
+        }
+
+        .StoppButton:hover {
+            background-color: #a211aa;
+        }
+
+        #kreis {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            background-color: #0eec5f;
+            margin: 40px;
+        }
+
+        @keyframes anim {
+            0% {
+                box-shadow: 0px 0px 8px 8px #e803ba;
+            }
+
+            25% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 8px 16px #e8035b;
+                background-color: #03e8ba;
+            }
+
+            50% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 8px 24px #e85f03;
+                background-color: #038ce8;
+            }
+
+            75% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 0px 24px #e85f03, 0px 0px 8px 32px #e8a303;
+            }
+        }
+
+        #kreis2 {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            background-color: #000506;
+            animation-name: anim;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            margin: 40px;
+
+        }
+
+        .StoppButton {
+            background-color: #e21cb0;
+            border-radius: 28px;
+            border: 1px solid #d9f40c;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 16px 31px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #302766;
+            margin: 20px;
+        }
+
+    </Style>
+</head>
+
+<body>
+    <button class="specialbutton" onclick="changeProperties()">Klick mich!</button>
+    <button class="specialbutton2" onclick="starteAnimation()">Animiere den Kreis</button>
+    <button class="StoppButton" onclick="stoppAnimation()">STOPP</button>
+
+    <div id="kreis">
+    </div>
+
+    <div id="kreis2">
+    </div>
+
+    <script>
+        function changeProperties() {
+            let element = document.getElementById("kreis");/* Zugriff auf das Element kreis */
+            element.style.backgroundColor = "red";/* Verändern des CSS Attributs */
+            element.style.border = "1px solid black";
+            element.style.borderRadius = "0px";
+            element.style.height = "200px"
+            element.style.margin = "40px";
+            console.log(element);
+        }
+
+        function starteAnimation() {
+            let element = document.getElementById("kreis2");
+            element.style.animationPlayState = "running";
+        }
+
+        function stoppAnimation() {
+            let element = document.getElementById("kreis2");
+            element.style.animationPlayState = "paused";
+        }
+
+        window.addEventListener("scroll", starteAnimation);
+
+    </script>
+
+</body>
+
+</html>

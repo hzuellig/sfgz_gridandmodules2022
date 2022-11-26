@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformed S</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 80vw;
+            text-align: center;
+        }
+
+        div.parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .erstes {
+            color: magenta;
+            transition-property: all;
+            transition-duration: 800ms;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            mix-blend-mode: multiply;
+            animation-name: links;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: 5;
+
+
+        }
+
+        .zweites {
+            color: yellow;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            mix-blend-mode: multiply;
+            transition-property: all;
+            transition-duration: 800ms;
+            transform-origin: center;
+            animation-name: mitte;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+        }
+
+        .drittes {
+            color: cyan;
+            transition-property: all;
+            transition-duration: 800ms;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            mix-blend-mode: multiply;
+            animation-name: rechts;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: 5;
+
+
+        }
+
+        @keyframes links {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            100% {
+                transform: translate(-150px, 0px) rotate(20deg) scale(0.9);
+            }
+
+        }
+
+
+        @keyframes rechts {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            100% {
+                transform: translate(150px, 0px) rotate(-20deg) scale(1.2);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="erstes">S</div>
+        <div class="zweites">S</div>
+        <div class="drittes">S</div>
+    </div>
+</body>
+
+</html>
