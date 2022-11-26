@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Smiths – Animation</title>
+
+    <style>
+
+body {
+    background-color: rgb (219, 224, 211);
+}
+
+h2 {
+    font-size: 6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.group{
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    padding: 3vw;
+}
+
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 700px;
+    text-align: center;
+    font-size: 70em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right {
+    mix-blend-mode: multiply;
+    color: cyan;
+   /* transform: translate(80px, 0); */
+}
+
+.middle {
+    mix-blend-mode: multiply;
+    color: yellow;
+}
+
+.left {
+    mix-blend-mode: multiply;
+    color: magenta;
+   /* transform: translate(-80px, 0); */
+}
+
+/*
+@keyframes links {
+    0% {transform: translate(0px, 0px);}
+    70%   {transform: translate(100px, 0px);}
+    100% {transform: translate(0px, 0px);}
+
+
+}
+
+.links {
+    animation-name: links;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes rechts {
+    0% {transform: translate(0px, 0px);}
+    70%   {transform: translate(-100px, 0px);}
+    100% {transform: translate(0px, 0px);}
+
+
+}
+
+.rechts {
+    animation-name: rechts;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+
+*/
+
+@keyframes links {
+    0% {transform: translate(0px, 0px);}
+    40%   {transform: translate(100px, 0px);}
+    80% {transform: translate(-100px, 0px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+.links {
+    animation-name: links;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes rechts {
+    0% {transform: translate(0px, 0px);}
+    40%   {transform: translate(-100px, 0px);}
+    80% {transform: translate(100px, 0px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+.rechts {
+    animation-name: rechts;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
+
+}
+
+    </style>
+
+
+</head>
+<body>
+    
+    <h2> the smiths </h2>
+
+    <section>
+     <div class="group">
+         <div class="transformed right rechts">
+             S
+         </div>
+         <div class="not_transformed middle">
+             S
+         </div>
+         <div class="transformed left links">
+             S
+         </div>
+     </div>
+ </section>
+
+</body>
+</html>

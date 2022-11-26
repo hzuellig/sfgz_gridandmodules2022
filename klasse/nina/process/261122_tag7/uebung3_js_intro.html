@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 1 Javascript</title>
+
+<style>
+    .specialbutton {
+        background-color: pink;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3vw;
+        border-radius: 10%;
+    }
+
+    .specialbutton2 {
+        background-color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3vw;
+        color: antiquewhite;
+    }
+
+    #kreis {
+width: 400px;
+height: 400px;
+background-color: red;
+border-radius: 50%;
+font-family: 'Times New Roman', Times, serif;
+font-size: 5vw;
+color: white;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+    }
+
+    @keyframes anim {
+            0% {
+                box-shadow: 0px 0px 8px 8px #e803ba;
+            }
+            25% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 8px 16px #e8035b;
+                background-color: #03e8ba;
+            }
+            50% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 8px 24px #e85f03;
+                background-color: #038ce8;
+            }
+            75% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 0px 24px #e85f03, 0px 0px 8px 32px #e8a303;
+            }
+        }
+#kreis2 {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: #000506;
+            animation-name: anim;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            
+        }
+
+</style>
+
+</head>
+<body>
+    
+    <button class="specialbutton" onclick="zaehleklicks()"> Klick mich </button>
+    <br>
+
+    <button class="specialbutton" onclick="changeProperties()"> Klick mich </button>
+
+    <div id="kreis">
+        <p>Kreis</p></div>
+
+        <br>
+
+
+        <button class="specialbutton2" onclick="starteAnimation()">Animiere den Kreis</button>
+        <div id="kreis2"> </div>
+        <button class="specialbutton2" onclick="stoppeAnimation()">Stoppe den Kreis</button>
+
+        <button class="specialbutton2" onclick="toggleAnimation()">Animiere & stoppe den Kreis</button>
+        <div id="kreis2"> </div>
+
+    
+
+<script>
+  /*  alert("Hola"); 
+    console.log ("Seite geladen"); */
+
+    let anzahlklicks=0;
+    function zaehleklicks() {
+        anzahlklicks = anzahlklicks + 1;
+        console.log (anzahlklicks);
+    }
+
+    function changeProperties() {
+        let element=document.getElementById("kreis");
+     /*   console.log(element); */
+        element.style.backgroundColor="yellow";
+        element.style.border="1px solid black";
+        element.style.fontFamily="Arial";
+    }
+
+    function starteAnimation() {
+        console.log ("animation gestartet");
+            let element = document.getElementById('kreis2');
+            element.style.animationPlayState = "running";
+         
+        }
+
+        function stoppeAnimation() {
+        console.log ("animation gestoppt");
+            let element = document.getElementById('kreis2');
+            element.style.animationPlayState = "paused";
+         
+        }
+
+        let toggle=false;
+
+        function toggleAnimation() {
+            let element=document.getElementById('kreis2')[0];
+            if (toggle=false) {
+                element.style.animationPlayState="running";
+                toggle=true;
+            }
+
+            else {
+                element.style.animationPlayState="paused";
+                toggle=false;
+            }
+        }
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 1 – Animation</title>
+
+<style>
+
+.group{
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    padding: 3vw;
+}
+
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 400px;
+    width: 400px;
+}
+/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        
+.not_transformed {
+    background-color: black;
+}
+.transformed {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+@keyframes drehen {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(180deg);}
+}
+
+
+.rotateanimation {
+    animation-name: drehen;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+}
+
+.rotateanimation2 {
+    animation-name: drehen;
+    animation-duration: 3s;
+    animation-iteration-count: 2; 
+    animation-direction: reverse;
+}
+
+@keyframes scale {
+    from {transform: scale(100%);}
+    to   {transform: scale(20%);}
+}
+
+.scaleanimation2 {
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaledoppelt {
+    0% {transform: scale(100%);}
+    50%   {transform: scale(20%);}
+   100% {transform: scale(100%);}
+
+}
+
+.scaledoppelt {
+    animation-name: scaledoppelt;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <section>
+        <h1>CSS Animationen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed rotateanimation">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>CSS Animationen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed rotateanimation2">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>CSS Animationen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed scaleanimation2">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1>CSS Animationen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed scaledoppelt">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
