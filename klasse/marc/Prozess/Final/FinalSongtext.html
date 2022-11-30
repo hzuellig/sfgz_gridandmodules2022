@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London View</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        .firstcontainer {
+            display: grid;
+            grid-template-columns: repeat(12, 8.33vw);
+            grid-template-rows: repeat(10, 10vh);
+            font-size: 100vw;
+            background-color: rgb(43, 43, 43);
+        }
+
+        .firstcontainer .child:nth-of-type(1) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10vw;
+            color: rgb(255, 255, 255);
+            grid-row: 2 / 3;
+            grid-column: 2/10;
+            align-self: center;
+        }
+
+        .firstcontainer .child:nth-of-type(2) {
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 3vw;
+            grid-row: 4 / 10;
+            grid-column: 5/10;
+        }
+
+        .firstcontainer .child:nth-of-type(3) {
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 6vw;
+            grid-row: 5 / 5;
+            grid-column: 3 / 10;
+        }
+
+        .firstcontainer .child:nth-of-type(4) {
+            font-family: 'Keania One', cursive;
+            color: aquamarine;
+            font-size: 25vw;
+            grid-row: 6 /8;
+            grid-column: 2/10;
+            align-self: center;
+        }
+
+
+        .secondcontainer {
+            display: grid;
+            grid-template-columns: repeat(12, 8.33vw);
+            grid-template-rows: repeat(10, 10vh);
+            font-size: 100vw;
+            background-color: aquamarine;
+
+        }
+
+        .secondcontainer .child:nth-of-type(1) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10vw;
+            color: rgb(255, 255, 255);
+            grid-row: 5/ 6;
+            grid-column: 2/10;
+        }
+
+        .secondcontainer .child:nth-of-type(2) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 6vw;
+            color: rgb(255, 255, 255);
+            grid-row: 7/ 7;
+            grid-column: 2/10;
+
+        }
+
+        .secondcontainer .child:nth-of-type(3) {
+            font-family: 'Keania One', cursive;
+            color: rgb(0, 0, 0);
+            font-size: 10vw;
+            grid-row: 5 /6;
+            grid-column: 9/10;
+        }
+
+        .thirdcontainer {
+            display: grid;
+            grid-template-columns: repeat(12, 8.33vw);
+            grid-template-rows: repeat(10, 10vh);
+            font-size: 100vw;
+            background-color: rgb(43, 43, 43);
+        }
+
+        .thirdcontainer .child:nth-of-type(1) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3vw;
+            color: rgb(255, 255, 255);
+            grid-row: 2 / 3;
+            grid-column: 2/10;
+            align-self: center;
+        }
+        .thirdcontainer .child:nth-of-type(2) {
+            font-family: 'Keania One', cursive;
+            font-size: 20vw;
+            color: rgb(255, 255, 255);
+            grid-row: 4 / 4;
+            grid-column: 2/10;
+            align-self: center;
+            
+        }
+        .thirdcontainer .child:nth-of-type(3) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3vw;
+            color: rgb(255, 255, 255);
+            grid-row: 6 / 6;
+            grid-column: 8/12;
+            align-self: center;
+            text-align: right;
+        }
+        .thirdcontainer .child:nth-of-type(4) {
+            font-family: 'Keania One', cursive;
+            font-size: 10vw;
+            color: rgb(255, 255, 255);
+            grid-row: 8 / 8;
+            grid-column: 9/12;
+            align-self: center;
+            text-align: right;
+        }
+
+        .fourthcontainer {
+            display: grid;
+            grid-template-columns: repeat(12, 8.33vw);
+            grid-template-rows: repeat(10, 10vh);
+            font-size: 100vw;
+            background-color: aquamarine;
+        }
+
+        .fourthcontainer .child:nth-of-type(1) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3vw;
+            color: rgb(255, 255, 255);
+            grid-row: 2 / 3;
+            grid-column: 3/12;
+            align-self: center;
+            text-align: right;
+        }
+        .fourthcontainer .child:nth-of-type(2) {
+            font-family: 'Keania One', cursive;
+            font-size: 20vw;
+            color: rgb(0, 0, 0);
+            grid-row: 4 / 3;
+            grid-column: 2/12;
+            align-self: center;
+            text-align: right ;
+        }
+        .fourthcontainer .child:nth-of-type(3) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3vw;
+            color: rgb(255, 255, 255);
+            grid-row: 6 / 6;
+            grid-column: 2/10;
+            align-self: center;
+        }
+        .fourthcontainer .child:nth-of-type(4) {
+            font-family: 'Keania One', cursive;
+            font-size: 20vw;
+            color: rgb(0, 0, 0);
+            grid-row: 7 / 8;
+            grid-column: 2/10;
+            align-self: center;
+        }
+    </style>
+</head>
+<div class="firstcontainer">
+    <div class="child">They run</div>
+    <div class="child">when they hear</div>
+    <div class="child">that the ting goes </div>
+    <div class="child">bang</div>
+
+</div>
+<div class="secondcontainer">
+    <div class="child">Sku-du-du</div>
+    <div class="child">du-du-du</div>
+    <div class="child">bang</div>
+</div>
+
+</div>
+<div class="thirdcontainer">
+    <div class="child">Do it on my </div>
+    <div class="child">ones</div>
+    <div class="child">or do it with</div>
+    <div class="child">gang gang gang </div>
+</div>
+</div>
+<div class="fourthcontainer">
+    <div class="child">Jump out</div>
+    <div class="child">cars</div>
+    <div class="child">or jump out</div>
+    <div class="child">vans</div>
+</div>
+
+<body>
+
+</body>
+
+</html>
