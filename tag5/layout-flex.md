@@ -222,7 +222,8 @@ section.infotext {
 ```
 
 
-
+Flexbox Playground: https://codepen.io/enxaneta/full/adLPwv/ 
+https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/
 
 *** 
 Übungen zu zweit, Task 1-3: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills<br/><br/>
