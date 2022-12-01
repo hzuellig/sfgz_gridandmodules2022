@@ -8,26 +8,6 @@
   animation-duration: 30s;
   animation-iteration-count: infinite;
 }
-@keyframes logisch {
-  0%{transform: translate(-150px);}
-  100%{transform: translate(50px);}
-}
-.part1 .logisch{
-  position: relative;
-  animation-name: logisch;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-}
-@keyframes isch {
-  0%{transform: translate(-100px);}
-  100%{transform: translate(100px);}
-}
-.part1 .drei{
-  position: relative;
-  animation-name: isch;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-}
 @keyframes flaker {
   0%{text-shadow: 0px 0px 4px #fff;margin-left:0px;}
   20%{text-shadow: 0px 0px 3px #ffffff60}
@@ -59,4 +39,79 @@
   animation-name: flyin;
   animation-duration: 2s;
   animation-iteration-count: 1;
+}
+@keyframes logik {
+  0%{transform: translate(-40px, -60px);}
+  35%{transform: translate(90px, 40px);}
+  55%{transform: translate(40px, -20px);}
+  70%{text-shadow:0 0 0px rgb(0, 0, 0, 1);transform: translate(0, 0);}
+  100%{text-shadow: 0 0 0px rgb(0, 0, 0, 0);transform: translate(0, 0);}
+}
+.part2 #logik{
+  animation-name: logik;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+@keyframes binoculars {
+  0%{filter:blur(15px);}
+  60%{filter:blur(1px);}
+  80%{filter:blur(5px);}
+  90%{filter:blur(0px);}
+  100%{filter:blur(0px);}
+}
+#binoculars{
+  animation-name: binoculars;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-play-state: paused;
+}
+@keyframes noed {
+  0%{transform: scale(100); opacity: 0;}
+  100%{transform: scale(1); opacity: 1;}
+}
+.part2 #noed{
+  animation-name: noed;
+  animation-delay: 1.5s;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+@keyframes mitmir1 {
+  0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(-7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+}
+.mitmir1{
+  animation-name: mitmir1;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes mitmir2 {
+  0%   { transform: scale(1,1)      translateY(0); }
+        10%  { transform: scale(1.1,.9)   translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(100px); }
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        57%  { transform: scale(1,1)      translateY(7px); }
+        64%  { transform: scale(1,1)      translateY(0); }
+        100% { transform: scale(1,1)      translateY(0); }
+}
+.mitmir2{
+  animation-name: mitmir2;
+  animation-delay: 0.4s;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }

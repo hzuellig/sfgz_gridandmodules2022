@@ -186,3 +186,39 @@ font-size: 3.5vh;
 .troll .one:hover p:after{
   display: block;
 }
+@keyframes eins {
+  0%{color:#ff0000;opacity: 1;transform: scale(1.2);}
+  33%{color:#00ff00;opacity: 0.5;transform: scale(1);}
+  66%{color:#56aeff;opacity: 0.5;transform: scale(1);}
+  100%{color:#ff0000;opacity: 1;transform: scale(1.2);}
+}
+@keyframes zwei {
+  0%{color:#00ff00;opacity: 0.5;transform: scale(1);}
+  33%{color:#56aeff;opacity: 1;transform: scale(1.2);}
+  66%{color:#ff0000;opacity: 0.5;transform: scale(1);}
+  100%{color:#00ff00;opacity: 0.5;transform: scale(1);}
+}
+@keyframes drei {
+  0%{color:#56aeff;opacity: 0.5;transform: scale(1);}
+  33%{color:#ff0000;opacity: 0.5;transform: scale(1);}
+  66%{color:#00ff00;opacity: 1;transform: scale(1.2);}
+  100%{color:#56aeff;opacity: 0.5;transform: scale(1);}
+}
+.eins{
+  animation-name: eins;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+.zwei{
+  animation-name: zwei;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+.drei{
+  animation-name: drei;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
