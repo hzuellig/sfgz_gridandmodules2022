@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+
+        .group{
+            display:grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+        }
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 500px;
+            width: 500px;
+            transition-property: all;
+            transition-duration: 800ms;
+        }
+
+        .not_transformed {
+            background-color: orange;
+        }
+        .transformed {
+            background-color: lightskyblue;
+            animation-name:slidein;
+            animation-duration:3s;
+            animation-iteration-count: infinite;
+        }
+
+        /*.transformed:hover {
+            background-color: darkmagenta;
+            transform: rotate(225deg);
+        }*/
+
+        @keyframes slidein {
+            0% {
+                transform: rotate(0deg) scale(1.0);
+                border-radius: 0%;
+            }
+            20% {
+                transform: rotate(720deg) scale(0.5);
+                border-radius: 0%;
+            }
+            40% {
+                transform: translate(500px, 0px) scale(0.5);
+                border-radius: 0%;
+            }
+            60% {
+                transform: translate(500px, 0px) scale(0.5);
+                border-radius: 50%;
+            }
+            80% {
+                transform: translate(0px, 0px) scale(0.5);
+                border-radius: 50%;
+            }
+            100% {
+                transform: translate(0px, 0px) scale(1);
+                border-radius: 0%;
+            }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Name der Transformation</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschieben">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
