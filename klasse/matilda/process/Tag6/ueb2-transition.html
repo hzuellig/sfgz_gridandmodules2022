@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .group{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+        .transformed {
+         height: 20px; 
+         width: 20px;
+         background-color:lightblue; 
+         transition: all 0.1s ease-out 0.3s;
+
+        }
+
+        .transformed:hover {
+            /* Veränderter Zustand */
+            transform: translate(100px, 200px);
+            transition-duration: 1000ms;
+            transition-timing-function: ease-out;
+            background-color: aqua;
+        }
+        .boxa{
+            background-color: blue;
+        }
+        .boxb{
+            background-color: brown;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Transition</h1>
+        <div class="group">
+            <div class="not_transformed boxa">
+            </div>
+            <div class="transformed schrift boxb">Hallo
+            </div>
+            <div class="transformed verschoben boxa">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
