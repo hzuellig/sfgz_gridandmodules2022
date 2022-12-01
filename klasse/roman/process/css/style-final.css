@@ -105,6 +105,12 @@ h3 {
     align-items: center;
     grid-column: 8 / 10;
     grid-row: 3 / 5;
+    animation-name: stumbleb;
+    animation-duration: 1.4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform-origin: bottom right;
 
 }
 
@@ -136,9 +142,46 @@ h3 {
 }
 
 
+
+@keyframes stumbleb {
+    0% {
+        opacity: 100%;
+        
+    }
+
+    25% {
+        opacity: 75%;
+
+
+
+    }
+
+    50% {
+        opacity: 50%;
+
+
+    }
+
+    75% {
+        opacity: 25%;
+
+
+    }
+
+    100% {
+        transform: translateY(600px);
+        opacity: 0%;
+
+
+    }
+
+}
+
+
+
 .ambition {
     display:grid; 
-    justify-content: top;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 1fr 200px 200px 200px;
     width: 100vw;
@@ -173,24 +216,71 @@ h3 {
 
 
 #ambi {
-    color: rgb(180, 17, 54);
     text-transform: uppercase;
+    animation: ambition;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 
 }
 
-#stretch {
+
+@keyframes ambition {
+    0% {
+        transform: translate(-70px);
+        color: rgb(180, 17, 54);
+
+    }
+
+    25% {
+        color: rgb(255, 231, 189);   
+    }
+
+    50% {
+        color: rgb(180, 17, 54);   
+    }
+
+
+    75% {
+        color: rgb(255, 231, 189);   
+    }
+
+    100% {
+        color: rgb(180, 17, 54);  
+        transform: translate(70px);
+ 
+    }
+}
+
+
+.stretch {
     color: rgb(180, 17, 54);
     align-self: center;
+    align-content: center;
+    align-items: center;
+    transition-duration: 0.9s;
+    transform-origin: center;
+    animation-fill-mode: forwards;
 }
+
+.stretch:hover {
+    color: rgb(180, 17, 54);
+    align-self: center;
+    align-items: center;
+    letter-spacing: 12vw;
+    padding-left: 1.5em;
+}
+
 
 
 .shower {
     display:flex;   
     flex-direction:column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100vw;
     height:400%;
     text-align: center;
+    align-self: center;
     background-color: rgb(180, 17, 54);
     align-items: center;
     padding-top: 150px;
@@ -257,7 +347,7 @@ h3 {
     grid-row: 2 / 4;
     color: rgb(11, 8, 53);
     text-align: left;
-    font-size: 55vw;
+    font-size: 52vw;
 }
 
 .to {
@@ -272,9 +362,44 @@ h3 {
 
 .five {
     font-family: 'Monoton', cursive;
+    color: rgb(11, 8, 53);
     grid-column: 10 / 13;
     grid-row: 2 / 4;
-    color: rgb(11, 8, 53);
     text-align: left;
-    font-size: 55vw;
+    font-size: 52vw;
 }
+
+.five::after {
+    content: counter(count);
+    animation: counter 3s linear infinite alternate-reverse;
+    font-family: 'Monoton', cursive;
+    color: rgb(11, 8, 53);
+    grid-column: 4 / 9;
+    grid-row: 2 / 4;
+    text-align: left;
+    font-size: 52vw;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 1;
+    }
+
+    25% {
+      counter-increment: count 2;
+    }
+   
+    50% {
+      counter-increment: count 3;
+    }
+    
+    75% {
+      counter-increment: count 4;
+    }
+  
+    100% {
+      counter-increment: count 5;
+      transform: color rgb(180, 17, 54);
+    }
+  }
+  
