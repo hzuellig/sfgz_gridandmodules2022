@@ -30,19 +30,20 @@ p {
 
 .parentcontainer {
     display: grid;
-    grid-template-columns: repeat(14, 7.05vw); /* 3 Spalten fr für fraction */
-    grid-template-rows: repeat(8, 1fr); /* 3 Zeilen */
+    grid-template-columns: repeat(14, 7.05vw); /* 14 Spalten fr für fraction */
+    grid-template-rows: repeat(8, 1fr); /* 8 Zeilen */
     height: 800px;
 }
 
 .parentcontainerbigger {
     display: grid;
-    grid-template-columns: repeat(14, 1fr); /* 3 Spalten fr für fraction */
-    grid-template-rows: repeat(19, 1fr); /* 3 Zeilen */
+    grid-template-columns: repeat(14, 1fr); /* 14 Spalten fr für fraction */
+    grid-template-rows: repeat(19, 1fr); /* 19 Zeilen */
     height: 2000px;
 }
 
 /* ---------- SCHRIFTEN ---------- */
+
 
 .playfairitalic2 {
     font-family: 'Playfair Display', serif;
@@ -382,50 +383,38 @@ p {
 }
 
 .row12 {
-    grid-column: 2 / 4;
+    grid-column: 7 / 9;
     grid-row: 5 / 7;
     text-align: center;
     align-self: center;
-    transform: translate(35vw, 0);
-    transition-property: all;
-    transition-duration: 500ms;
-    animation-name: t-errorists;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
 }
 
 .row13 {
-    grid-column: 3 / 5;
-    grid-row: 6 / 8;
+    grid-column: 7 / 9;
+    grid-row: 6/ 8;
     text-align: center;
     align-self: center;
-    transform: translate(28vw, 0);
 }
 
 .row14 {
-    grid-column: 4 / 6;
+    grid-column: 7 / 9;
     grid-row: 7 / 9;
     text-align: center;
     align-self: center;
-    transform: translate(21vw, 0);
 }
 
 .row15 {
-    grid-column: 5 / 7;
+    grid-column: 7 / 9;
     grid-row: 8 / 10;
     text-align: center;
     align-self: center;
-    transform: translate(14vw, 0);
 }
 
 .row16 {
-    grid-column: 6 / 8;
+    grid-column: 7 / 9;
     grid-row: 9 / 11;
     text-align: center;
     align-self: center;
-    transform: translate(7vw, 0);
 }
 
 .row17 {
@@ -433,39 +422,34 @@ p {
     grid-row: 10 / 12;
     text-align: center;
     align-self: center;
-    transform: translate(0vw, 0);
 }
 
 .row18 {
-    grid-column: 8 / 10;
+    grid-column: 7 / 9;
     grid-row: 11 / 13;
     text-align: center;
     align-self: center;
-    transform: translate(-7vw, 0);
 }
 
 .row19 {
-    grid-column: 9 / 11;
+    grid-column: 7 / 9;
     grid-row: 12 / 14;
     text-align: center;
     align-self: center;
-    transform: translate(-14vw, 0);
 }
 
 .row20 {
-    grid-column: 10 / 12;
+    grid-column: 7 / 9;
     grid-row: 13 / 15;
     text-align: center;
-    align-self: center;
-    transform: translate(-21vw, 0);
+    align-self: center;;
 }
 
 .row21 {
-    grid-column: 11 / 13;
+    grid-column: 7 / 9;
     grid-row: 14 / 16;
     text-align: center;
     align-self: center;
-    transform: translate(-28vw, 0);
 }
 
 .row22 {
@@ -487,7 +471,7 @@ p {
     }
 }
 
-@keyframes t-errorists {
+/*@keyframes t-errorists {
     0% {
         transform: translate(35vw, 0);
     }
@@ -500,7 +484,7 @@ p {
     100% {
         transform: translate(0vw, 0);
     }
-}
+}*/
 
 #world {
     font-family: 'Roboto', sans-serif;

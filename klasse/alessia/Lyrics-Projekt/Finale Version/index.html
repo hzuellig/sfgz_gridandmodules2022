@@ -109,23 +109,254 @@
     <script>
         /* window.addEventListener("scroll", starteAnimation);
 
-                                                                                function starteAnimation() {
-                                                                                    let element = document.getElementById('world');
-                                                                                    element.style.animationPlayState = "running";
-                                                                                }*/
+        function starteAnimation() {
+            let element = document.getElementById('world');
+            element.style.animationPlayState = "running";
+        }*/
 
-        gsap.registerPlugin(ScrollTrigger);
+       gsap.registerPlugin(ScrollTrigger);
 
         gsap.to(".row12", {
-            x: "-20vw",
-            rotation: 360,
+            x: "-35vw",
             scrollTrigger: {
                 trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
                 scrub: true,
                 markers: true,
                 id: "scrub"
             }
         });
+
+        gsap.to(".row12", {
+            y: "500px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row13", {
+            x: "-28vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row13", {
+            y: "395px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row14", {
+            x: "-21vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row14", {
+            y: "290px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row15", {
+            x: "-14vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row15", {
+            y: "185px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+
+        gsap.to(".row16", {
+            x: "-7vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row16", {
+            y: "80px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row17", {
+            x: "0vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row17", {
+            y: "-25px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row18", {
+            x: "7vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row18", {
+            y: "-130px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row19", {
+            x: "14vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row19", {
+            y: "-235px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row20", {
+            x: "21vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row20", {
+            y: "-340px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row21", {
+            x: "28vw",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+0",
+                end: "+400",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
+        gsap.to(".row21", {
+            y: "-445px",
+            scrollTrigger: {
+                trigger: ".parentcontainerbigger",
+                start: "+400",
+                end: "+800",
+                scrub: true,
+                markers: true,
+                id: "scrub"
+            }
+        });
+
     </script>
 </body>
 
