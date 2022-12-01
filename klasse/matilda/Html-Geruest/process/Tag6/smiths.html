@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiths</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            font-family: 'Anton', sans-serif;
+            font-size: 500px;
+        }
+
+        /* so sprichst du das erste element mit der Klasse .letter innerhalb von .group an, falls der Mauszeiger über .group schwebt */
+        .group:hover.letter:nth-of-type(1) {
+            transform: translate(-20px, 0);
+            transition: all 0.1s ease-out 0.3s;
+        }
+
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+        }
+
+        .not_transformed {
+            color: rgb(255, 0, 179);
+        }
+
+        .verschoben {
+            transform: translate(70px);
+            color: rgb(255, 247, 0);
+        }
+
+        .verschoben2 {
+            transform: translate(170px);
+            color: rgb(0, 200, 255);
+        }
+
+        .letter {
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group">
+        <div class="not_transformed letter">S
+        </div>
+        <div class="transformed verschoben letter">S
+        </div>
+        <div class="transformed verschoben2 letter">S
+        </div>
+    </div>
+</body>
+
+</html>
