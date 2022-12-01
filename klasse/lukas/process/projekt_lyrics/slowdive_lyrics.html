@@ -9,6 +9,38 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="style.css">
     <style>
+
+
+
+
+
+.now {
+    grid-column: 4 / 5;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+    font-family: Happy Times;
+    font-size: 24px;
+    font-weight: lighter;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 72px;
+    z-index: 20;
+
+
+}
+
+@keyframes now-animation {
+    0%{
+        transform: translate(0, 100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    
+}
     </style>
 </head>
 
@@ -22,17 +54,170 @@
             <p>they're drumming in the</p>
         </div>
     </section>
-    <section class="wind">
-        <div>wind
+    <section class="windgrid">
+        <div class="wind">wind
         </div>
     </section>
     <section class="onlylovers">
         <div>only lovers alive <br>
             running in the </div>
     </section>
-    <section class="dark">
-        <div>dark.</div>
+    <section class="darkgrid">
+        <div class="dark">dark.</div>
+        <div class="darkgradient"></div>
     </section>
+    <section class="refrain refrain-gradient">
+        <section>
+            <div class="anna"> anna rolled</div>
+            <div class="awaygrid">
+                <div class="letter01">Y</div>
+                <div class="letter02">A</div>
+                <div class="letter03">W</div>
+                <div class="letter04">A</div>
+                <div class="letter05">Y</div>
+                <div class="letter06">A</div>
+                <div class="letter07">A</div>
+                <div class="letter08">Y</div>
+                <div class="letter09">A</div>
+                <div class="letter10">W</div>
+                <div class="letter11">A</div>
+                <div class="letter12">W</div>
+                <div class="letter13">Y</div>
+                <div class="letter14">W</div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="saidwenever">said we never wanted much</div>
+            <div class="justa">just a</div>
+        </section>
+        <section>
+            <div class="warp" aria-labelledby="warp-label">
+                <span id="warp-label" class="warp__placeholder">
+                    rollercoast'rollercoast'rollercoast'
+                </span>
+
+                <span aria-role="presentation">
+                    <span class="warp__0">
+                        r
+                    </span>
+                    <span class="warp__1">
+                        o
+                    </span>
+                    <span class="warp__2">
+                        l
+                    </span>
+                    <span class="warp__3">
+                        l
+                    </span>
+                    <span class="warp__4">
+                        e
+                    </span>
+                    <span class="warp__5">
+                        r
+                    </span>
+                    <span class="warp__6">
+                        c
+                    </span>
+                    <span class="warp__7">
+                        o
+                    </span>
+                    <span class="warp__8">
+                        a
+                    </span>
+                    <span class="warp__9">
+                        s
+                    </span>
+                    <span class="warp__10">
+                        t
+                    </span>
+                    <span class="warp__11">
+                        '
+                    </span>
+                    <span class="warp__12">
+                        r
+                    </span>
+                    <span class="warp__13">
+                        o
+                    </span>
+                    <span class="warp__14">
+                        l
+                    </span>
+                    <span class="warp__15">
+                        l
+                    </span>
+                    <span class="warp__16">
+                        e
+                    </span>
+                    <span class="warp__17">
+                        r
+                    </span>
+                    <span class="warp__18">
+                        c
+                    </span>
+                    <span class="warp__19">
+                        o
+                    </span>
+                    <span class="warp__20">
+                        a
+                    </span>
+                    <span class="warp__21">
+                        s
+                    </span>
+                    <span class="warp__22">
+                        t
+                    </span>
+                    <span class="warp__23">
+                        '
+                    </span>
+                    <span class="warp__24">
+                        r
+                    </span>
+                    <span class="warp__25">
+                        o
+                    </span>
+                    <span class="warp__26">
+                        l
+                    </span>
+                    <span class="warp__27">
+                        l
+                    </span>
+                    <span class="warp__28">
+                        e
+                    </span>
+                    <span class="warp__29">
+                        r
+                    </span>
+                    <span class="warp__30">
+                        c
+                    </span>
+                    <span class="warp__31">
+                        o
+                    </span>
+                    <span class="warp__32">
+                        a
+                    </span>
+                    <span class="warp__33">
+                        s
+                    </span>
+                    <span class="warp__34">
+                        t
+                    </span>
+                    <span class="warp__35">
+                        '
+                    </span>
+                </span>
+            </div>
+
+        </section>
+        <section class="section3">
+            <div class="ourlovewasnever">our love was never number one</div>
+        </section>
+
+
+
+    </section>
+
+    <!--
     <section>
         <div class="anna"> anna rolled</div>
         <div class="awaygrid">
@@ -52,6 +237,8 @@
             <div class="letter14">W</div>
         </div>
     </section>
+
+
     <section class="section2">
         <div class="saidwenever">said we never wanted much</div>
         <div class="justa">just a</div>
@@ -178,12 +365,18 @@
     <section class="section3">
         <div class="ourlovewasnever">our love was never number one</div>
     </section>
+
+    -->
+
     <section class="section4">
         <div class="sugarforthepill">sugar for the pill</div>
         <div class="youknow">you know it's just <br> the way things are</div>
         <div class="cantabide">can't abide <br> the</div>
     </section>
-    <div class="sun">sun</div>
+    <section class="sungrid">
+        <div class="sonne"></div>
+        <div class="sun">sun</div>
+    </section>
     <div class="jealousy">this jealousy will break the whole</div>
     <section class="section5">
         <div class="cutacross"> cut across the sky </div>
