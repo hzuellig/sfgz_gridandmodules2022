@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -105,12 +106,6 @@ h3 {
     align-items: center;
     grid-column: 8 / 10;
     grid-row: 3 / 5;
-    animation-name: stumbleb;
-    animation-duration: 1.4s;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    transform-origin: bottom right;
 
 }
 
@@ -118,7 +113,6 @@ h3 {
     align-items: center;
     grid-column: 10 / 12;
     grid-row: 3 / 5;
-    justify-self: ;
 
 }
 
@@ -141,6 +135,15 @@ h3 {
     font-size: 28vw;
 }
 
+#bbb {
+    animation-name: stumbleb;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform-origin: bottom right;
+    animation-play-state: paused;
+}
+
 
 
 @keyframes stumbleb {
@@ -151,6 +154,7 @@ h3 {
 
     25% {
         opacity: 75%;
+        rotate: 40deg;
 
 
 
@@ -169,8 +173,9 @@ h3 {
     }
 
     100% {
-        transform: translateY(600px);
+        transform: translateY(750px);
         opacity: 0%;
+        rotate:-20deg;
 
 
     }
@@ -209,9 +214,9 @@ h3 {
 }
 
 .yawn {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     grid-row: 5 / 7;
-    align-self: center;
+
 }
 
 
@@ -220,16 +225,17 @@ h3 {
     animation: ambition;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
+    animation-play-state: paused;
+
 
 }
 
 
 @keyframes ambition {
     0% {
-        transform: translate(-70px);
         color: rgb(180, 17, 54);
-
+        transform: translate(-70px);
     }
 
     25% {
@@ -237,17 +243,19 @@ h3 {
     }
 
     50% {
-        color: rgb(180, 17, 54);   
+        color: rgb(180, 17, 54); 
     }
 
 
     75% {
-        color: rgb(255, 231, 189);   
+        color: rgb(255, 231, 189);
+   
     }
 
     100% {
         color: rgb(180, 17, 54);  
         transform: translate(70px);
+
  
     }
 }
@@ -261,6 +269,9 @@ h3 {
     transition-duration: 0.9s;
     transform-origin: center;
     animation-fill-mode: forwards;
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .stretch:hover {
@@ -268,7 +279,9 @@ h3 {
     align-self: center;
     align-items: center;
     letter-spacing: 12vw;
-    padding-left: 1.5em;
+    transform-origin: center;
+    justify-self: center;
+    display: inline;
 }
 
 
@@ -306,8 +319,10 @@ h3 {
 #pump {
     color: rgb(255, 231, 189);
     text-align: center;
-    transform: scale(2);
-    animation: pulse 1s infinite;
+    transform: scale(2.9);
+    animation: pulse 0.7s infinite;
+    animation-play-state: paused;
+
 }
 
 @keyframes pulse {
@@ -371,13 +386,14 @@ h3 {
 
 .five::after {
     content: counter(count);
-    animation: counter 3s linear infinite alternate-reverse;
+    animation: counter 4s linear infinite;
     font-family: 'Monoton', cursive;
     color: rgb(11, 8, 53);
     grid-column: 4 / 9;
     grid-row: 2 / 4;
     text-align: left;
     font-size: 52vw;
+
   }
   
   @keyframes counter {
@@ -385,21 +401,32 @@ h3 {
       counter-increment: count 1;
     }
 
-    25% {
+    15% {
       counter-increment: count 2;
     }
    
-    50% {
+    30% {
       counter-increment: count 3;
     }
     
-    75% {
+    45% {
       counter-increment: count 4;
     }
+
+    60% {
+        counter-increment: count 5;
+       color:rgb(11, 8, 53);
+      }
+
+    75% {
+        counter-increment: count 5;
+        color: rgb(180, 17, 54);
+      }
   
     100% {
       counter-increment: count 5;
-      transform: color rgb(180, 17, 54);
+      color:rgb(180, 17, 54);
+      
     }
   }
   

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Index Roman Marty</title>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap" rel="stylesheet">
     <style>
 
@@ -15,17 +15,24 @@ body {
     background-size: 16px 16px;
     background-position: 0 0,8px 8px;
     margin: 5vw;
-
-    }
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+ }
 
 h1 {
     color: #e61324;
     font-family: 'Teko', sans-serif;
-    font-size: 4.5em;
+    font-size: 4em;
     font-weight: 700;
     text-decoration: none;
-  
+    padding: 40px;
     }
+
+.div {
+    display: block;
+    justify-content: space-evenly;
+}
 
 a {
     text-decoration: none;
@@ -46,10 +53,23 @@ a:hover {
 a:active {
 color: #e61324;
 }
+
+@media all and (min-width: 900px) {
+  div.example {
+    display: flex;
+    padding: 0;
+  }}
+
 </style>
 
 </head>
 <body>
-<h1><a href= "process/index_process.html" >Process</a></h1>
+    
+<div class="example">
+    <h1><a href= "process/index_process.html" >Process</a></h1>
+    <h1><a href= "process/songtext_v1.html" >Sprint 1</a></h1>
+    <h1><a href= "process/songtext_v3.html" >Sprint 2</a></h1>
+    <h1><a href= "process/songtext_startseite_grid.html" >Final</a></h1>
+</div>
 </body>
 </html>
