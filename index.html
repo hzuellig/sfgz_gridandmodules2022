@@ -6,34 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid&Modules HFIAD2022</title>
-    <link rel="stylesheet" href="repetition/css/style.css">
+    <link rel="stylesheet" href="repetition/css/main.css">
 </head>
 
 <body>
-    <h1>Practice and Project Based Introduction to HTML5</h1>
+
+
+    <!--<h1>Practice and Project Based Introduction to HTML5</h1>
 
     <ul>
         <li><a href="repetition/">Repetition der Konzepte</a></li>
     </ul>
 
-    <h1>Projekte</h1>
+    <h1>Projekte</h1>-->
+
     <ul>
 
-        <li><a href="klasse/lukas/index.html">Lukas Ebnöther</a></li>
-        <li><a href="klasse/matilda/index.html">Matilda Ezgeta</a></li>
-        <li><a href="klasse/anna/index.html">Anna Fedier</a></li>
-        <li><a href="klasse/nick/index.html">Nick Gabathuler</a></li>
-        <li><a href="klasse/nina/index.html">Nina Karli</a></li>
-        <li><a href="klasse/tobias/index.html">Tobias Kramer</a></li>
-        <li><a href="klasse/marc/index.html">Marc Kuhn</a></li>
-        <li><a href="klasse/manuel/index.html">Manuel Lusti</a></li>
-        <li><a href="klasse/roman/index.html">Roman Marty</a></li>
-        <li><a href="klasse/alessia/index.html">Alessia Mognol</a></li>
-        <li><a href="klasse/pryjan/index.html">Pryjan Shivananthakumar</a></li>
-        <li><a href="klasse/patrick/index.html">Patrick Stöckli</a></li>
-        <li><a href="klasse/roger/index.html">Roger Tschümperlin</a></li>
+        <li class="norm"><a href="klasse/lukas/index.html">Lukas Ebnöther</a></li>
+        <li class="norm"><a href="klasse/matilda/index.html">Matilda Ezgeta</a></li>
+        <li class="norm"><a href="klasse/anna/index.html">Anna Fedier</a></li>
+        <li class="norm"><a href="klasse/nick/index.html">Nick Gabathuler</a></li>
+        <li class="norm"><a href="klasse/nina/index.html">Nina Karli</a></li>
+        <li class="norm"><a href="klasse/tobias/index.html">Tobias Kramer</a></li>
+        <li class="norm"><a href="klasse/marc/index.html">Marc Kuhn</a></li>
+        <li class="norm"><a href="klasse/manuel/index.html">Manuel Lusti</a></li>
+        <li class="norm"><a href="klasse/roman/index.html">Roman Marty</a></li>
+        <li class="norm"><a href="klasse/alessia/index.html">Alessia Mognol</a></li>
+        <li class="norm"><a href="klasse/pryjan/index.html">Pryjan Shivananthakumar</a></li>
+        <li class="norm"><a href="klasse/patrick/index.html">Patrick Stöckli</a></li>
+        <li class="norm"><a href="klasse/roger/index.html">Roger Tschümperlin</a></li>
 
     </ul>
+
+
+
+    <script>
+        const parentDiv = document.getElementsByTagName("ul")[0];
+        Array.from(document.getElementsByTagName('li')).forEach((element, key) => {
+
+            let rand = Math.floor(Math.random() * 5);
+            if (rand < 3) {
+                let el = document.createElement("li");
+                el.classList.add("empty");
+                /*el.style.backgroundColor = "red";*/
+                parentDiv.insertBefore(el, element);
+            }
+            if (key == 2) {
+                let el = document.createElement("li");
+                let sp = document.createElement("span");
+                sp.append("Grid & Modules");
+                el.append(sp);
+                el.classList.add("word");
+
+                parentDiv.insertBefore(el, element);
+            }
+            if (key == 4) {
+                let el = document.createElement("li");
+                let sp = document.createElement("a");
+                sp.append("SfG Zürich");
+                el.classList.add("sfgz");
+                el.append(sp);
+
+
+                parentDiv.insertBefore(el, element);
+            }
+            if (key == 7) {
+                let el = document.createElement("li");
+                let sp = document.createElement("span");
+                sp.append("2022");
+                el.classList.add("jahr");
+                el.append(sp);
+
+
+                parentDiv.insertBefore(el, element);
+            }
+
+            if (key == 8) {
+                let el = document.createElement("li");
+                let sp = document.createElement("span");
+                sp.append("HTML & CSS");
+                el.classList.add("htmlcss");
+                el.append(sp);
+
+
+                parentDiv.insertBefore(el, element);
+            }
+
+            if (key == 10) {
+                let el = document.createElement("li");
+                let sp = document.createElement("span");
+                sp.append("Hanna Züllig & Brigitte Lampert");
+                el.classList.add("htmlcss");
+                el.append(sp);
+
+
+                parentDiv.insertBefore(el, element);
+            }
+        });
+    </script>
 </body>
 
 </html>
