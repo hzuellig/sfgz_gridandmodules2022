@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+
+        h1{
+            font-size: 8vw;
+            text-align: left;
+            color: white;
+            padding: 30px;
+
+        }
+        @media all and (orientation:portrait) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        @media all and (orientation:portrait){
+            h1 {
+                font-size: 8vw;
+                text-align: center;
+                color: black;
+            }
+        }
+
+        .example div{
+            border: 1px solid red;
+            min-width: 22vw;
+            padding: 5px;
+            margin: 3px;
+        }
+
+        @media screen and (min-width: 640px) { 
+    div.example {
+        display: flex; }
+    }
+    
+    </style>
+</head>
+
+<body>
+<h1>Media Queries</h1>
+
+<div class="example">
+<div>Box1</div>
+<div>Box2</div>
+<div>Box3</div>
+<div>Box4</div>
+</div>
+</body>
+
+</html>
