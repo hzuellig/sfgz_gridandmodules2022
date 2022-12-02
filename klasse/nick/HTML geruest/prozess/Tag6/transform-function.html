@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .group{
+    display:grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+}
+
+/* beide elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 400px;
+    width: 400px;
+}
+/* zur visuellen unterscheidung zwei unterschiedliche stile zuweisen */
+        
+.not_transformed {
+    background-color: black;
+}
+.transformed {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.verschieben {
+    transform: translate(100px, 200px);
+}
+.drehen {
+    transform: rotate(45deg);
+    
+    transform-origin: bottom right;
+}
+.skalieren{
+    transform: scale(0.8);
+}
+.verzerren{
+    transform: skew(10deg, 30deg);
+}
+.mehrere{
+    transform: rotate(45deg) scale(0.5);
+}
+.letter{
+    mix-blend-mode: multiply;
+}  
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Name der Transformation</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verschieben">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Rotate</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed drehen">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>scale</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed skalieren">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>verzerren</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed verzerren">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Mehrere Transformationen</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed mehrere">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>letter</h1>
+        <div class="group">
+            <div class="not_transformed">
+            </div>
+            <div class="transformed letter">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

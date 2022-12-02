@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital@1&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Black Ops One', cursive;
+    
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+    background: #000;
+    
+
+}
+
+
+
+.content h2 {
+    position: absolute;
+    color: red;
+    transform: translate(-50%,-50%);
+    font-size: 16em;
+}
+.content h2:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px red;
+}
+.content h2:nth-child(2)
+{
+    color: red;
+    animation: animate 4s ease-in-out infinite;
+
+}
+@keyframes animate {
+    0%,100%{
+        clip-path: polygon(0 33%, 14% 37%, 24% 46%, 33% 51%, 41% 57%, 50% 60%, 66% 61%, 78% 55%, 87% 51%, 100% 53%, 100% 100%, 0 100%);
+ 
+    }
+    50%{
+        clip-path: polygon(0 51%, 9% 46%, 24% 46%, 33% 51%, 37% 52%, 50% 56%, 65% 51%, 76% 42%, 88% 35%, 100% 31%, 100% 100%, 0 100%);
+    }
+}
