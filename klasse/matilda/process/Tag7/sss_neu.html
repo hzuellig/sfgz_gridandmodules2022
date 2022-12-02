@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2 14vw;
+            grid-row: 1 / 2;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50em;
+            font-weight: bolder;
+        }
+
+        .left,
+        .middle,
+        .right {
+            color: rgb(0, 0, 0);
+            transition: all 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+            /*
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+            */
+        }
+
+        .group:hover .middle {
+            color: yellow;
+            mix-blend-mode: multiply;
+        }
+
+        .group:hover .right {
+            color: cyan;
+            mix-blend-mode: multiply;
+            transform: translate(120px, 0);
+        }
+
+        .group:hover .left {
+            color: magenta;
+            mix-blend-mode: multiply;
+            transform: translate(-120px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class=“group”>
+            <div class=“not_transformed middle”>
+                S
+            </div>
+            <div class=“transformed left”>
+                S
+            </div>
+            <div class=“transformed right”>
+                S
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #kreis {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: #000506;
+        }
+        @keyframes anim {
+            0% {
+                box-shadow: 0px 0px 8px 8px #e803ba;
+            }
+            25% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 8px 16px #e8035b;
+                background-color: #03e8ba;
+            }
+            50% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 8px 24px #e85f03;
+                background-color: #038ce8;
+            }
+            75% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 0px 24px #e85f03, 0px 0px 8px 32px #e8a303;
+            }
+        }
+#kreis2 {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: #000506;
+            animation-name: anim;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <button class="specialbutton" onclick="changeProperties()">Klick Mich!</button>
+    <div id="kreis">
+        Hallo Kreis
+
+    </div>
+    <div id="kreis2">
+        Hallo Kreis
+
+    </div>
+    <button class="specialbutton" onclick="starteAnimation()">Animiere den Kreis</button>
+    <button class="specialbutton" onclick="stopAnimation()">Pausiere Kreis</button>
+
+
+    <script>
+        let anzahklicks=0;
+       /* alert("Hallo");*/
+        console.log(anzahklicks);
+        function zaehleKlicks(){
+            anzahklicks=anzahklicks + 1;
+            console.log(anzahklicks)
+
+        }
+        function changeProperties(){
+           let element = document.getElementById("kreis");
+            element.style.backgroundColor = "rgb(255, 0, 0)"
+        }
+        function starteAnimation() {
+            let element = document.getElementById("kreis2");
+            element.style.animationPlayState = "running";
+         
+        }
+        function stopAnimation(){
+            let element = getElementById("kreis2");
+            element.style.animationPlayState = "paused";
+        }
+
+    </script>
+    
+</body>
+</html>

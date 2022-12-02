@@ -1,0 +1,405 @@
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 15vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    line-height: 13vw;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(255, 231, 189);
+    text-align: center;
+    line-height: 1.25em;
+    width: 100%;
+    text-align: center;
+}
+
+.pour h2 {
+    writing-mode: vertical-rl;
+    letter-spacing: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 17vw;
+    font-weight: 400;
+    text-align: center;
+    line-height: 13vw;
+    width: 100%;
+}
+
+.buttonstyle {
+    background-color: rgb(180, 17, 54);
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    font-weight: 400;
+    border-radius: 45px;
+    border: none;
+    color:rgb(255, 231, 189);
+    padding: 15px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.buttonstyle:hover,
+.buttonstyle.active {
+    outline: solid 2px rgb(255, 231, 189);
+    box-shadow: 0px 0px 25px rgb(255, 231, 189);
+}
+
+.buttonstyle:visited {
+    outline: solid 2px rgb(255, 231, 189);
+    box-shadow: 0px 0px 25px rgb(255, 231, 189);
+}
+
+
+.buttoncontainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.stumble {
+    display:grid;   
+    justify-content: center;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: 80px 80px 1fr 80px 80px 80px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(11, 8, 53);
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.childstumble:nth-child(1) {
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+}
+
+.childstumble:nth-child(2) {
+    grid-column: 1 / 8;
+    grid-row: 3 / 5;
+    justify-self: end;
+}
+
+.childstumble:nth-child(3) {
+    align-items: center;
+    grid-column: 8 / 10;
+    grid-row: 3 / 5;
+    animation-name: stumbleb;
+    animation-duration: 1.4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform-origin: bottom right;
+
+}
+
+.childstumble:nth-child(4) {
+    align-items: center;
+    grid-column: 10 / 12;
+    grid-row: 3 / 5;
+    justify-self: ;
+
+}
+
+.childstumble:nth-child(5) {
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+
+}
+
+.childstumble:nth-child(6) {
+    align-items: center;
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+
+}
+
+.stumblebig {
+    color:rgb(255, 231, 189);
+    font-size: 28vw;
+}
+
+
+
+@keyframes stumbleb {
+    0% {
+        opacity: 100%;
+        
+    }
+
+    25% {
+        opacity: 75%;
+
+
+
+    }
+
+    50% {
+        opacity: 50%;
+
+
+    }
+
+    75% {
+        opacity: 25%;
+
+
+    }
+
+    100% {
+        transform: translateY(600px);
+        opacity: 0%;
+
+
+    }
+
+}
+
+
+
+.ambition {
+    display:grid; 
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 1fr 200px 200px 200px;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    background-color: rgb(11, 8, 53);
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.pour {
+    grid-column: 6 / 8;
+    grid-row: 1 / 2;
+    justify-self: center;
+}
+
+.myself {
+    grid-column: 2 / 12;
+    grid-row: 2 / 4;
+}
+
+.childambition {
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+}
+
+.yawn {
+    grid-column: 2 / 12;
+    grid-row: 5 / 7;
+    align-self: center;
+}
+
+
+#ambi {
+    text-transform: uppercase;
+    animation: ambition;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+
+@keyframes ambition {
+    0% {
+        transform: translate(-70px);
+        color: rgb(180, 17, 54);
+
+    }
+
+    25% {
+        color: rgb(255, 231, 189);   
+    }
+
+    50% {
+        color: rgb(180, 17, 54);   
+    }
+
+
+    75% {
+        color: rgb(255, 231, 189);   
+    }
+
+    100% {
+        color: rgb(180, 17, 54);  
+        transform: translate(70px);
+ 
+    }
+}
+
+
+.stretch {
+    color: rgb(180, 17, 54);
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    transition-duration: 0.9s;
+    transform-origin: center;
+    animation-fill-mode: forwards;
+}
+
+.stretch:hover {
+    color: rgb(180, 17, 54);
+    align-self: center;
+    align-items: center;
+    letter-spacing: 12vw;
+    padding-left: 1.5em;
+}
+
+
+
+.shower {
+    display:flex;   
+    flex-direction:column;
+    justify-content: center;
+    width: 100vw;
+    height:400%;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(180, 17, 54);
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.childshower:nth-child(1) {
+    align-items: center;
+}
+
+.childshower:nth-child(2) {
+    align-items: center;
+
+}
+
+.childshower:nth-child(3) {
+    align-items: center;
+
+}
+
+#pump {
+    color: rgb(255, 231, 189);
+    text-align: center;
+    transform: scale(2);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.80);
+    }
+
+    60% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(0.80);
+    }
+}
+
+.refrain-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr 20px;
+    background-color:  rgb(255, 231, 189);
+    align-items: center;
+}
+
+.workin {
+    font-family: 'Abril Fatface', cursive;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    color: rgb(180, 17, 54);
+    text-align: center;
+    font-size: 4vw;
+}
+
+.nine {
+    font-family: 'Monoton', cursive;
+    grid-column: 4 / 9;
+    grid-row: 2 / 4;
+    color: rgb(11, 8, 53);
+    text-align: left;
+    font-size: 52vw;
+}
+
+.to {
+    font-family: 'Abril Fatface', cursive;
+    grid-column: 9 / 10;
+    grid-row: 2 / 4;
+    transform: rotate(-90deg);
+    color: rgb(180, 17, 54);
+    text-align: center;
+    font-size: 4vw;
+}
+
+.five {
+    font-family: 'Monoton', cursive;
+    color: rgb(11, 8, 53);
+    grid-column: 10 / 13;
+    grid-row: 2 / 4;
+    text-align: left;
+    font-size: 52vw;
+}
+
+.five::after {
+    content: counter(count);
+    animation: counter 3s linear infinite alternate-reverse;
+    font-family: 'Monoton', cursive;
+    color: rgb(11, 8, 53);
+    grid-column: 4 / 9;
+    grid-row: 2 / 4;
+    text-align: left;
+    font-size: 52vw;
+  }
+  
+  @keyframes counter {
+    0% {
+      counter-increment: count 1;
+    }
+
+    25% {
+      counter-increment: count 2;
+    }
+   
+    50% {
+      counter-increment: count 3;
+    }
+    
+    75% {
+      counter-increment: count 4;
+    }
+  
+    100% {
+      counter-increment: count 5;
+      transform: color rgb(180, 17, 54);
+    }
+  }
+  

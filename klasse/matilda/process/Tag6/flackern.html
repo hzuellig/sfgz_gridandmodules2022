@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+ 
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+ 
+.displays {
+    position: relative;
+    font-size: 4em;
+    color: #0e3742;
+    width: 100%;
+    text-align: center;
+}
+ 
+.displays span {
+    animation: animate 5s linear infinite;
+}
+ 
+@keyframes animate {
+    0%, 18%, 20%, 50%, 60%, 65%, 80%, 90%, 92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    19%, 21%, 30%, 49%, 60%, 64%, 81%, 89%, 93%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #176275,
+        0 0 20px #29a3c1,
+        0 0 40px #29a3c1,
+        0 0 80px #29a3c1,
+        0 0 160px #29a3c1,
+        0 0 400px #29a3c1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="displays">
+        <span>STADT</span> &nbsp;
+ 
+</div>
+    
+</body>
+</html>

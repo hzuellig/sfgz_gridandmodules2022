@@ -24,7 +24,19 @@
     font-family: Happy Times Italic;
     font-size: 24px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    padding: 0.5rem;
+    opacity: 0;
+    background: linear-gradient(45deg, rgb(12, 13, 19), rgba(255, 255, 255, 0.6), rgb(12, 13, 19));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation-name: shine;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
 }
 
@@ -37,50 +49,257 @@
     font-family: Happy Times Italic;
     font-size: 24px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    padding: 0.5rem;
+    opacity: 0;
+    background: linear-gradient(45deg, rgb(12, 13, 19), rgba(255, 255, 255, 0.6), rgb(12, 13, 19));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation-name: shine2;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+        opacity: 0;
+    }
+
+    100% {
+        background-position-x: 500%;
+        opacity: 100;
+    }
+}
+
+@keyframes shine2 {
+    0% {
+        background-position-x: -700%;
+        opacity: 0;
+    }
+
+    100% {
+        background-position-x: 700%;
+        opacity: 100;
+    }
+}
+
+.windgrid {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: max-content;
 
 }
 
 .wind {
-    /*
-    display: grid;
-    grid-template-rows: max-content;
-    grid-template-columns: 1fr;
-    align-self: center;*/
-    text-align: center;
+    grid-column: 1;
+    justify-self: center;
+    text-align: left;
     font-family: Happy Times Italic;
     font-size: 312px;
     font-weight: lighter;
-    letter-spacing: 8rem;
-    background: linear-gradient(90.13deg, #FFFFFF -297.33%, rgba(255, 255, 255, 0) 118.99%);
+    background: linear-gradient(90.13deg, #ffffff9b -297.33%, rgba(255, 255, 255, 0) 118.99%);
+    opacity: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 0.5em;
+    animation-name: wind;
+    animation-delay: 5s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.36, 0, .06, 1);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes wind {
+
+    50%,
+    100% {
+        transform: translateX(0.5em);
+    }
+
+    0% {
+        opacity: 0;
+        filter: blur(15px);
+        letter-spacing: 0px;
+
+    }
+
+    100% {
+        opacity: 0.5;
+        filter: blur(5px);
+        letter-spacing: 150px;
+    }
+
+    0% {
+        opacity: 0;
+        letter-spacing: 800px;
+
+    }
+}
+
 
 .onlylovers {
     font-family: Happy Times Italic;
     font-size: 48px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.4);
-    line-height: 96px;
     text-align: center;
-    margin-top: 15rem;
-    margin-bottom: 15rem;
+    opacity: 0;
+    margin-top: 15em;
+    margin-bottom: 5em;
+    animation-name: onlylovers-animation;
+    animation-delay: 10s;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.36, 0, .06, 1);
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+
+}
+
+@keyframes onlylovers-animation {
+
+
+    0% {
+        opacity: 0;
+        filter: blur(15px);
+        scale: 20%;
+        line-height: 50px;
+
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        scale: 150%;
+        line-height: 96px;
+    }
+
+
+}
+
+.darkgrid {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: max-content;
+}
+
+.darkgradient {
+    background: linear-gradient(180deg, #0C0D13, rgba(0, 0, 0, 1));
+    width: 100vw;
+    height: 1400px;
+    grid-row: 1 / 2;
+    grid-column: 1;
+    z-index: 1;
 
 }
 
 .dark {
     font-family: Happy Times;
     font-size: 24px;
+    opacity: 0;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.15);
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 20rem;
+    color: rgba(255, 255, 255, 0.2);
+    justify-self: center;
+    align-self: end;
+    grid-row: 1 / 2;
+    grid-column: 1;
+    z-index: 5;
+    animation-name: dark-animation;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes dark-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(5em);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.darkgrid {
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: max-content;
+}
+
+.darkgradient {
+    background: linear-gradient(180deg, #0C0D13, rgba(0, 0, 0, 1));
+    width: 100vw;
+    height: 1400px;
+    grid-row: 1 / 2;
+    grid-column: 1;
+    z-index: 1;
+
+}
+
+.dark {
+    font-family: Happy Times;
+    font-size: 24px;
+    opacity: 0;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.2);
+    justify-self: center;
+    align-self: center;
+    grid-row: 1 / 2;
+    grid-column: 1;
+    z-index: 5;
+    animation-name: dark-animation;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: 25rem;
+
+}
+
+@keyframes dark-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(5em);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.refrain {
+    margin-top: 0rem;
+    padding-top: 15em;
+    margin-bottom: 0rem;
+    padding-bottom: 30em;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: max-content;
+}
+
+.refrain-gradient {
+    width: 100vw;
+    height: max-content;
+    background: linear-gradient(180deg, #8F6B4B -7.47%, rgba(56, 13, 22, 0.74) 37.77%, #141A35 69.05%, #0C0D13 96.19%);
+    grid-row: 1 / 2;
+}
+
 
 .anna {
     text-align: center;
@@ -91,6 +310,31 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-size: 200% 200%;
+    animation-name: anna-animation;
+    animation-duration: 2500ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes anna-animation {
+    0% {
+        background-position-y: 100%;
+    }
+
+    50% {
+        background-position-y: 60%;
+
+    }
+
+    100% {
+        background-position-y: 110%;
+        filter: invert(60%);
+
+    }
 }
 
 .awaygrid {
@@ -101,6 +345,54 @@
     row-gap: 120px;
 }
 
+/*animation AWAY*/
+
+@keyframes meineanimation1 {
+    0% {
+        color: rgba(159, 119, 93, 1);
+    }
+
+    100% {
+        color: rgba(159, 119, 93, 0);
+    }
+
+    0% {
+        color: rgba(159, 119, 93, 1);
+    }
+
+}
+
+@keyframes meineanimation2 {
+    0% {
+        color: rgba(159, 119, 93, 1);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    0% {
+        color: rgba(159, 119, 93, 0);
+    }
+}
+
+@keyframes meineanimation3 {
+    0% {
+        color: rgba(159, 119, 93, 0);
+    }
+
+    100% {
+        color: rgba(159, 119, 93, 1);
+    }
+
+    0% {
+        color: rgba(159, 119, 93, 0);
+    }
+}
+
+
+
+
 .letter01 {
     grid-column: 1;
     grid-row: 2;
@@ -109,6 +401,12 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation3;
+    animation-delay: 100ms;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
 
 
 }
@@ -121,6 +419,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation1;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 }
 
 .letter03 {
@@ -131,6 +436,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation2;
+    animation-delay: 500ms;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 }
 
 .letter04 {
@@ -141,6 +453,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation1;
+    animation-delay: 300ms;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 }
 
 .letter05 {
@@ -151,6 +470,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation2;
+    animation-delay: 700ms;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -162,6 +488,12 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation1;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -173,6 +505,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation2;
+    animation-delay: 200ms;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -184,6 +523,14 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation3;
+    animation-delay: 500ms;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
+
 
 }
 
@@ -195,6 +542,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation2;
+    animation-delay: 300ms;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -206,6 +560,12 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation3;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -217,6 +577,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation1;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+    animation-delay: 100ms;
+
 
 }
 
@@ -228,6 +595,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation1;
+    animation-delay: 600ms;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -239,6 +613,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation3;
+    animation-delay: 200ms;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 }
 
 .letter14 {
@@ -249,6 +630,13 @@
     font-size: 48px;
     font-weight: lighter;
     color: rgba(159, 119, 93, 1);
+    animation-name: meineanimation1;
+    animation-delay: 50ms;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+
 
 }
 
@@ -260,6 +648,16 @@
     margin-top: 450px;
 }
 
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr max-content;
+    margin-top: 350px;
+    margin-bottom: 350px;
+}
+
+
 .saidwenever {
     grid-column: 2 / 6;
     grid-row: 1;
@@ -268,7 +666,11 @@
     font-family: Happy Times Italic;
     font-size: 24px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    animation-name: shine3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
 
 }
 
@@ -280,16 +682,14 @@
     font-family: Happy Times Italic;
     font-size: 24px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0);
+    animation-name: shine3;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
-}
 
-.section3 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr max-content;
-    margin-top: 350px;
-    margin-bottom: 350px;
 }
 
 .warp__placeholder {
@@ -306,8 +706,31 @@
     font-family: Happy Times Italic;
     font-weight: lighter;
     font-size: 120px;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0);
+
 }
+
+
+
+@keyframes rollercoast-animation {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    20% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    60% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+
 
 [class*='warp__'] {
     display: block;
@@ -317,205 +740,414 @@
 .warp__0 {
     transform-origin: 50% 103px;
     transform: translate(-48.5606px, 96.8082px) rotate(-0.304663rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+
 }
 
 .warp__1 {
     transform-origin: 50% 103px;
     transform: translate(2.6054999999999993px, 81.5761px) rotate(-0.22772rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 100ms;
+
 }
 
 .warp__2 {
     transform-origin: 50% 103px;
     transform: translate(64.8504px, 71.3631px) rotate(-0.171049rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 200ms;
+
 }
 
 .warp__3 {
     transform-origin: 50% 103px;
     transform: translate(105.0836px, 65.2296px) rotate(-0.132247rad);
+    animation-name: rollercoast-animation;
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 300ms;
+
+
 }
 
 .warp__4 {
     transform-origin: 50% 103px;
     transform: translate(146.2986px, 59.66319999999999px) rotate(-0.089421rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 400ms;
+
 }
 
 .warp__5 {
     transform-origin: 50% 103px;
     transform: translate(205.5592px, 55.82169999999999px) rotate(-0.046536rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+
 }
 
 .warp__6 {
     transform-origin: 50% 103px;
     transform: translate(258.7025px, 54.30420000000001px) rotate(-0.00854rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 600ms;
+
 }
 
 .warp__7 {
     transform-origin: 50% 103px;
     transform: translate(317.6778px, 54.987300000000005px) rotate(0.030331rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 700ms;
+
 }
 
 .warp__8 {
     transform-origin: 50% 103px;
     transform: translate(381.2188px, 58.489000000000004px) rotate(0.071504rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 800ms;
+
 }
 
 .warp__9 {
     transform-origin: 50% 103px;
     transform: translate(454.944px, 64.26419999999999px) rotate(0.109287rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 900ms;
+
 }
 
 .warp__10 {
     transform-origin: 50% 103px;
     transform: translate(507.90520000000004px, 70.23079999999999px) rotate(0.138407rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+
 }
 
 .warp__11 {
     transform-origin: 50% 103px;
     transform: translate(550.6194px, 74.89099999999999px) rotate(0.158123rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1100ms;
+
 }
 
 .warp__12 {
-    color: rgba(255, 255, 255, 1);
     transform-origin: 50% 103px;
     transform: translate(571.2808px, 81.2841px) rotate(0.182872rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1200ms;
+
 }
 
 .warp__13 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(624.302px, 93.28049999999999px) rotate(0.225962rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1300ms;
+
 }
 
 .warp__14 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(686.8131px, 106.1953px) rotate(0.271464rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1400ms;
+
 }
 
 .warp__15 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(725.5875px, 117.85910000000001px) rotate(0.314438rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;
+
 }
 
 .warp__16 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(764.265px, 135.1514px) rotate(0.381332rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1600ms;
+
 }
 
 .warp__17 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(819.1145px, 155.82659999999998px) rotate(0.370681rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1700ms;
+
 }
 
 .warp__18 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(868.5258px, 175.6492px) rotate(0.358585rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1800ms;
+
 }
 
 .warp__19 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(922.8958px, 196.4866px) rotate(0.34349rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1900ms;
+
 }
 
 .warp__20 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(982.6386px, 218.93990000000002px) rotate(0.323626rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;
+
 }
 
 .warp__21 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(1053.6207px, 238.6753px) rotate(0.301755rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2100ms;
+
 }
 
 .warp__22 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(1105.4044px, 252.7532px) rotate(0.282398rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2200ms;
+
 }
 
 .warp__23 {
-    color: rgba(255, 255, 255, 1);
 
     transform-origin: 50% 103px;
     transform: translate(1147.526px, 261.4076px) rotate(0.268258rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2300ms;
+
 }
 
 .warp__24 {
     transform-origin: 50% 103px;
     transform: translate(1166.3366px, 270.7791px) rotate(0.250238rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2400ms;
+
 }
 
 .warp__25 {
     transform-origin: 50% 103px;
     transform: translate(1218.4828px, 284.3907px) rotate(0.216278rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;
+
 }
 
 .warp__26 {
     transform-origin: 50% 103px;
     transform: translate(1281.2925px, 294.7046px) rotate(0.179199rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2600ms;
+
 }
 
 .warp__27 {
     transform-origin: 50% 103px;
     transform: translate(1322.2217px, 301.3908px) rotate(0.14359rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2700ms;
+
+
 }
 
 .warp__28 {
     transform-origin: 50% 103px;
     transform: translate(1363.0563px, 307.2998px) rotate(0.090269rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2800ms;
+
 }
 
 .warp__29 {
     transform-origin: 50% 103px;
     transform: translate(1421.1992px, 310.2587px) rotate(0.011859rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2900ms;
+
 }
 
 .warp__30 {
     transform-origin: 50% 103px;
     transform: translate(1474.1441px, 308.0527px) rotate(-0.098122rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;
+
 }
 
 .warp__31 {
     transform-origin: 50% 103px;
     transform: translate(1535.1441px, 305.0527px) rotate(-0.098122rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3100ms;
+
 }
 
 .warp__32 {
     transform-origin: 50% 103px;
     transform: translate(1597.1442px, 298.0527px) rotate(-0.158122rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3200ms;
+
 }
 
 .warp__33 {
     transform-origin: 50% 103px;
     transform: translate(1670.1442px, 285.0527px) rotate(-0.2122rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3300ms;
+
 }
 
 .warp__34 {
     transform-origin: 50% 103px;
     transform: translate(1723.1442px, 278.0527px) rotate(-0.2522rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3400ms;
+
 }
 
 .warp__35 {
     transform-origin: 50% 103px;
     transform: translate(1765.1442px, 278.0527px) rotate(-0.2522rad);
+    animation-name: rollercoast-animation;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;
+
 }
+
+
 
 .ourlovewasnever {
     grid-column: 3 / 5;
@@ -524,8 +1156,33 @@
     font-family: Happy Times Italic;
     font-size: 24px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0);
+    animation-name: shine3;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
+
+}
+
+@keyframes shine3 {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        filter: blur(5px);
+
+    }
+
+    60% {
+        color: rgba(255, 255, 255, 0.8);
+        filter: blur(0px);
+
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0);
+        filter: blur(5px);
+    }
 }
 
 .section4 {
@@ -533,7 +1190,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 3fr max-content;
     margin-bottom: 100px;
-    row-gap: 80px;
+    row-gap: 100px;
 }
 
 .sugarforthepill {
@@ -543,7 +1200,12 @@
     font-family: Happy Times;
     font-size: 120px;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(133, 134, 137, 1);
+    animation-name: sugarforthepill-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 
 }
 
@@ -556,6 +1218,12 @@
     line-height: 2.2rem;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.4);
+    animation-name: shine3;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
 
 }
 
@@ -569,19 +1237,97 @@
     line-height: 2.2rem;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.4);
+    animation-name: shine3;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes sugarforthepill-animation {
+    0% {
+        color: rgba(133, 134, 137, 1);
+    }
+
+    30% {
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+
+    70% {
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 10px 10px 40px rgba(116, 80, 61, 1),
+            20px 20px 60px rgba(31, 40, 81, 1);
+
+    }
+
+    100% {
+        color: rgba(133, 134, 137, 1);
+    }
+
+
+}
+
+
+.sungrid {
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
 
 }
 
 .sun {
     font-family: Happy Times;
-    font-size: 312px;
+    font-size: 504px;
     font-weight: lighter;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     -webkit-text-fill-color: transparent;
     text-align: center;
-    padding: 50px;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    z-index: 10;
+    margin-bottom: 80px;
 
 }
+
+.sonne {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #68462B, #68462B, #310621, #08090D, #000000);
+    background-size: 200% 200%;
+    animation: gradient 8s cubic-bezier(0.65, 0, 0.35, 1) infinite reverse backwards;
+
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 20%;
+        rotate: 180deg;
+    }
+
+    50% {
+        background-position: 80% 50%;
+        rotate: -359deg;
+    }
+
+    100% {
+        background-position: 0% 20%;
+        rotate: 180deg;
+    }
+}
+
 
 .jealousy {
     font-family: Happy Times Italic;
@@ -589,8 +1335,14 @@
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.4);
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 300px;
+    margin-bottom: 500px;
+    animation-name: shine3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
 
 }
 
@@ -610,7 +1362,19 @@
     font-size: 24px;
     line-height: 2.2rem;
     font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
+    padding: 0.5rem;
+    opacity: 0;
+    background: linear-gradient(45deg, rgb(12, 13, 19), rgba(255, 255, 255, 0.6), rgb(12, 13, 19));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation-name: shine;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
 }
 
@@ -621,9 +1385,22 @@
     justify-self: start;
     font-family: Happy Times Italic;
     font-size: 24px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
     margin-left: 3em;
+    font-weight: lighter;
+    padding: 0.5rem;
+    opacity: 0;
+    background: linear-gradient(45deg, rgb(12, 13, 19), rgba(255, 255, 255, 0.6), rgb(12, 13, 19));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation-name: shine2;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
 
 }
 
@@ -635,24 +1412,35 @@
     font-family: Happy Times Italic;
     font-size: 504px;
     font-weight: lighter;
-    color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: rgba(0, 0, 0, 1);
+    animation-name: closer-animation;
+    animation-duration: 4s;
+    animation-delay: 4.5s;
+    animation-timing-function: cubic-bezier(.36, 0, .06, 1);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: 10;
 
-
-}
-
-.now {
-    grid-column: 4 / 5;
-    grid-row: 3;
-    justify-self: end;
-    align-self: end;
-    font-family: Happy Times;
-    font-size: 24px;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 72px;
 
 
 }
+
+@keyframes closer-animation {
+
+
+    0% {
+        opacity: 0;
+        letter-spacing: 800px;
+
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: -64px;
+    }
+}
+
 
 .lying {
     font-family: Happy Times Italic;

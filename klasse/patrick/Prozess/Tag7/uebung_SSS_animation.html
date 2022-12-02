@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plakat_SSS</title>
+</head>
+    <style>
+    .bb {
+        display: flex;
+    }
+    .group{
+        display:grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+    }
+    
+
+    /* beide elemente liegen ursprünglich übereinander */
+    .not_transformed,
+    .transformed {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        height: 700px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50em;
+        font-weight: bolder;
+    }
+
+    .left {
+        color: magenta;
+        mix-blend-mode: multiply;
+        transform: translate(-80px);
+    }
+
+    .middle {
+        color:red;
+        mix-blend-mode: multiply;
+    }
+
+    .right {
+        color: cyan;
+        mix-blend-mode: multiply;
+        transform: translate(80px, 0);
+    }
+    .transformed {
+/*background-color: rgba(0, 0, 255, 0.5);*/
+transition-duration: 1000ms;
+transition-timing-function: linear;
+
+}
+.group:hover .transformed:nth-last-of-type(1)
+{ /*background-color: aqua;*/
+    transform: translate(500px);
+    color: red;
+}
+.group:hover .transformed:nth-last-of-type(2)
+{ /*background-color: aqua;*/
+    transform: translate(-500px);
+    color: red;
+}
+.group:hover .transformed:nth-last-of-type(3)
+{ /*background-color: aqua;*/
+    transform: translate(0);
+    color: red;
+}
+@keyframes animation1 {
+ 0% {
+    color: greenyellow;
+    transform: translate(-500px)
+    
+ }
+ 100% {
+    color: blueviolet;
+    transform: translate(500px)
+ }
+}
+/*Animation zuweisen*/
+.a1{
+    animation-name:animation1;
+    animation-duration: 3s;
+    animation-iteration-count: 3; /* Wie oft die Animation abgespielt wird, default 1 Mal*/
+    animation-direction: alternate;
+}
+
+@keyframes animation2 
+{
+ 0% {
+    color: red;
+    
+ }
+ 100% {
+    color: blueviolet;
+ }
+}
+
+.a2 {
+    animation-name:animation2;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes animation3 
+{
+ 0% {
+    color: gold;
+    
+ }
+ 50% {
+    color:black;
+}
+ 100% {
+    color: blueviolet;
+ }
+}
+
+.a3 {
+    animation-name:animation3;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+</style>
+<body>
+    <section>
+        <div class="group">
+            <div class="not_transformed middle a2">
+                O
+            </div>
+            <div class="transformed left a1">
+                S
+            </div>
+            <div class="transformed right a3">
+                S
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -15,7 +15,7 @@
             grid-template-columns: repeat(12, 8.33vw);
             grid-template-rows: repeat(10, 10vh);
             font-size: 100vw;
-            background-color: rgb(43, 43, 43);
+            background-color: rgb(0, 0, 0);
         }
 
         .firstcontainer .child:nth-of-type(1) {
@@ -25,7 +25,29 @@
             grid-row: 2 / 3;
             grid-column: 2/10;
             align-self: center;
+            animation-name: slide-left;
+            width: 100%;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-direction: normal;
+            opacity: 0%;
+            animation-fill-mode: forwards;
         }
+
+        @keyframes slide-left {
+            from {
+                margin-left: 100%;
+                width: 200%;
+                opacity: 0%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+                opacity: 100%;
+            }
+        }
+
 
         .firstcontainer .child:nth-of-type(2) {
             font-family: 'Montserrat', sans-serif;
@@ -33,25 +55,56 @@
             font-size: 3vw;
             grid-row: 4 / 10;
             grid-column: 5/10;
+            animation-name: slide-left;
+            width: 100%;
+            overflow: hidden;
+            animation-duration: 1s;
+            animation-delay: 2.5s;
+            animation-direction: normal;
+            opacity: 0%;
+            animation-fill-mode: forwards;
         }
+
 
         .firstcontainer .child:nth-of-type(3) {
             font-family: 'Montserrat', sans-serif;
             color: rgb(255, 255, 255);
             font-size: 6vw;
-            grid-row: 5 / 5;
+            grid-row: 5 / 6;
             grid-column: 3 / 10;
+            animation-name: slide-left;
+            animation-duration: 1s;
+            animation-delay: 3s;
+            animation-direction: normal;
+            opacity: 0%;
+            animation-fill-mode: forwards;
         }
 
         .firstcontainer .child:nth-of-type(4) {
             font-family: 'Keania One', cursive;
             color: aquamarine;
             font-size: 25vw;
-            grid-row: 6 /8;
+            grid-row: 5 /8;
             grid-column: 2/10;
-            align-self: center;
+            animation-name: appear;
+            animation-duration: 0.5s;
+            animation-delay: 4s;
+            animation-direction: normal;
+            opacity: 0%;
+            animation-fill-mode: forwards;
         }
 
+        @keyframes appear {
+            from {
+                font-size: 0vw;
+                opacity: 0%;
+            }
+
+            to {
+                font-size: 25vw;
+                opacity: 100%;
+            }
+        }
 
         .secondcontainer {
             display: grid;
@@ -68,6 +121,22 @@
             color: rgb(255, 255, 255);
             grid-row: 5/ 6;
             grid-column: 2/10;
+
+            animation: waviy 1s;
+            animation-delay: calc(.1s * var(--i));
+            animation-iteration-count: 2;
+        }
+
+        @keyframes waviy {
+
+            40%,
+            100% {
+                transform: translatex(0)
+            }
+
+            20% {
+                transform: translatex(-50px)
+            }
         }
 
         .secondcontainer .child:nth-of-type(2) {
@@ -85,6 +154,27 @@
             font-size: 10vw;
             grid-row: 5 /6;
             grid-column: 9/10;
+            animation-name: bang;
+            width: 100%;
+            animation-duration: 0.3s;
+            animation-delay: 1s;
+            animation-direction: normal;
+            opacity: 0%;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes bang {
+            from {
+                margin-left: -100%;
+                width: 100%;
+                opacity: 0%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+                opacity: 100%;
+            }
         }
 
         .thirdcontainer {
@@ -92,7 +182,7 @@
             grid-template-columns: repeat(12, 8.33vw);
             grid-template-rows: repeat(10, 10vh);
             font-size: 100vw;
-            background-color: rgb(43, 43, 43);
+            background-color: rgb(0, 0, 0);
         }
 
         .thirdcontainer .child:nth-of-type(1) {
@@ -103,6 +193,7 @@
             grid-column: 2/10;
             align-self: center;
         }
+
         .thirdcontainer .child:nth-of-type(2) {
             font-family: 'Keania One', cursive;
             font-size: 20vw;
@@ -110,8 +201,9 @@
             grid-row: 4 / 4;
             grid-column: 2/10;
             align-self: center;
-            
+
         }
+
         .thirdcontainer .child:nth-of-type(3) {
             font-family: 'Montserrat', sans-serif;
             font-size: 3vw;
@@ -121,6 +213,7 @@
             align-self: center;
             text-align: right;
         }
+
         .thirdcontainer .child:nth-of-type(4) {
             font-family: 'Keania One', cursive;
             font-size: 10vw;
@@ -148,6 +241,7 @@
             align-self: center;
             text-align: right;
         }
+
         .fourthcontainer .child:nth-of-type(2) {
             font-family: 'Keania One', cursive;
             font-size: 20vw;
@@ -155,8 +249,9 @@
             grid-row: 4 / 3;
             grid-column: 2/12;
             align-self: center;
-            text-align: right ;
+            text-align: right;
         }
+
         .fourthcontainer .child:nth-of-type(3) {
             font-family: 'Montserrat', sans-serif;
             font-size: 3vw;
@@ -165,6 +260,7 @@
             grid-column: 2/10;
             align-self: center;
         }
+
         .fourthcontainer .child:nth-of-type(4) {
             font-family: 'Keania One', cursive;
             font-size: 20vw;
@@ -172,6 +268,9 @@
             grid-row: 7 / 8;
             grid-column: 2/10;
             align-self: center;
+        }
+        body{
+            margin: 0;
         }
     </style>
 </head>
