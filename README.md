@@ -6,5 +6,5 @@
 * Fluides Layout, CSS Flexbox
 * <a href="tag6/tag6.md">CSS Transformationen und Transitions</a>
 * <a href="tag7/tag7.md">CSS Animationen, Events, DOM und JavaScript</a>
-
+* <a href="tag8/tag8.md">Responsiveness, Media Queries</a>
 
