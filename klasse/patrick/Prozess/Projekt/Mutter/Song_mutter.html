@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutter</title>
+    <style>
+        
+        @font-face{
+            font-family: Vektra;
+            src: url("font_svg/Vektra.otf")}
+        
+
+        @keyframes open_vorhang {
+            0% {height: 0vh;
+ background: linear-gradient(to bottom, black 0%, transparent);}
+            1% {height: 1vh;
+ background: linear-gradient(to bottom, black 1%, transparent);}
+2% {height: 2vh;
+ background: linear-gradient(to bottom, black 2%, transparent);}
+3% {height: 3vh;
+ background: linear-gradient(to bottom, black 3%, transparent);}
+4% {height: 4vh;
+ background: linear-gradient(to bottom, black 4%, transparent);}
+5% {height: 5vh;
+ background: linear-gradient(to bottom, black 5%, transparent);}
+6% {height: 6vh;
+ background: linear-gradient(to bottom, black 6%, transparent);}
+7% {height: 7vh;
+ background: linear-gradient(to bottom, black 7%, transparent);}
+8% {height: 8vh;
+ background: linear-gradient(to bottom, black 8%, transparent);}
+9% {height: 9vh;
+ background: linear-gradient(to bottom, black 9%, transparent);}
+10% {height: 10vh;
+ background: linear-gradient(to bottom, black 10%, transparent);}
+11% {height: 11vh;
+ background: linear-gradient(to bottom, black 11%, transparent);}
+12% {height: 12vh;
+ background: linear-gradient(to bottom, black 12%, transparent);}
+13% {height: 13vh;
+ background: linear-gradient(to bottom, black 13%, transparent);}
+14% {height: 14vh;
+ background: linear-gradient(to bottom, black 14%, transparent);}
+15% {height: 15vh;
+ background: linear-gradient(to bottom, black 15%, transparent);}
+16% {height: 16vh;
+ background: linear-gradient(to bottom, black 16%, transparent);}
+17% {height: 17vh;
+ background: linear-gradient(to bottom, black 17%, transparent);}
+18% {height: 18vh;
+ background: linear-gradient(to bottom, black 18%, transparent);}
+19% {height: 19vh;
+ background: linear-gradient(to bottom, black 19%, transparent);}
+20% {height: 20vh;
+ background: linear-gradient(to bottom, black 20%, transparent);}
+21% {height: 21vh;
+ background: linear-gradient(to bottom, black 21%, transparent);}
+22% {height: 22vh;
+ background: linear-gradient(to bottom, black 22%, transparent);}
+23% {height: 23vh;
+ background: linear-gradient(to bottom, black 23%, transparent);}
+24% {height: 24vh;
+ background: linear-gradient(to bottom, black 24%, transparent);}
+25% {height: 25vh;
+ background: linear-gradient(to bottom, black 25%, transparent);}
+26% {height: 26vh;
+ background: linear-gradient(to bottom, black 26%, transparent);}
+27% {height: 27vh;
+ background: linear-gradient(to bottom, black 27%, transparent);}
+28% {height: 28vh;
+ background: linear-gradient(to bottom, black 28%, transparent);}
+29% {height: 29vh;
+ background: linear-gradient(to bottom, black 29%, transparent);}
+30% {height: 30vh;
+ background: linear-gradient(to bottom, black 30%, transparent);}
+31% {height: 31vh;
+ background: linear-gradient(to bottom, black 31%, transparent);}
+32% {height: 32vh;
+ background: linear-gradient(to bottom, black 32%, transparent);}
+33% {height: 33vh;
+ background: linear-gradient(to bottom, black 33%, transparent);}
+34% {height: 34vh;
+ background: linear-gradient(to bottom, black 34%, transparent);}
+35% {height: 35vh;
+ background: linear-gradient(to bottom, black 35%, transparent);}
+36% {height: 36vh;
+ background: linear-gradient(to bottom, black 36%, transparent);}
+37% {height: 37vh;
+ background: linear-gradient(to bottom, black 37%, transparent);}
+38% {height: 38vh;
+ background: linear-gradient(to bottom, black 38%, transparent);}
+39% {height: 39vh;
+ background: linear-gradient(to bottom, black 39%, transparent);}
+40% {height: 40vh;
+ background: linear-gradient(to bottom, black 40%, transparent);}
+41% {height: 41vh;
+ background: linear-gradient(to bottom, black 41%, transparent);}
+42% {height: 42vh;
+ background: linear-gradient(to bottom, black 42%, transparent);}
+43% {height: 43vh;
+ background: linear-gradient(to bottom, black 43%, transparent);}
+44% {height: 44vh;
+ background: linear-gradient(to bottom, black 44%, transparent);}
+45% {height: 45vh;
+ background: linear-gradient(to bottom, black 45%, transparent);}
+46% {height: 46vh;
+ background: linear-gradient(to bottom, black 46%, transparent);}
+47% {height: 47vh;
+ background: linear-gradient(to bottom, black 47%, transparent);}
+48% {height: 48vh;
+ background: linear-gradient(to bottom, black 48%, transparent);}
+49% {height: 49vh;
+ background: linear-gradient(to bottom, black 49%, transparent);}
+50% {height: 50vh;
+ background: linear-gradient(to bottom, black 50%, transparent);}
+51% {height: 51vh;
+ background: linear-gradient(to bottom, black 51%, transparent);}
+52% {height: 52vh;
+ background: linear-gradient(to bottom, black 52%, transparent);}
+53% {height: 53vh;
+ background: linear-gradient(to bottom, black 53%, transparent);}
+54% {height: 54vh;
+ background: linear-gradient(to bottom, black 54%, transparent);}
+55% {height: 55vh;
+ background: linear-gradient(to bottom, black 55%, transparent);}
+56% {height: 56vh;
+ background: linear-gradient(to bottom, black 56%, transparent);}
+57% {height: 57vh;
+ background: linear-gradient(to bottom, black 57%, transparent);}
+58% {height: 58vh;
+ background: linear-gradient(to bottom, black 58%, transparent);}
+59% {height: 59vh;
+ background: linear-gradient(to bottom, black 59%, transparent);}
+60% {height: 60vh;
+ background: linear-gradient(to bottom, black 60%, transparent);}
+61% {height: 61vh;
+ background: linear-gradient(to bottom, black 61%, transparent);}
+62% {height: 62vh;
+ background: linear-gradient(to bottom, black 62%, transparent);}
+63% {height: 63vh;
+ background: linear-gradient(to bottom, black 63%, transparent);}
+64% {height: 64vh;
+ background: linear-gradient(to bottom, black 64%, transparent);}
+65% {height: 65vh;
+ background: linear-gradient(to bottom, black 65%, transparent);}
+66% {height: 66vh;
+ background: linear-gradient(to bottom, black 66%, transparent);}
+67% {height: 67vh;
+ background: linear-gradient(to bottom, black 67%, transparent);}
+68% {height: 68vh;
+ background: linear-gradient(to bottom, black 68%, transparent);}
+69% {height: 69vh;
+ background: linear-gradient(to bottom, black 69%, transparent);}
+70% {height: 70vh;
+ background: linear-gradient(to bottom, black 70%, transparent);}
+71% {height: 71vh;
+ background: linear-gradient(to bottom, black 71%, transparent);}
+72% {height: 72vh;
+ background: linear-gradient(to bottom, black 72%, transparent);}
+73% {height: 73vh;
+ background: linear-gradient(to bottom, black 73%, transparent);}
+74% {height: 74vh;
+ background: linear-gradient(to bottom, black 74%, transparent);}
+75% {height: 75vh;
+ background: linear-gradient(to bottom, black 75%, transparent);}
+76% {height: 76vh;
+ background: linear-gradient(to bottom, black 76%, transparent);}
+77% {height: 77vh;
+ background: linear-gradient(to bottom, black 77%, transparent);}
+78% {height: 78vh;
+ background: linear-gradient(to bottom, black 78%, transparent);}
+79% {height: 79vh;
+ background: linear-gradient(to bottom, black 79%, transparent);}
+80% {height: 80vh;
+ background: linear-gradient(to bottom, black 80%, transparent);}
+81% {height: 81vh;
+ background: linear-gradient(to bottom, black 81%, transparent);}
+82% {height: 82vh;
+ background: linear-gradient(to bottom, black 82%, transparent);}
+83% {height: 83vh;
+ background: linear-gradient(to bottom, black 83%, transparent);}
+84% {height: 84vh;
+ background: linear-gradient(to bottom, black 84%, transparent);}
+85% {height: 85vh;
+ background: linear-gradient(to bottom, black 85%, transparent);}
+86% {height: 86vh;
+ background: linear-gradient(to bottom, black 86%, transparent);}
+87% {height: 87vh;
+ background: linear-gradient(to bottom, black 87%, transparent);}
+88% {height: 88vh;
+ background: linear-gradient(to bottom, black 88%, transparent);}
+89% {height: 89vh;
+ background: linear-gradient(to bottom, black 89%, transparent);}
+90% {height: 90vh;
+ background: linear-gradient(to bottom, black 90%, transparent);}
+91% {height: 91vh;
+ background: linear-gradient(to bottom, black 91%, transparent);}
+92% {height: 92vh;
+ background: linear-gradient(to bottom, black 92%, transparent);}
+93% {height: 93vh;
+ background: linear-gradient(to bottom, black 93%, transparent);}
+94% {height: 94vh;
+ background: linear-gradient(to bottom, black 94%, transparent);}
+95% {height: 95vh;
+ background: linear-gradient(to bottom, black 95%, transparent);}
+96% {height: 96vh;
+ background: linear-gradient(to bottom, black 96%, transparent);}
+97% {height: 97vh;
+ background: linear-gradient(to bottom, black 97%, transparent);}
+98% {height: 98vh;
+ background: linear-gradient(to bottom, black 98%, transparent);}
+99% {height: 99vh;
+ background: linear-gradient(to bottom, black 99%, transparent);}
+100% {height: 100vh;
+ background: linear-gradient(to bottom, black 100%, transparent);}
+        }
+
+        @keyframes close_vorhang {
+            0% {background: linear-gradient(0deg, rgba(255,255,255,1) 0%, black 0%, black 100%);}
+1% {background: linear-gradient(0deg, rgba(255,255,255,1) 1%, black 1%, black 100%);}
+2% {background: linear-gradient(0deg, rgba(255,255,255,1) 2%, black 2%, black 100%);}
+3% {background: linear-gradient(0deg, rgba(255,255,255,1) 3%, black 3%, black 100%);}
+4% {background: linear-gradient(0deg, rgba(255,255,255,1) 4%, black 4%, black 100%);}
+5% {background: linear-gradient(0deg, rgba(255,255,255,1) 5%, black 5%, black 100%);}
+6% {background: linear-gradient(0deg, rgba(255,255,255,1) 6%, black 6%, black 100%);}
+7% {background: linear-gradient(0deg, rgba(255,255,255,1) 7%, black 7%, black 100%);}
+8% {background: linear-gradient(0deg, rgba(255,255,255,1) 8%, black 8%, black 100%);}
+9% {background: linear-gradient(0deg, rgba(255,255,255,1) 9%, black 9%, black 100%);}
+10% {background: linear-gradient(0deg, rgba(255,255,255,1) 10%, black 10%, black 100%);}
+11% {background: linear-gradient(0deg, rgba(255,255,255,1) 11%, black 11%, black 100%);}
+12% {background: linear-gradient(0deg, rgba(255,255,255,1) 12%, black 12%, black 100%);}
+13% {background: linear-gradient(0deg, rgba(255,255,255,1) 13%, black 13%, black 100%);}
+14% {background: linear-gradient(0deg, rgba(255,255,255,1) 14%, black 14%, black 100%);}
+15% {background: linear-gradient(0deg, rgba(255,255,255,1) 15%, black 15%, black 100%);}
+16% {background: linear-gradient(0deg, rgba(255,255,255,1) 16%, black 16%, black 100%);}
+17% {background: linear-gradient(0deg, rgba(255,255,255,1) 17%, black 17%, black 100%);}
+18% {background: linear-gradient(0deg, rgba(255,255,255,1) 18%, black 18%, black 100%);}
+19% {background: linear-gradient(0deg, rgba(255,255,255,1) 19%, black 19%, black 100%);}
+20% {background: linear-gradient(0deg, rgba(255,255,255,1) 20%, black 20%, black 100%);}
+21% {background: linear-gradient(0deg, rgba(255,255,255,1) 21%, black 21%, black 100%);}
+22% {background: linear-gradient(0deg, rgba(255,255,255,1) 22%, black 22%, black 100%);}
+23% {background: linear-gradient(0deg, rgba(255,255,255,1) 23%, black 23%, black 100%);}
+24% {background: linear-gradient(0deg, rgba(255,255,255,1) 24%, black 24%, black 100%);}
+25% {background: linear-gradient(0deg, rgba(255,255,255,1) 25%, black 25%, black 100%);}
+26% {background: linear-gradient(0deg, rgba(255,255,255,1) 26%, black 26%, black 100%);}
+27% {background: linear-gradient(0deg, rgba(255,255,255,1) 27%, black 27%, black 100%);}
+28% {background: linear-gradient(0deg, rgba(255,255,255,1) 28%, black 28%, black 100%);}
+29% {background: linear-gradient(0deg, rgba(255,255,255,1) 29%, black 29%, black 100%);}
+30% {background: linear-gradient(0deg, rgba(255,255,255,1) 30%, black 30%, black 100%);}
+31% {background: linear-gradient(0deg, rgba(255,255,255,1) 31%, black 31%, black 100%);}
+32% {background: linear-gradient(0deg, rgba(255,255,255,1) 32%, black 32%, black 100%);}
+33% {background: linear-gradient(0deg, rgba(255,255,255,1) 33%, black 33%, black 100%);}
+34% {background: linear-gradient(0deg, rgba(255,255,255,1) 34%, black 34%, black 100%);}
+35% {background: linear-gradient(0deg, rgba(255,255,255,1) 35%, black 35%, black 100%);}
+36% {background: linear-gradient(0deg, rgba(255,255,255,1) 36%, black 36%, black 100%);}
+37% {background: linear-gradient(0deg, rgba(255,255,255,1) 37%, black 37%, black 100%);}
+38% {background: linear-gradient(0deg, rgba(255,255,255,1) 38%, black 38%, black 100%);}
+39% {background: linear-gradient(0deg, rgba(255,255,255,1) 39%, black 39%, black 100%);}
+40% {background: linear-gradient(0deg, rgba(255,255,255,1) 40%, black 40%, black 100%);}
+41% {background: linear-gradient(0deg, rgba(255,255,255,1) 41%, black 41%, black 100%);}
+42% {background: linear-gradient(0deg, rgba(255,255,255,1) 42%, black 42%, black 100%);}
+43% {background: linear-gradient(0deg, rgba(255,255,255,1) 43%, black 43%, black 100%);}
+44% {background: linear-gradient(0deg, rgba(255,255,255,1) 44%, black 44%, black 100%);}
+45% {background: linear-gradient(0deg, rgba(255,255,255,1) 45%, black 45%, black 100%);}
+46% {background: linear-gradient(0deg, rgba(255,255,255,1) 46%, black 46%, black 100%);}
+47% {background: linear-gradient(0deg, rgba(255,255,255,1) 47%, black 47%, black 100%);}
+48% {background: linear-gradient(0deg, rgba(255,255,255,1) 48%, black 48%, black 100%);}
+49% {background: linear-gradient(0deg, rgba(255,255,255,1) 49%, black 49%, black 100%);}
+50% {background: linear-gradient(0deg, rgba(255,255,255,1) 50%, black 50%, black 100%);}
+51% {background: linear-gradient(0deg, rgba(255,255,255,1) 51%, black 51%, black 100%);}
+52% {background: linear-gradient(0deg, rgba(255,255,255,1) 52%, black 52%, black 100%);}
+53% {background: linear-gradient(0deg, rgba(255,255,255,1) 53%, black 53%, black 100%);}
+54% {background: linear-gradient(0deg, rgba(255,255,255,1) 54%, black 54%, black 100%);}
+55% {background: linear-gradient(0deg, rgba(255,255,255,1) 55%, black 55%, black 100%);}
+56% {background: linear-gradient(0deg, rgba(255,255,255,1) 56%, black 56%, black 100%);}
+57% {background: linear-gradient(0deg, rgba(255,255,255,1) 57%, black 57%, black 100%);}
+58% {background: linear-gradient(0deg, rgba(255,255,255,1) 58%, black 58%, black 100%);}
+59% {background: linear-gradient(0deg, rgba(255,255,255,1) 59%, black 59%, black 100%);}
+60% {background: linear-gradient(0deg, rgba(255,255,255,1) 60%, black 60%, black 100%);}
+61% {background: linear-gradient(0deg, rgba(255,255,255,1) 61%, black 61%, black 100%);}
+62% {background: linear-gradient(0deg, rgba(255,255,255,1) 62%, black 62%, black 100%);}
+63% {background: linear-gradient(0deg, rgba(255,255,255,1) 63%, black 63%, black 100%);}
+64% {background: linear-gradient(0deg, rgba(255,255,255,1) 64%, black 64%, black 100%);}
+65% {background: linear-gradient(0deg, rgba(255,255,255,1) 65%, black 65%, black 100%);}
+66% {background: linear-gradient(0deg, rgba(255,255,255,1) 66%, black 66%, black 100%);}
+67% {background: linear-gradient(0deg, rgba(255,255,255,1) 67%, black 67%, black 100%);}
+68% {background: linear-gradient(0deg, rgba(255,255,255,1) 68%, black 68%, black 100%);}
+69% {background: linear-gradient(0deg, rgba(255,255,255,1) 69%, black 69%, black 100%);}
+70% {background: linear-gradient(0deg, rgba(255,255,255,1) 70%, black 70%, black 100%);}
+71% {background: linear-gradient(0deg, rgba(255,255,255,1) 71%, black 71%, black 100%);}
+72% {background: linear-gradient(0deg, rgba(255,255,255,1) 72%, black 72%, black 100%);}
+73% {background: linear-gradient(0deg, rgba(255,255,255,1) 73%, black 73%, black 100%);}
+74% {background: linear-gradient(0deg, rgba(255,255,255,1) 74%, black 74%, black 100%);}
+75% {background: linear-gradient(0deg, rgba(255,255,255,1) 75%, black 75%, black 100%);}
+76% {background: linear-gradient(0deg, rgba(255,255,255,1) 76%, black 76%, black 100%);}
+77% {background: linear-gradient(0deg, rgba(255,255,255,1) 77%, black 77%, black 100%);}
+78% {background: linear-gradient(0deg, rgba(255,255,255,1) 78%, black 78%, black 100%);}
+79% {background: linear-gradient(0deg, rgba(255,255,255,1) 79%, black 79%, black 100%);}
+80% {background: linear-gradient(0deg, rgba(255,255,255,1) 80%, black 80%, black 100%);}
+81% {background: linear-gradient(0deg, rgba(255,255,255,1) 81%, black 81%, black 100%);}
+82% {background: linear-gradient(0deg, rgba(255,255,255,1) 82%, black 82%, black 100%);}
+83% {background: linear-gradient(0deg, rgba(255,255,255,1) 83%, black 83%, black 100%);}
+84% {background: linear-gradient(0deg, rgba(255,255,255,1) 84%, black 84%, black 100%);}
+85% {background: linear-gradient(0deg, rgba(255,255,255,1) 85%, black 85%, black 100%);}
+86% {background: linear-gradient(0deg, rgba(255,255,255,1) 86%, black 86%, black 100%);}
+87% {background: linear-gradient(0deg, rgba(255,255,255,1) 87%, black 87%, black 100%);}
+88% {background: linear-gradient(0deg, rgba(255,255,255,1) 88%, black 88%, black 100%);}
+89% {background: linear-gradient(0deg, rgba(255,255,255,1) 89%, black 89%, black 100%);}
+90% {background: linear-gradient(0deg, rgba(255,255,255,1) 90%, black 90%, black 100%);}
+91% {background: linear-gradient(0deg, rgba(255,255,255,1) 91%, black 91%, black 100%);}
+92% {background: linear-gradient(0deg, rgba(255,255,255,1) 92%, black 92%, black 100%);}
+93% {background: linear-gradient(0deg, rgba(255,255,255,1) 93%, black 93%, black 100%);}
+94% {background: linear-gradient(0deg, rgba(255,255,255,1) 94%, black 94%, black 100%);}
+95% {background: linear-gradient(0deg, rgba(255,255,255,1) 95%, black 95%, black 100%);}
+96% {background: linear-gradient(0deg, rgba(255,255,255,1) 96%, black 96%, black 100%);}
+97% {background: linear-gradient(0deg, rgba(255,255,255,1) 97%, black 97%, black 100%);}
+98% {background: linear-gradient(0deg, rgba(255,255,255,1) 98%, black 98%, black 100%);}
+99% {background: linear-gradient(0deg, rgba(255,255,255,1) 99%, black 99%, black 100%);}
+100% {background: linear-gradient(0deg, rgba(255,255,255,1) 100%, black 100%, black 100%);}
+        }
+
+        @keyframes pulsieren {
+           0% {
+            transform: scale(0.6)
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #vorhang{
+            background: #000506;
+            width: 100vw;
+            animation-name: open_vorhang;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-play-state: paused;
+        }
+
+
+        #vorhang_end{
+            background: black;
+            width: 100vw;
+            animation-name: close_vorhang;
+            animation: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-play-state: paused;
+            color: white;
+        }
+
+        .main_mutter{
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            background: transparent;
+            width: 100vw;
+            
+        }
+
+        .main_intro{
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            background: transparent;
+            width: 100
+
+        }
+
+        .text_in_mutter{
+            margin: 0 auto;
+            font-size: 20vw;
+            font-family: Vektra;
+            text-align: center;
+            animation-name: pulsieren;
+            animation-play-state: both;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        .white_rock{
+            background: transparent;
+            width: 100vw;
+            display: flex;
+        }
+
+        .main_for_white{
+            height: 100vh;
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(6, 8vw);
+            
+            
+        }
+
+        .text_in_white{
+            grid-column: 3 / 4;
+            vertical-align: bottom;
+            text-align: center;
+            font-family: Vektra;
+            font-size: 2vw;
+            color: white;
+            padding-top: 15vw;
+            padding-left: 15%;
+            padding-right: 15%;
+            overflow: hidden;
+        }
+
+        .black_rock{ /* ;-) */ 
+            background: black;
+            width: 100vw;
+            display: flex;
+        }
+
+        .main_for_black{
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(6, 8vw);
+        }
+
+        .text_in_black{
+            grid-column: 3 / 4;
+            font-family: Vektra;
+            text-align: center;
+            vertical-align: top;
+            color: white;
+            font-size: 2vw;
+            padding: 1vh;
+        }
+
+        .main_traenen{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            margin-top: -100vh;
+        }
+
+        section.traenen {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(6, 8vw);
+            grid-template-rows: 2fr;
+            text-align: center;
+            font-family: Vektra;
+            overflow: hidden;
+
+        }
+
+        .letters {
+            font-size: 14vw;
+            font-weight: 100;
+            transition-property: all;
+            transition-duration: 1s;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            mix-blend-mode:exclusion;
+        }
+
+        /*---- buchstabengruppen */
+
+        section.traenen:hover .letters {
+            transform: translate(0, 20px);
+        }
+
+        .letters:nth-of-type(2) {
+            transition-delay: 300ms;
+            
+        }
+
+        .letters:nth-of-type(3) {
+            transition-delay: 200ms;
+        }
+
+        .letters:nth-of-type(4) {
+            transition-delay: 300ms;
+        }
+
+        .letters:nth-of-type(5) {
+            transition-delay: 400ms;
+        }
+
+        .letters:nth-of-type(6) {
+            transition-delay: 500ms;
+        }
+
+        /*--- einzelbuchstaben innerhalb der gruppe ----*/
+
+        .buchstabe {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            transition-property: all;
+            transition-duration: 10s;
+            transition-timing-function: cubic-bezier(.5, -0.06, 1, .43);
+        }
+
+        section.traenen:hover .buchstabe {
+            transform: translate(0, 100vh);
+        }
+        /*T*/
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(1) {
+            transition-delay: 500ms;
+        }
+        /*T*/
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(2) {
+            transition-delay: 2500ms;
+        }
+        /*T*/
+        .letters:nth-of-type(1) .buchstabe:nth-of-type(3) {
+            transition-delay: 900ms;
+        }
+        /*R*/
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(1) {
+            transition-delay: 1500ms;
+        }
+        /*R*/
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(2) {
+            transition-delay: 20ms;
+        }
+        /*R*/
+        .letters:nth-of-type(2) .buchstabe:nth-of-type(3) {
+            transition-delay: 600ms;
+        }
+        /*Ä*/
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(1) {
+            transition-delay: 1000ms;
+        }
+        /*Ä*/
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(2) {
+            transition-delay: 7000ms;
+        }
+        /*Ä*/
+        .letters:nth-of-type(3) .buchstabe:nth-of-type(3) {
+            transition-delay: 3000ms;
+        }
+        /*N*/
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(1) {
+            transition-delay: 1500ms;
+        }
+        /*N*/
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(2) {
+            transition-delay: 800ms;
+        }
+        /*N*/
+        .letters:nth-of-type(4) .buchstabe:nth-of-type(3) {
+            transition-delay: 2800ms;
+        }
+        /*E*/
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(1) {
+            transition-delay: 1600ms;
+        }
+        /*E*/
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(2) {
+            transition-delay: 2000ms;
+        }
+        /*E*/
+        .letters:nth-of-type(5) .buchstabe:nth-of-type(3) {
+            transition-delay: 900ms;
+        }
+        /*N*/
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(1) {
+            transition-delay: 4000ms;
+        }
+        /*N*/
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(2) {
+            transition-delay: 700ms;
+        }
+        /*N*/
+        .letters:nth-of-type(6) .buchstabe:nth-of-type(3) {
+            transition-delay: 3500ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_mutter">
+        <div id="vorhang">
+            <div class="text_in_mutter">Artist "Rammstein"</div>
+        </div>
+    </div>
+    <div class="white_rock">
+        <div class="main_for_white">
+            <div class="text_in_white">
+                Ich zieh’ sie auf ein weißes Haar Werf in die Luft die nasse Kette Und wünsch mir, dass
+            </div>
+        </div>
+    </div>
+    <div class="main_traenen">
+    <section class="traenen">
+        <div class="letters">
+            <div class="buchstabe">
+                T
+            </div>
+            <div class="buchstabe">
+                T
+            </div>
+            <div class="buchstabe">
+                T
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                R
+            </div>
+            <div class="buchstabe">
+                R
+            </div>
+            <div class="buchstabe">
+                R
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                Ä
+            </div>
+            <div class="buchstabe">
+                Ä
+            </div>
+            <div class="buchstabe">
+                Ä
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                E
+            </div>
+            <div class="buchstabe">
+                E
+            </div>
+            <div class="buchstabe">
+                E
+            </div>
+        </div>
+        <div class="letters">
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+            <div class="buchstabe">
+                N
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <div class="black_rock">
+        <div class="main_for_black">
+            <div class="text_in_black">
+                ich<br>eine<br>Mutter<br>hätte
+            </div>
+        </div>
+    </div>
+    <div class="main_mutter">
+        <div id="vorhang_end">
+            <div class="text_in_mutter">"MUTTER"</div>
+        </div>
+    </div>
+    
+
+    <script>
+    
+        window.addEventListener("scroll", starteAnimation);
+
+        var element_1 = document.getElementById("vorhang_end");
+        element_1.addEventListener("mouseover", f_vorhang_end);
+       
+
+    function starteAnimation() {
+        let element = document.getElementById("vorhang");
+        element.style.animationPlayState = "running";
+        
+        }
+
+    function f_vorhang_end() {
+        
+        element_1.style.animationPlayState = "running";
+        element_1.style.animationName = "close_vorhang";
+        }
+    </script>
+</body>
+</html>

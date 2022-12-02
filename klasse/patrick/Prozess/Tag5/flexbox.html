@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexbox</title>
-</head>
-    <style>
-        .parentcontainer{
-    
-    display:flex; 
-    flex-wrap:wrap;
-   flex-direction: row; 
-    /* Positional alignment */
-    justify-content: center; /* Pack items around the center Haubtachse */
-    /* justify-content: start; /* Pack items from the start */
-    /* justify-content: end; /* Pack items from the end */
-    /* justify-content: space-between; /* Raum gleichmässig zwischen den Items verteilen. Das erste hat links keinen Raum, das letze hat rechts keinen */
-    border:1px dotted blue;
-   /* height: 100vh;*/
-}
-.child {
-    border:1px dotted blue;
-    padding:1rem;
-    margin:1rem;
-    flex-basis: 200px;
-    flex-grow: 1;
-}
-.child:fist-of-type{
-    flex-grow:2;
-    background-color:pink;
-}
+    <title>Übung – Flexbox</title>
 
+    <style>
+    .parentcontainer{
+        display:flex; 
+        justify-content: center;
+                flex-direction: row;
+        border: 2px dotted pink;
+        height: 100vh;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .child{
+        border:1px dotted blue;
+        padding:1rem;
+        margin:1rem;
+        flex-basis: min-content;
+        flex-grow: 1;
+    }
+
+    .child:nth-of-type(2) {
+        flex-grow: 2;
+        background-color: beige;
+    }
+
+    .child:nth-of-type(3) {
+        background-color: rgb(201, 255, 227);
+    }
+    </style>
+
+</head>
 
 <body>
+
     <div class="parentcontainer">
         <div class="child">1</div>
         <div class="child">2</div>
