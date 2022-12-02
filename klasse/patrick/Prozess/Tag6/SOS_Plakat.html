@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS Transform</title>
+    <style>
+        .bb {
+            display: flex;
+        }
+        .group{
+            display:grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+        }
+        
+
+        /* beide elemente liegen ursprünglich übereinander */
+        .not_transformed,
+        .transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 700px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50em;
+            font-weight: bolder;
+        }
+
+        .left {
+            color: magenta;
+            mix-blend-mode: multiply;
+            transform: translate(-80px);
+        }
+
+        .middle {
+            color:red;
+            mix-blend-mode: multiply;
+        }
+
+        .right {
+            color: cyan;
+            mix-blend-mode: multiply;
+            transform: translate(80px, 0);
+        }
+        .transformed {
+    /*background-color: rgba(0, 0, 255, 0.5);*/
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+
+    }
+    .group:hover .transformed:nth-last-of-type(1)
+    { /*background-color: aqua;*/
+        transform: translate(500px);
+        color: red;
+    }
+    .group:hover .transformed:nth-last-of-type(2)
+    { /*background-color: aqua;*/
+        transform: translate(-500px);
+        color: red;
+    }
+    .group:hover .transformed:nth-last-of-type(3)
+    { /*background-color: aqua;*/
+        transform: translate(0);
+        color: red;
+    }
+/*.transformed:hover
+{
+    background-color: aqua;
+    transform: scale(0.6);
+    mix-blend-mode: exclusion;
+}*/
+
+    </style>
+</head>
+<body>
+        <section>
+        <div class="group">
+            <div class="not_transformed middle">
+                O
+            </div>
+            <div class="transformed left">
+                S
+            </div>
+            <div class="transformed right">
+                S
+            </div>
+        </div>
+    </section>
+</body>
+</html>
