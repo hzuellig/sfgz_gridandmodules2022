@@ -237,10 +237,9 @@ padding-bottom: 5vw;
     0% { opacity: 0; }
     100% { opacity: 1; }
 
-
   }
 
-  .fadeIn1 {
+  #fadeIn1 {
     animation-name: fadeIn;
     animation-duration: 8s;
     animation-delay: 5s;
@@ -249,7 +248,7 @@ padding-bottom: 5vw;
     animation-fill-mode: forwards;
 }
 
-.fadeIn2 {
+#fadeIn2 {
     animation-name: fadeIn;
     animation-duration: 8s;
     animation-delay: 6s;
@@ -259,7 +258,7 @@ padding-bottom: 5vw;
 
 }
 
-.fadeIn3 {
+#fadeIn3 {
     animation-name: fadeIn;
     animation-duration: 8s;
     animation-delay: 7s;
@@ -269,7 +268,7 @@ padding-bottom: 5vw;
 
 }
 
-.fadeIn4 {
+#fadeIn4 {
     animation-name: fadeIn;
     animation-duration: 8s;
     animation-delay: 8s;
@@ -277,6 +276,28 @@ padding-bottom: 5vw;
     opacity: 0;
     animation-fill-mode: forwards;
 
+}
+
+
+@keyframes devil {
+    0% {
+        text-shadow: 0px 0px 2px #ff6600;
+    }
+    25% {
+        text-shadow: 0px 0px 0.2px 0.2px #ff6600, 0px 0px 0.2px 0.4px #ff5100;
+    }
+    50% {
+        text-shadow: 0px 0px 0.2px 0.2px #ff6600, 0px 0px 0.2px 0.4px #ff5100, 0px 0px 0.2px 0.6px #ff3700;
+    }
+    75% {
+        text-shadow: 0px 0px 0.2px 0.2px #ff6600, 0px 0px 0.2px 0.4px #ff5100, 0px 0px 0.2px 0.6px #ff3700, 0px 0px 0.2px 0.8px #ff0000;
+    }
+}
+.devil {
+    animation-name: devil;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
 }
 
 
