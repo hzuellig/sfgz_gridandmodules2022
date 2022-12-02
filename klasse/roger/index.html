@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,20 +20,21 @@
 
     h1 {
         font-family: 'Caveat', cursive;
-        font-size: 10vw;
+        font-size: 14vw;
         position: relative;
     }
 
     h2 {
         font-family: 'Comfortaa', cursive;
-        font-size: 4vw;
+        font-size: 6vw;
         line-height: 2;
 
     }
 
     div {
         background-color: rgb(231, 242, 132);
-        padding: 10px;
+        padding: 5px;
+        display:block;
     }
 
     a {
@@ -41,16 +43,37 @@
     }
 
     a:hover {
-        color: rgb(113, 2, 113);
+        color: rgb(22, 2, 113);
     }
 
     li {
         list-style: none;
     }
+
+    @media screen and (min-width: 768px) { 
+    div.example {
+        display:flex;}
+    }
+    @media screen and (min-width: 768px) { 
+    h2.link {
+        font-size: 3vw;
+    padding: 3vw;}
+    }
+
 </style>
+
 <body>
-    <h1>
-  <a href="process/index-prozess.html">Process</a>  
-</h1>
+
+    <h1><a href="process/fordfiesta-sprint3.html">Ford Fiesta</a></h1>
+    <div class="example">
+    <h2 class="link"><a href="process/index-prozess.html">Process</a></h2>
+    <h2 class="link"><a href="process/fordfiesta-sprint1.html">Sprint 1</a></h2>
+    <h2 class="link"><a href="process/fordfiesta-sprint1-5.html">Sprint 1½</a></h2>
+    <h2 class="link"><a href="process/fordfiesta-sprint2.html">Sprint 2</a></h2>
+    <h2 class="link"><a href="process/fordfiesta-sprint3.html">Sprint 3</a></h2>
+</div>
+
+
 </body>
+
 </html>
