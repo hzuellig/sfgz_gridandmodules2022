@@ -18,7 +18,7 @@
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: 45vh;
+      font-size: 40vh;
       padding-top: 10%;
       padding-bottom: 10%;
       margin: 0;
@@ -122,6 +122,71 @@
     }
 
 
+    .emoji {
+      position: fixed;
+      top: -50%;
+      z-index: 9999;
+      -webkit-animation-name: emojis-fall, emojis-shake;
+      -webkit-animation-duration: 10s, 3s;
+      -webkit-animation-timing-function: linear, ease-in-out;
+      -webkit-animation-iteration-count: infinite, infinite;
+      -webkit-animation-play-state: running, running;
+      animation-duration: 10s, 3s;
+    }
+
+    .emoji:nth-child(0) {
+      left: 1%;
+      animation-delay: 0s, 0s
+    }
+
+    .emoji:nth-child(1) {
+      left: 10%;
+      animation-delay: 1s, 1s
+    }
+
+    .emoji:nth-child(2) {
+      left: 20%;
+      animation-delay: 6s, .5s
+    }
+
+    .emoji:nth-child(3) {
+      left: 30%;
+      animation-delay: 4s, 2s
+    }
+
+    .emoji:nth-child(4) {
+      left: 40%;
+      animation-delay: 2s, 2s
+    }
+
+    .emoji:nth-child(5) {
+      left: 50%;
+      animation-delay: 8s, 3s
+    }
+
+    .emoji:nth-child(6) {
+      left: 60%;
+      animation-delay: 6s, 2s
+    }
+
+    .emoji:nth-child(7) {
+      left: 70%;
+      animation-delay: 2.5s, 1s
+    }
+
+    .emoji:nth-child(8) {
+      left: 80%;
+      animation-delay: 1s, 0s
+    }
+
+    .emoji:nth-child(9) {
+      left: 90%;
+      animation-delay: 3s, 1.5s
+    }
+
+    .pop_name {
+      animation: 2s pop_name ease infinite;
+    }
     @-webkit-keyframes emojis-fall {
       0% {
         top: -50%
@@ -148,84 +213,7 @@
         transform: translateX(0px)
       }
     }
-
-
-    .emoji {
-      position: fixed;
-      top: -50%;
-      z-index: 9999;
-      -webkit-animation-name: emojis-fall, emojis-shake;
-      -webkit-animation-duration: 10s, 3s;
-      -webkit-animation-timing-function: linear, ease-in-out;
-      -webkit-animation-iteration-count: infinite, infinite;
-      -webkit-animation-play-state: running, running;
-      animation-duration: 10s, 3s;
-    }
-
-    .emoji:nth-of-type(0) {
-      left: 1%;
-      -webkit-animation-delay: 0s, 0s;
-      animation-delay: 0s, 0s
-    }
-
-    .emoji:nth-of-type(1) {
-      left: 10%;
-      -webkit-animation-delay: 1s, 1s;
-      animation-delay: 1s, 1s
-    }
-
-    .emoji:nth-of-type(2) {
-      left: 20%;
-      -webkit-animation-delay: 6s, .5s;
-      animation-delay: 6s, .5s
-    }
-
-    .emoji:nth-of-type(3) {
-      left: 30%;
-      -webkit-animation-delay: 4s, 2s;
-      animation-delay: 4s, 2s
-    }
-
-    .emoji:nth-of-type(4) {
-      left: 40%;
-      -webkit-animation-delay: 2s, 2s;
-      animation-delay: 2s, 2s
-    }
-
-    .emoji:nth-of-type(5) {
-      left: 50%;
-      -webkit-animation-delay: 8s, 3s;
-      animation-delay: 8s, 3s
-    }
-
-    .emoji:nth-of-type(6) {
-      left: 60%;
-      -webkit-animation-delay: 6s, 2s;
-      animation-delay: 6s, 2s
-    }
-
-    .emoji:nth-of-type(7) {
-      left: 70%;
-      -webkit-animation-delay: 2.5s, 1s;
-      animation-delay: 2.5s, 1s
-    }
-
-    .emoji:nth-of-type(8) {
-      left: 80%;
-      -webkit-animation-delay: 1s, 0s;
-      animation-delay: 1s, 0s
-    }
-
-    .emoji:nth-of-type(9) {
-      left: 90%;
-      -webkit-animation-delay: 3s, 1.5s;
-      animation-delay: 3s, 1.5s
-    }
-
-    .pop_name {
-      animation: 2s pop_name ease infinite;
-    }
-
+    
     @keyframes pop_name {
       0% {
         transform: scale(0);
@@ -333,7 +321,7 @@
   <h2 class="blink">POWER</h2>
   </section>
   <section>
-    <h1>RUNNIG</h1>
+    <h1>RUNNING</h1>
   </section>
   <section>
     <p>THROUGH MY</p>
