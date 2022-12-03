@@ -221,48 +221,56 @@ body {
     
     
 }
-@keyframes fade {
- 0% {
-    transform: color(0%);
-    color: rgba(255, 255, 255, 0.130);
+/*@keyframes fade {
+ 25% {
+    color: rgba(255, 255, 255, 0.609);
 
  }
  100% {
-    transform: color (100%);
-    color: rgba(255, 255, 255, 0.109);
+    color: rgba(255, 255, 255, 0.600);
 
 }
-}
+}*/
 
 
 @keyframes begin {
- 25% {
-    transform: color(0%);
-    color: rgba(255, 255, 255, 0.109);
-
+ 0% {
+    color: rgba(255, 255, 255, 0.010);
  }
- 50% {
-    transform: color (100%);
-    color: rgba(255, 255, 255, 0.130);
-
- }
- .animierteklasse2{
-    animation-name: begin;
+ 10% {
+    color: rgba(255, 255, 255, 0.075);
  }
  
+ 25% {
+    color: rgba(255, 255, 255, 0.150);
+ }
+ 50% {
+    color: rgba(255, 255, 255, 0.300);
+ }
+ 75% {
+    color: rgba(255, 255, 255, 0.150);
+ }
+ 85% {
+    color: rgba(255, 255, 255, 0.075);
+ }
+ 100% {
+    color: rgba(255, 255, 255, 0.010);
+ }
+
+ 
 }
-/*Animation zuweisen*/
-.animierteklasse{
+
+/*.animierteklasse{
     animation-name:fade;
     animation-delay: 20ms;
     animation-duration:5s;
     animation-iteration-count: infinite;
     background-color: #000;
-}
+}*/
 .animierteklasse{
     animation-name:begin;
     animation-delay: 20ms;
-    animation-duration:5s;
+    animation-duration:10s;
     animation-iteration-count: infinite;
     background-color: #000;
 }
@@ -272,9 +280,7 @@ section.stadt{
     display: flex;
     height: 100vh;
 }
-.stadtschrift{
 
-}
 
 
 
