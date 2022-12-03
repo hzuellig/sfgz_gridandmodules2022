@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,87 +10,151 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+HK:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        .titel{
-        color: rgb(255, 255, 255);
-        font-size: 5em;
-        font-family: 'Bebas Neue', cursive;
 
-        }
-        .haupttitel{
-        color: rgb(255, 255, 255);
-        font-size: 8em;
-        font-family: 'Bebas Neue', cursive;
-
-        }
-        li{
+        .titel {
             display: grid;
+            color: rgb(255, 255, 255);
+            font-size: 3em;
+            font-family: 'Bebas Neue', cursive;
+            padding-top: 1em;
+            padding-bottom: 0.8em;
+            align-self: center;
             margin: 1em;
-            box-shadow: 5px 10px 10px;
+            text-align: center;
+
+        }
+
+        @media all and (min-width: 600px) {
+            .titel {
+                background-color: lightblue;
+                font-size: 5em;
+            }
+        }
+
+
+
+        .haupttitel {
+            display: grid;
+            color: rgb(255, 255, 255);
+            font-size: 4em;
+            font-family: 'Bebas Neue', cursive;
+            padding-top: 1em;
+            padding-bottom: 0.8em;
+            padding-left: 1em;
+            padding-right: 1em;
+            align-self: center;
+            margin: 1em;
+            text-align: center;
+
+        }
+
+        @media all and (min-width: 600px) {
+            .haupttitel {
+                background-color: lightblue;
+                font-size: 6em;
+            }
+        }
+
+
+
+
+        li {
+
+            display: flex;
+            margin: 1em;
+            color: white;
             text-decoration: wavy;
             font-family: 'Indie Flower', cursive;
             font-size: 2em;
             padding-top: 1em;
             padding-bottom: 0.8em;
             padding-left: 1em;
-            padding-right:1em ;
+            padding-right: 1em;
             align-self: center;
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
         }
-        a{
+
+        @media all and (min-width: 600px) {
+            li {
+                background-color: lightblue;
+                font-size: 1em;
+            }
+        }
+
+
+
+        a {
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
-        a:hover{
+
+        a:hover {
             color: rgb(255, 119, 0);
         }
+
         body {
-  background-color: rgb(0, 0, 0);
-}
+            background-color: rgb(0, 0, 0);
+        }
     </style>
 </head>
+
 <body>
     Prozess
-    <ul>  
+    <ul>
         <li class="haupttitel">Matilda Ezgeta <br> Grid & Modules</li>
         <li class="titel">TAG 1</li>
-        <li>  <a href="./Html-Geruest/process/Tag1/Uebung1.html">Übung 1</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag1/Uebung2.html">Übung 2</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag1/Uebung3.html">Übung 3</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag1/Verschachteln.html">Übung 4</a></li>
-        <li>  <li class="titel">TAG 2</li>
-        <li>  <a href="./Html-Geruest/process/Tag2/3links.html">Übung 1</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag2/Statisch.html">Statische Seite</a></li>
-        <li>  <li class="titel">TAG 3</li>
-        <li>  <a href="./Html-Geruest/process/Tag3/Boxmodel/boxmodel.html">Boxmodel</a></li>
-        <li>  <li class="titel">TAG 4</li>
-        <li>  <a href="./Html-Geruest/process/Tag4/1Versuch-Song.html">Song V1</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag4/2Versuch-Song.html">Song V2</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag4/Aufgabe2_LayoutGrid.html">Grid Layout</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag4/uebung-grid-plakat.html">Grid Plakat</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag4/uebung1-grid-basic.html">Grid Basic</a></li>
-        <li>  <li class="titel">TAG 5</li>
-        <li>  <a href="./Html-Geruest/process/Tag5/Flexbox_Matilda.html">Flexbox Matilda</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag5/Flexbox_Basics.html">Flexbox Basics</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag5/ueb-1-plakat-flex.html">Flexbox Basics</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag5/Uebung_Webseite.html">Übung Web</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag5/SongVar3.html">Statische Variante 3</a></li>
-        <li>  <li class="titel">TAG 6</li>
-        <li>  <a href="./Html-Geruest/process/Tag6/flackern.html">Leuchtreklame</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag6/smiths.html">Smiths</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag6/ueb1-transform.html">Übung 1</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag6/ueb2-transition.html">Übung 2</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag6/SongVar4.html">Song V4</a></li>
-        <li>  <li class="titel">TAG 7</li>
-        <li>  <a href="./Html-Geruest/process/Tag7/song_var_5.html">Song V5</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag7/SongVar6.html">Song V6</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag7/sss_neu.html">Übung SSS</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag7/ueb_1_animation.html">Übung 1</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag7/ueb2_jsintro">Übung 2</a></li>
-        <li>  <a href="./Html-Geruest/process/Tag7/ueb3_transition_plakat">Übung 3</a></li>
-        <li>  <li class="titel">Wahrscheinlich halbwegs Finale Version :)</li>
-        <li>  <a href="./Html-Geruest/process/Tag6/SongVar4">Identitätsstiftend By Heisskalt</a></li>
+        <li> <a href="./Html-Geruest/process/Tag1/Uebung1.html">Übung 1</a></li>
+        <li> <a href="./Html-Geruest/process/Tag1/Uebung2.html">Übung 2</a></li>
+        <li> <a href="./Html-Geruest/process/Tag1/Uebung3.html">Übung 3</a></li>
+        <li> <a href="./Html-Geruest/process/Tag1/Verschachteln.html">Übung 4</a></li>
+
+        <li class="titel">TAG 2</li>
+        <li> <a href="./Html-Geruest/process/Tag2/3links.html">Übung 1</a></li>
+        <li> <a href="./Html-Geruest/process/Tag2/Statisch.html">Statische Seite</a></li>
+
+        <li class="titel">TAG 3</li>
+        <li> <a href="./Html-Geruest/process/Tag3/Boxmodel/boxmodel.html">Boxmodel</a></li>
+
+        <li class="titel">TAG 4</li>
+        <li> <a href="./Html-Geruest/process/Tag4/1Versuch-Song.html">Song V1</a></li>
+        <li> <a href="./Html-Geruest/process/Tag4/2Versuch-Song.html">Song V2</a></li>
+        <li> <a href="./Html-Geruest/process/Tag4/Aufgabe2_LayoutGrid.html">Grid Layout</a></li>
+        <li> <a href="./Html-Geruest/process/Tag4/uebung-grid-plakat.html">Grid Plakat</a></li>
+        <li> <a href="./Html-Geruest/process/Tag4/uebung1-grid-basic.html">Grid Basic</a></li>
+
+        <li class="titel">TAG 5</li>
+        <li> <a href="./Html-Geruest/process/Tag5/Flexbox_Matilda.html">Flexbox Matilda</a></li>
+        <li> <a href="./Html-Geruest/process/Tag5/Flexbox_Basics.html">Flexbox Basics</a></li>
+        <li> <a href="./Html-Geruest/process/Tag5/ueb-1-plakat-flex.html">Flexbox Basics</a></li>
+        <li> <a href="./Html-Geruest/process/Tag5/Uebung_Webseite.html">Übung Web</a></li>
+        <li> <a href="./Html-Geruest/process/Tag5/SongVar3.html">Statische Variante 3</a></li>
+
+        <li class="titel">TAG 6</li>
+        <li> <a href="./Html-Geruest/process/Tag6/flackern.html">Leuchtreklame</a></li>
+        <li> <a href="./Html-Geruest/process/Tag6/smiths.html">Smiths</a></li>
+        <li> <a href="./Html-Geruest/process/Tag6/ueb1-transform.html">Übung 1</a></li>
+        <li> <a href="./Html-Geruest/process/Tag6/ueb2-transition.html">Übung 2</a></li>
+        <li> <a href="./Html-Geruest/process/Tag6/SongVar4.html">Song V4</a></li>
+
+        <li class="titel">TAG 7</li>
+        <li> <a href="./Html-Geruest/process/Tag7/song_var_5.html">Song V5</a></li>
+        <li> <a href="./Html-Geruest/process/Tag7/SongVar6.html">Song V6</a></li>
+        <li> <a href="./Html-Geruest/process/Tag7/sss_neu.html">Übung SSS</a></li>
+        <li> <a href="./Html-Geruest/process/Tag7/ueb_1_animation.html">Übung 1</a></li>
+        <li> <a href="./Html-Geruest/process/Tag7/ueb2_jsintro">Übung 2</a></li>
+        <li> <a href="./Html-Geruest/process/Tag7/ueb3_transition_plakat">Übung 3</a></li>
+
+        <li class="titel">TAG 8</li>
+        <li> <a href="./Html-Geruest/process/Tag8/Uebung1.html">Übung 1</a></li>
+
+        <li class="titel">Finale Version</li>
+        <li> <a href="./Html-Geruest/process/Tag8/song_final.html">Identitätsstiftend By Heisskalt</a></li>
     </ul>
 
 
-    
+
 </body>
+
 </html>

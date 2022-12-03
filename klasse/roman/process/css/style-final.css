@@ -1,6 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Monoton&display=swap');
 
 body {
     margin: 0;
@@ -281,7 +279,8 @@ h3 {
     letter-spacing: 12vw;
     transform-origin: center;
     justify-self: center;
-    display: inline;
+    /*display: inline;*/
+    transform: translateX(6vw);
 }
 
 

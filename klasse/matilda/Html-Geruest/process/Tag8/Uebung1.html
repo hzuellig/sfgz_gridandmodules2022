@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body {
+    background-color: rgb(255, 129, 129);
+  }
+@media all and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+    min-width: 30vw;
+  }
+}
+.example div{
+    border: 1px solid white;
+}
+@media screen and (min-width: 640px) { 
+    div.example {
+        display: flex; }
+    }
+    h1{
+    font-size:1.2rem;
+}
+@media screen and (min-width: 1024px) { 
+    h1 {
+        font-size:20rem; 
+        }
+}
+    </style>
+</head>
+<body>
+<div class="example">
+    <h1>Hallöcheen</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identitätsstiftend_V3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .parentcontainer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .section_naehe{
+            display: grid
+            grid-template-columns: 1fr;
+            grid-template-rows: 2 /3;
+            text-align: center;
+            align-self: center;
+            height: 100vh;
+        }
+        .naehe_schrift{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 600px;
+            color: rgb(255, 255, 255);
+        }
+        .naehe_schrift:hover {
+
+            transform-origin: center;
+            transition-duration: 1000ms;
+            scale: 180%;
+            color: rgb(223, 20, 20);
+            
+        }
+        .schrift{
+            font-family: 'Dosis', sans-serif;
+            text-align: center;
+            align-self: center;
+            color: rgb(255, 255, 255);
+            padding: 5rem;
+            font-size: 70px;
+        }
+        .text1{
+            margin: 2rem;
+        }
+        .special{
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            align-self: center;
+            background-color: white;
+            font-size: 500px;
+            padding: 2rem;
+        }
+        .special2{
+            font-size: 20em;
+            background-color: #000;
+
+        }
+        .transformed {
+        font-size: 600px;
+         transition: all 0.1s ease-out 0.3s;
+
+        }
+                .transformed:hover {
+            /* Veränderter Zustand */
+            transition-property: font-size; 
+            transition-duration: 100ms;
+            transition-timing-function: ease-out;
+        }
+        .W{
+            background: linear-gradient(
+            to right, #f3217281, #ff6b089f,
+             #cf234b80, #eedd448d);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+         }
+        /*.K{
+            background: linear-gradient(
+            to right, #000000, #262626,
+             #8f8e8e, #ffffff);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+         }*/
+         
+        .element {
+            text-shadow: 10px 10px 500px red;
+            animation: glow ease-in-out infinite alternate;
+            
+}
+
+@keyframes element {
+ 0% {
+
+    text-shadow: 10px 10px 500px rgba(255, 0, 0, 0.273);
+}
+25%{
+
+    text-shadow: 10px 10px 500px red;
+ }
+ 50%{
+
+    text-shadow:10px 10px 500px rgba(255, 0, 0, 0.150);
+ }
+
+ 
+ 100% {
+
+    text-shadow: 10px 10px 500px rgba(255, 0, 0, 0.500);
+
+}
+/*@-webkit-keyframes .element {
+
+from {
+
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+
+}
+
+
+to {
+
+  text-shadow: 0 0 20000px #fff, 0 0 30000px #ff4da6, 0 0 40000px #ff4da6, 0 0 100000px #ff4da6, 0 0 60000px #ff4da6, 0 0 70000px #ff4da6, 0 0 80000px #ff4da6;
+
+}
+
+}*/
+}
+.animierteklasse_element{
+    animation-name:element;
+    animation-delay: 50ms;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+        /* .A{
+            color:  rgba(0, 0, 0, 1);
+        }
+        .H{
+            color:  rgba(0, 0, 0, 0.2);
+        }
+        .N{
+            color:  rgba(0, 0, 0, 0.4);
+        }
+        .U{
+            color:  rgba(0, 0, 0, 0.6);
+        }
+        .N2{
+            color:  rgba(0, 0, 0, 0.8); 
+        }
+        .G{
+            color:  rgba(0, 0, 0, 1);
+        }*/
+        .City1{
+            position: center;
+            width: 263px;
+            height: 624px;
+            left: 343px;
+            top: 4170.54px; 
+        }
+        .City2{
+            position: center;
+            width: 353px;
+            height: 837.54px;
+            left: 588px;
+            top: 3957px;    
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+ 
+body {
+    width: 100%;
+    min-height: 50%;
+   justify-content: center;
+    align-items: center;
+    background: #000;
+    text-align: center;
+
+}
+ 
+.displays {
+    position: relative;
+    font-size: 20em;
+    width: 100%;
+    text-align: center;
+    background-image: url(wall.jpg);
+
+}
+ 
+.displays span {
+    animation: animate 5s linear infinite;
+
+}
+ 
+@keyframes animate {
+    0%, 18%, 20%, 50%, 60%, 65%, 80%, 90%, 92% {
+        color: #000000;
+        text-shadow: none;
+    }
+    19%, 21%, 30%, 49%, 60%, 64%, 81%, 89%, 93%, 100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #93e9ff,
+        0 0 20px #29a3c1,
+        0 0 40px #29a3c1,
+        0 0 80px #29a3c1,
+        0 0 160px #29a3c1,
+        0 0 400px #29a3c1;
+    }
+    
+    
+}
+/*@keyframes fade {
+ 25% {
+    color: rgba(255, 255, 255, 0.609);
+
+ }
+ 100% {
+    color: rgba(255, 255, 255, 0.600);
+
+}
+}*/
+
+
+@keyframes begin {
+ 0% {
+    color: rgba(255, 255, 255, 0.010);
+ }
+ 10% {
+    color: rgba(255, 255, 255, 0.075);
+ }
+ 
+ 25% {
+    color: rgba(255, 255, 255, 0.150);
+ }
+ 50% {
+    color: rgba(255, 255, 255, 0.300);
+ }
+ 75% {
+    color: rgba(255, 255, 255, 0.150);
+ }
+ 85% {
+    color: rgba(255, 255, 255, 0.075);
+ }
+ 100% {
+    color: rgba(255, 255, 255, 0.010);
+ }
+
+ 
+}
+
+/*.animierteklasse{
+    animation-name:fade;
+    animation-delay: 20ms;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    background-color: #000;
+}*/
+.animierteklasse{
+    animation-name:begin;
+    animation-delay: 20ms;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    background-color: #000;
+}
+section.stadt{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+
+
+
+         </style>
+</head>
+<body>
+    <div class="parentcontainer">
+        <div class="schrift text1;">Und aus der</div>
+         <div class="section_naehe naehe_schrift">NÄHE</div>
+        <div class="schrift text1;">wird ein Geruch, <br> wird eine</div>
+       <div class="special special2 animierteklasse">AHNUNG</div>
+       <!-- <div class="special special2 H">H</div>
+        <div class="special special2 N">N</div>
+        <div class="special special2 U">U</div>
+        <div class="special special2 N2">N</div>
+        <div class="special special2 G">G</div> -->
+        <div class="schrift text1;">aus der</div>
+        <div class="special special2 W animierteklasse_element">WÄRME</div>
+        <div class="schrift text1;">deiner Umarmung, <br> die Kälte irgendeiner</div>
+        <div class="displays">
+            <span>STADT</span>
+     
+    </div>
+    </div>
+</body>
+</html>
