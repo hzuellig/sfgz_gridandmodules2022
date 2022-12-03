@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 1 – Media Queries</title>
+<style>
+        body {
+        background-color: #EADED5;
+      }
+    @media all and (max-width: 600px) {
+      body {
+        background-color: #1E1E1E;
+      }
+    }
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15vw;
+    color: #1E1E1E;
+    text-align: center;
+    justify-content: center;
+}
+    @media all and (max-width: 600px) {
+      h1 {
+        font-family: 'Times New Roman', Times, serif;
+        color: #EADED5;
+        font-size: 10vw;
+        text-align: center;
+    justify-content: center;
+      }
+    }
+    .example div {
+        border: 1px solid white;
+        min-width: 30vw;
+    }
+    @media screen and (min-width: 800px) {
+    div.example {
+        display: flex; }
+    }
+</style>
+</head>
+<h1>Hier steht ein Titel</h1>
+<div class="example">
+    <div>Box1</div>
+    <div>Box2</div>
+    <div>Box3</div>
+</div>
+<body>
+</body>
+</html>
+

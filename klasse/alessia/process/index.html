@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,73 +9,51 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
-         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <style>
+        body {
+            background-color: #1E1E1E;
+            padding: 50px;
+            align-content: center;
+        }
 
         h1 {
-            margin: 0em;
-            font-family: 'Source Serif Pro', serif;
-            font-style: italic;
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Source Sans Pro', sans-serif;
             font-size: 2.5em;
             font-weight: 400;
-            text-align: center;
+            color: white;
+        }
+
+        @media all and (max-width: 600px) {
+            h1{
+                text-align: center;
+            margin-top: 50px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            color: white;
+            }
+        }
+
+        h2 {
+            margin: 0em;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: left;
+            color: white;
         }
 
         p {
-            text-align: center;
+            text-align: left;
             font-family: 'Source Sans Pro', sans-serif;
+            color: white;
         }
 
-        .row .button{
-            margin: 2em;
-            padding: 1em;
-            border: 0px solid;
-            border-radius: 25px;
-            background-color: rgb(234, 234, 234);
-            width: 15vw;
-            float: center;
-            font-family: 'Source Sans Pro', sans-serif;
-            color: black;
-            font-weight: bold;
-            font-variant: normal;
-            text-align: center;
-        }
-
-        .row .button:hover {
-            margin: 2em;
-            padding: 1em;
-            border: 0px solid;
-            border-radius: 25px;
-            background-color: rgb(61, 61, 61);
-            width: 15vw;
-            float: center;
-            font-family: 'Source Sans Pro', sans-serif;
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            font-variant: normal;
-            box-shadow: 0 0 10px 0 #aaaaaa;
-            text-align: center;
-        }
-
-        .row {
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-        
-        
         hr {
             margin-top: 5em;
             width: 10vw;
@@ -84,119 +63,244 @@
             border-width: 0.1em;
         }
 
+        .buttons-coll {
+            width: 90%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            color: white;
+        }
+
+        .custom-btn {
+            padding: 10px 25px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            background: transparent;
+            outline: none !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        /**** BTN No. 4 ****/
+        .btn-4 {
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            padding: 0;
+            border: none;
+        }
+
+        .btn-4 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-4:before,
+        .btn-4:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-4:before {
+            height: 50%;
+            width: 2px;
+        }
+
+        .btn-4:after {
+            width: 20%;
+            height: 2px;
+        }
+
+        .btn-4:hover:before {
+            height: 100%;
+        }
+
+        .btn-4:hover:after {
+            width: 100%;
+        }
+
+        .btn-4 span:before,
+        .btn-4 span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-4 span:before {
+            width: 2px;
+            height: 50%;
+        }
+
+        .btn-4 span:after {
+            width: 20%;
+            height: 2px;
+        }
+
+        .btn-4 span:hover:before {
+            height: 100%;
+        }
+
+        .btn-4 span:hover:after {
+            width: 100%;
+        }
+
+        .box {
+            float: left;
+            display: block;
+            width: 200px;
+            height: 220px;
+            padding: 20px;
+            margin: 10px;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px 2px 0px 0px;
+            text-align: center;
+            align-self: center;
+        }
+
+        .outtercont {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        @media all and (max-width: 600px) {
+            .outtercont {
+                flex-wrap: wrap;   
+            }
+        }
+
     </style>
 </head>
+
 <body>
 
-    <hr>
-    <h1>Aktueller Stand</h1>
-
-    <div class="row">
-        
-        <a href="../../Lyrics-Projekt/Finale Version/index.html">
-            <button class="row button">Aktueller Stand</button>
-        </a>
+    <h1 style="text-align: center;">Where is the Love</h1>
+    <div class="outtercont">
+            <a href="../../Lyrics-Projekt/Finale Version/index.html">
+                <button class="custom-btn btn-4"><span>Here it is</span></button>
+            </a>
     </div>
 
-    <hr>
-    <h1>Tag 1</h1>
 
-    <div class="row">
-        
-        <a href="tag-1/uebung-1.html">
-            <button class="row button">Übung 1</button>
-        </a>
-        <a href="tag-1/uebung-2.html">
-            <button class="row button">Übung 2</button>
-        </a>
 
+    <h1>Übungen</h1>
+    <div class="outtercont">
+        <div class="box">
+            <h2>Tag 1</h2>
+
+            <a href="tag-1/uebung-1.html">
+                <button class="custom-btn btn-4"><span>Übung 1</span></button>
+            </a>
+            <a href="tag-1/uebung-2.html">
+                <button class="custom-btn btn-4"><span>Übung 2</span></button>
+            </a>
+        </div>
+
+        <div class="box">
+            <h2>Tag 4</h2>
+
+            <a href="tag-4/uebung-1-grid-basic.html">
+                <button class="custom-btn btn-4"><span>Grid Basics</span></button>
+            </a>
+            <a href="tag-4/uebung-2-grid-plakat.html">
+                <button class="custom-btn btn-4"><span>Grid Plakat</span></button>
+            </a>
+        </div>
+
+        <div class="box">
+            <h2>Tag 5</h2>
+            <a href="tag-5/uebung-1-flex-basics.html">
+                <button class="custom-btn btn-4"><span>Flex Basics</span></button>
+            </a>
+            <a href="tag-5/uebung-2-plakat-flex.html">
+                <button class="custom-btn btn-4"><span>Flex Plakat</span></button>
+            </a>
+        </div>
+    </div>
+    <div class="outtercont">
+        <div class="box">
+            <h2>Tag 6</h2>
+
+            <a href="tag-6/uebung-1-css-transform.html">
+                <button class="custom-btn btn-4"><span>CSS Transform</span></button>
+            </a>
+            <a href="tag-6/uebung-2-transition.html">
+                <button class="custom-btn btn-4"><span>CSS Transitions</span></button>
+            </a>
+            <a href="tag-6/uebung-3-sss-transform.html">
+                <button class="custom-btn btn-4"><span>Übung Plakat</span></button>
+            </a>
+
+        </div>
+
+        <div class="box">
+
+            <h2>Tag 7</h2>
+
+            <a href="tag-7/uebung-1-animation.html">
+                <button class="custom-btn btn-4"><span>CSS Animation</span></button>
+            </a>
+            <a href="tag-7/uebung-2-JS-Intro.html">
+                <button class="custom-btn btn-4"><span>JS Einführung</span></button>
+            </a>
+            <a href="tag-7/uebung-3-sss-animation.html">
+                <button class="custom-btn btn-4"><span>Übung Plakat</span></button>
+            </a>
+        </div>
+
+        <div class="box">
+
+            <h2>Tag 8</h2>
+
+            <a href="tag-8/uebung-1-responsive-desing.html">
+                <button class="custom-btn btn-4"><span>Responsive Design</span></button>
+            </a>
+        </div>
     </div>
 
-    <hr>
-    <h1>Tag 4</h1>
 
-    <div class="row">
-        
-        <a href="tag-4/uebung-1-grid-basic.html">
-            <button class="row button">Übung 1 - Grid Basics</button>
-        </a>
-        <a href="tag-4/uebung-2-grid-plakat.html">
-            <button class="row button">Übung 2 - Grid Plakat</button>
-        </a>
-
-    </div>
-
-    <hr>
-    <h1>Tag 5</h1>
-
-    <div class="row">
-        
-        <a href="tag-5/uebung-1-flex-basics.html">
-            <button class="row button">Übung 1 - Flex Basics</button>
-        </a>
-        <a href="tag-5/uebung-2-plakat-flex.html">
-            <button class="row button">Übung 2 - Flex Plakat</button>
-        </a>
-
-    </div>
-
-    <hr>
-    <h1>Tag 6</h1>
-
-    <div class="row">
-        
-        <a href="tag-6/uebung-1-css-transform.html">
-            <button class="row button">Übung 1 - CSS Transform</button>
-        </a>
-        <a href="tag-6/uebung-2-transition.html">
-            <button class="row button">Übung 2 - CSS Transitions</button>
-        </a>
-        <a href="tag-6/uebung-3-sss-transform.html">
-            <button class="row button">Übung 3 - SSS Plakat</button>
-        </a>
-
-    </div>
-
-    <hr>
-    <h1>Tag 7</h1>
-
-    <div class="row">
-        
-        <a href="tag-7/uebung-1-animation.html">
-            <button class="row button">Übung 1 - CSS Animation</button>
-        </a>
-        <a href="tag-7/uebung-2-JS-Intro.html">
-            <button class="row button">Übung 2 - JS Einführung</button>
-        </a>
-        <a href="tag-7/uebung-3-sss-animation.html">
-            <button class="row button">Übung 3 - SSS Plakat</button>
-        </a>
-
-    </div>
-
-    <hr>
     <h1>Sprints</h1>
+    <div class="outtercont">
+        <div class="box">
+            <a href="../../Lyrics-Projekt/Statische Version/index-statisch.html">
+                <button class="custom-btn btn-4"><span>Statische Version</span></button>
+            </a>
 
-    <div class="row">
+            <a href="../../Lyrics-Projekt/Raster Version/index-fluid.html">
+                <button class="custom-btn btn-4"><span>Fluide Version</span></button>
+            </a>
 
-        <a href="../../Lyrics-Projekt/Statische Version/index-statisch.html">
-            <button class="row button">Sprint 1 - Statische Version</button>
-        </a>
-
-        <a href="../../Lyrics-Projekt/Raster Version/index-fluid.html">
-            <button class="row button">Sprint 2 - Fluide Version</button>
-        </a>
+            <a href="../../Lyrics-Projekt/Finale Version/index.html">
+                <button class="custom-btn btn-4"><span>Finale Version</span></button>
+            </a>
+        </div>
     </div>
 
-    <hr>
     <h1>Figma</h1>
-
-    <div class="row">
-
-        <a href="https://www.figma.com/file/8fdG2OKqtU2zOgFp8euTRz/Grid-Skizze?node-id=0%3A1&t=UDfsqY4AC9acGh2w-1">
-            <button class="row button">Skizze</button>
-        </a>
+    <div class="outtercont">
+        <div class="box">
+            <a href="https://www.figma.com/file/8fdG2OKqtU2zOgFp8euTRz/Grid-Skizze?node-id=0%3A1&t=UDfsqY4AC9acGh2w-1">
+                <button class="custom-btn btn-4"><span>Skizze</span></button>
+            </a>
+        </div>
     </div>
 
 </body>
+
 </html>
