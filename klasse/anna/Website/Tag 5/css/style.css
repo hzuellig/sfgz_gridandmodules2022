@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  /* CSS Angaben über Custom Properties definieren, -> zentraler Ort, um Werte zu ändern */
+  --white: #fff;
+  --background: #e4007b;
+  --dark: #6d0039;
+  --bright: #c10069;
+  --medium: #a00058;
+}
+.parentcontainer {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11rem;
+    margin-top: 1.5rem;
+    line-height: 9.5rem;
+    flex-basis: 200px;
+    flex-shrink: 1;
+}
+
+/*---- Reihen der farbigen Punkte  ----*/
+section.dotrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--background);
+    padding: 2rem;
+}
+
+.dot {
+    border-radius: 50%;
+    flex-basis: 150px;
+    height: 150px;
+    margin: 1rem;
+    background-color: var(--white);
+}
+
+.dot:nth-of-type(1) {
+    background-color: #a00058;
+}
+
+.dot:nth-of-type(3) {
+     background-color: #6d0039;
+}
+
+section.infotext {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.smalldot {
+    margin: 1.5rem;
+    border-radius: 50%;
+    flex-basis: 10px;
+    height: 10px;
+    background-color: var(--bright);
+}

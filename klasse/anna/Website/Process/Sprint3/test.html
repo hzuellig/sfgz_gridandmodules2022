@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 3</title>
+    <style>
+        @import url("https://use.typekit.net/nrr3amr.css");
+
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .parentcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-shrink: 1;
+            gap: 2.5rem;
+            margin-left: 45px;
+            margin-right: 45px;
+            margin-top: 50vh;
+        }
+
+        .hear {
+            font-family: acumin-pro, sans-serif;
+            font-size: 200px;
+            font-weight: 100;
+            font-style: normal;
+            text-transform: uppercase;
+            letter-spacing: -5px;
+            margin-top: 80px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        main {
+            overflow-x: hidden;
+            display: flex;
+        }
+
+        .einblenden {
+            animation-name: test;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            animation-duration: 3s;
+
+        }
+
+        @keyframes test {
+            0% {
+                opacity: 0;
+                color: white;
+            }
+
+            100% {
+                opacity: 1;
+                color: black;
+            }
+        }
+
+        .tonight {
+            color: black;
+            background-color: #FF89E8;
+            font-family: acumin-pro-wide, sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 200px;
+            text-transform: uppercase;
+            letter-spacing: 30px;
+            padding-top: -50px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 80px;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            animation: mark 2s ease-in 1;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            overflow: hidden;
+
+        }
+
+        @keyframes mark {
+            0% {
+                top: 0.2rem;
+                width: 0;
+            }
+            100% {
+                top: 0;
+                width: 1270px;
+                text-indent: 0;
+            }
+        }
+
+        .dance {
+            color: black;
+            font-family: ohno-blazeface, sans-serif;
+            font-size: 200px;
+            font-weight: 600;
+            font-style: normal;
+            padding-top: 23px;
+            margin-top: 85px;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            transform: scale(0.9, 1) rotatey(-10deg) translatey(0px);
+            animation: 2.2s scaling cubic-bezier(0.45, 0, 0.55, 1) infinite;
+            transform-origin: 50% 100%;
+            position: relative;
+            top: 10%;
+            transform-style: preserve-3d;
+            margin-right: 4px;
+            animation-name: scaling;
+        }
+
+        @keyframes scaling {
+            20% {
+                transform: scale(0.9, 1) rotatey(-10deg);
+                text-shadow: 0px 0 #ff952b, 0px 0 #fff589, 0px 0 #FF89E8;
+
+            }
+
+            40% {
+                transform: scale(0.9, 2) translatey(16px);
+                text-shadow: -10px 0px #ff952b, -20px 0 #fff589, -30px 0 #FF89E8;
+            }
+
+            60% {
+                transform: scale(0.9, 1) rotatey(-5deg);
+                text-shadow: 0px 0 #ff952b, 0px 0 #fff589, 0px 0 #FF89E8;
+            }
+
+            80% {
+                transform: scale(0.9, 2) translatey(16px);
+                text-shadow: 10px 0px #ff952b, 20px 0 #fff589, 30px 0 #FF89E8;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <div class="parentcontainer">
+            <div class="hear einblenden">
+                <hear>Lady
+            </div>
+            <div class="hear einblenden">hear</div>
+            <div class="hear einblenden">me</div>
+            <div class="tonight">tonight</div>
+            <div class="hear einblenden">'cause</div>
+            <div class="hear einblenden">my</div>
+            <div class="hear einblenden">feeling</div>
+            <div class="hear einblenden">is</div>
+            <div class="hear einblenden">just</div>
+            <div class="hear einblenden">so</div>
+            <div class="hear einblenden">right</div>
+            <div class="hear">as</div>
+            <div class="hear">we</div>
+            <div class="dance">dance</div>
+            <div class="hear">by</div>
+            <div class="hear">the</div>
+            <div class="tonight">moonlight</div>
+            <div class="hear">can't</div>
+            <div class="hear">you</div>
+            <div class="hear">see</div>
+            <div class="hear">you're</div>
+            <div class="hear">my</div>
+            <div class="hear">delight</div>
+            <div class="hear">?</div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

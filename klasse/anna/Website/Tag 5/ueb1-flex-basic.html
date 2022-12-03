@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 1 Felx Basic</title>
+    <style>
+        .parentcontainer{
+            display:flex; 
+        }
+        .child{
+        border:1px dotted blue;
+        padding:1rem;
+        margin:1rem;
+        }
+
+        .flexcolumn{
+            display:flex; 
+            flex-direction: column;
+        }
+        h2 {
+            font-family: monospace;
+            margin-left: 1rem;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 1rem;
+        }
+
+        .justifycontent{
+            display:flex;
+            justify-content: center; 
+        }
+
+        .justifycontentvertical{
+            display:flex;
+            flex-direction: column;
+            justify-content: center; 
+            border: 2px solid red;
+            height: 100vh;
+        }
+
+        .spacebetween{
+            display:flex;
+            justify-content: space-between; 
+        }
+        .alignitems{
+            display:flex;
+            justify-content: center; 
+            align-items: center;
+            border: 2px solid rgb(255, 157, 0);
+            height: 100vh;
+        }
+
+        .flexwrap{
+            display:flex;
+            justify-content: center; 
+            align-items: center;
+            flex-wrap: wrap;
+            border: 2px solid rgb(0, 255, 0);
+            height: 100vh;
+        }
+        .childbasis{
+        border:1px dotted blue;
+        padding:1rem;
+        margin:1rem;
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        }
+        .flexbasis{
+            display:flex;
+            justify-content: start; 
+            align-items: start;
+            border: 2px solid rgb(0, 247, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Flexbox Default</h2>
+    <p>Hauptachse: horizontal / Querachse: vertikal</p>
+    <div class="parentcontainer">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+
+
+    <div class="flexcolumn">
+        <h2>Flexbox Column</h2>
+        <p>Hauptachse: vertikal / Querachse: Horizontal</p>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>
+
+    <h2>Flexbox Justify Content - Center</h2>
+    <div class="justifycontent">
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>
+
+    <h2>Flexbox Justify Content - Center Vertical</h2>
+    <p>Damit etwas in der Viewporthöhe zentriert werden kann muss ein VH-Wert (height) angegeben werden</p>
+    <div class="justifycontentvertical">
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>
+    <h2>Flexbox Justify Content - Space Between</h2>
+    <div class="spacebetween">
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>
+    <h2>Flexbox Align Items</h2>
+    <p>Justify Content tangiert die Hauptachse, Align Items tangiert die Querachse</p>
+    <div class="alignitems">
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+    </div>
+
+    <h2>Flexbox Flex Wrap</h2>
+    <p>Wenn nicht genügend Platz vorhanden, werden Elemente umgebrochen</p>
+    <div class="flexwrap">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>
+    </div>
+
+    <h2>Flexbox Flex Basis</h2>
+    <p>Befehl, dass Elemente grösser und kleiner werden dürfen bei verändertem verfügbarem Platz</p>
+    <div class="flexbasis">
+        <div class="childbasis">1</div>
+        <div class="childbasis">2</div>
+        <div class="childbasis">3</div>
+        <div class="childbasis">4</div>
+    </div>
+</body>
+</html>
