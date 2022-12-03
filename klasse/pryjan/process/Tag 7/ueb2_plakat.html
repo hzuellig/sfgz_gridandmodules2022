@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .group {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .not_transformed,
+        .tranformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 700px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50em;
+            font-weight: bolder;
+
+        }
+
+        .not_transformed {
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .group .left {
+            transform: translate(-20px, 0);
+            animation-duration: 3;
+        }
+
+        .group .middle {
+            transform: translate(-100px, 0);
+        }
+
+        .left {
+            color: blueviolet;
+            mix-blend-mode: multiply;
+
+        }
+
+        .middle {
+            color: orange;
+            mix-blend-mode: multiply;
+        }
+
+        .right {
+            color: black;
+            mix-blend-mode: multiply;
+            transform: translate(80px, 0);
+        }
+@keyframes meineAnimation
+{
+    
+}
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div class="group">
+            <div class="not_transformed middle">
+                O
+            </div>
+        </div>
+    </section>
+    </div>
+    </section>
+</body>
+
+</html>
