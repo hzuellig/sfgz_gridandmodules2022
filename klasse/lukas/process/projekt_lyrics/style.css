@@ -1604,4 +1604,5 @@ button:hover {
 
 body {
     background-color: rgb(12, 13, 19);
+    overflow-x: hidden;
 }
