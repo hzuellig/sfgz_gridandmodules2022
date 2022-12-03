@@ -2,71 +2,248 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <title>Nit ohne di</title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400;700&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Staatliches&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      body{
+        font-family:'Urbanist';
+        color:#ffffff;
+        background: rgb(14,13,28);
+        background: linear-gradient(36deg, rgba(14,13,28,1) 0%, rgba(32,44,73,1) 61%, rgba(29,43,79,1) 100%);
+      }
+      .intro{
+        height:125px;
+        border-bottom:1px solid black;
+        margin-bottom:50px;
+      }
+      .container{
+        width:66vw;
+        margin:0 auto;
+      }
+      .element{
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        width: 23%;
+        display: inline-block;
+        margin: 10px 10px
+      }
+      .element-inner{
+        padding: 20px 20px;
+      }
+      h2{
+        font-weight:200;
+        font-size:30px;
+        text-transform:uppercase;
+        margin-top: 50px;
+      }
+      .element.hoverable:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+      .element a{
+        color:#000;
+        text-decoration:none;
+      }
+      .element p{
+        font-size:14px;
+        line-height:14px;
+        margin:0px;
+        text-transform:uppercase;
+        color: #fff;
+      }
+      .element h4{
+        font-size:22px;
+        line-height:22px;
+        margin:0px;
+        color: #ffffff;
+      }
+      .block{
+        position: relative;
+      }
+      .container{
+        position: relative;
+        display: block;
+      }
+    </style>
+    <title>Process</title>
   </head>
   <body>
-    <div class="playbutton">
-      <img src="img/play.svg" alt="" id="playbtn" onclick="audio.play();">
-    </div>
-
-    <div class="part1">
-      <div class="container">
-        <div class="grid">
-          <p class="basic eins">Frog mi nöd obs</p>
-          <p class="logisch" id="mainlogisch">Logisch</p>
-          <span class="logisch"><p id="scrolling" class="scrolling"><span class="transparent">Log</span>isch</p></span>
-        </div><!--
-        <div class="grid scrlgrid">
-          <span class="basic drei"><p class="scrolling">Logisch</p></span>
-        </div>-->
+    <div class="container">
+      <div class="intro">
+        <h1 style="font-size:60px;">Manuel Lusti</h1>
+        <h4 style="font-size:20px;margin-top:-40px;">Übersicht</h4>
       </div>
-    </div>
-    <div id="part1spacer"></div>
-    <div class="part2">
-      <div class="ichgsedini">
-        <p class="basic ichgse gse1"><nobr>ch ich ich ich  <span class="highlighted">ich</span> ich ich ich ich ich ich ich ich ich ich ich ich ich ich ich ic</nobr></p>
-        <p class="basic ichgse gse2"><nobr>se gse gse gse <span class="highlighted">gse</span> gse gse gse gse gse gse gse gse gse gse gse gse gse gs</nobr></p>
-        <p class="basic ichgse gse3"><nobr>dini dini dini dini <span class="highlighted">dini</span> dini dini dini dini dini dini dini dini dini dini dini d</nobr></p>
-      </div>
-      <div class="container-binoc">
-        <div class="">
-          <div class="binoculars" id="binoculars">
-            <div class="binoc-inner">
-              <p class="logik logik1" style="opacity:1;" id="logik">Logik</p>
-              <p class="logik noed" id="noed">nöd</p>
+      <div class="block">
+          <h2>Lyrics Versionen</h2>
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="work/lyrics-versions/221203/index.html">
+              <div class="element-inner">
+                <p>Stand 03.12.2022</p>
+                <h4>Lyrics</h4>
+              </div>
+            </a>
+          </div>
+          <!--END element-->
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="work/lyrics-versions/221201/index.html">
+              <div class="element-inner">
+                <p>Stand 01.12.2022</p>
+                <h4>Lyrics</h4>
+              </div>
+            </a>
+          </div>
+          <!--END element-->
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="work/lyrics-versions/221117/index.html">
+              <div class="element-inner">
+                <p>Stand 17.11.2022</p>
+                <h4>Lyrics</h4>
+              </div>
+            </a>
+          </div>
+          <!--END element-->
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="work/lyrics-versions/221110/index.html">
+              <div class="element-inner">
+                <p>Stand 10.11.22</p>
+                <h4>Lyrics</h4>
+              </div>
+            </a>
+          </div>
+          <!--END element-->
+        </div>
+      <div class="block">
+            <h2>Übungen</h2>
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/js-ueb.html">
+                <div class="element-inner">
+                  <p>Tag 7</p>
+                  <h4>Javascript</h4>
+                </div>
+              </a>
             </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/animation.html">
+                <div class="element-inner">
+                  <p>Tag 7</p>
+                  <h4>Animation</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/transform-plakat.html">
+                <div class="element-inner">
+                  <p>Tag 6</p>
+                  <h4>Transform Plakat</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/transform.html">
+                <div class="element-inner">
+                  <p>Tag 6</p>
+                  <h4>Transform</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/flex-plakat.html">
+                <div class="element-inner">
+                  <p>Tag 5</p>
+                  <h4>Flexbox Plakat</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/flexbox.html">
+                <div class="element-inner">
+                  <p>Tag 5</p>
+                  <h4>Flexbox</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/plakat.html">
+                <div class="element-inner">
+                  <p>Tag 4</p>
+                  <h4>Übung Plakat</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/uebungen/layout-grid-ueb.html">
+                <div class="element-inner">
+                  <p>Tag 4</p>
+                  <h4>Übung Grid</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+            <!--START element-->
+            <div class="element hoverable">
+              <a href="work/fonts.html">
+                <div class="element-inner">
+                  <p>Tag 1</p>
+                  <h4>Font Sammlung</h4>
+                </div>
+              </a>
+            </div>
+            <!--END element-->
+        </div>
+      <div class="block">
+          <h2>Figmas</h2>
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="https://www.figma.com/file/bZ8xvA1hWJ2GUr5MbdczJL/LyricsSize?node-id=0%3A1&t=sD90IhAXQPY4dI4D-1">
+              <div class="element-inner">
+                <p>Figma</p>
+                <h4>Schriftgrössen</h4>
+              </div>
+            </a>
           </div>
-          <p class="basic">Wenns drum goht öb</p>
-        </div>
-      </div>
-    </div>
-    <div class="part3">
-      <div class="container">
-        <div class="dumitmir">
-          <p class="basic du">Du</p>
-          <p class="basic mitmir1">mit mir</p>
-          <p class="basic mitmir2">mit mir</p>
-        </div>
-      </div>
-    </div>
-    <div class="part4">
-      <div class="container">
-        <div class="oderohne">
-          <p class="oder">oder</p>
-          <p class="ohne">ohne</p>
-          <p class="bisch">bisch</p>
-          <p class="ohne">ohne</p>
-          <div class="shitglow">
-            <p class="shit glow1">shit</p>
-            <p class="shit shitmain">shit</p>
+          <!--END element-->
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="https://www.figma.com/file/ObiJFotuHawbFwTtNx0hTj/Lyrics?node-id=0%3A1&t=5ZF7P6gK7b8fSvyl-1">
+              <div class="element-inner">
+                <p>Figma</p>
+                <h4>Lyrics</h4>
+              </div>
+            </a>
           </div>
+          <!--END element-->
+          <!--START element-->
+          <div class="element hoverable">
+            <a href="https://www.figma.com/file/Q49YmxXx6ZdcyilxRO2Cvw/Plakat?node-id=0%3A1&t=JiqAIN0YH99Pujz7-1">
+              <div class="element-inner">
+                <p>Figma</p>
+                <h4>Plakat</h4>
+              </div>
+            </a>
+          </div>
+          <!--END element-->
         </div>
-      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>

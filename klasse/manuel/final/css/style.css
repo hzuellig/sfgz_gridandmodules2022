@@ -1,0 +1,312 @@
+/*Config CSS*/
+html,body{
+  margin:0;
+  padding: 0;
+}
+p{
+  margin:0;
+  padding: 0;
+}
+/*Elements*/
+.container{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.basic{
+  font-size: 4em;
+  font-weight: 800;
+}
+.playbutton{
+  position: fixed;
+  bottom: 3vh;
+  left: 3vh;
+  z-index: 999;
+  padding: 8px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px 2px 3px 1px #8181815c;
+  transition: 0.2s ease;
+}
+.playbutton #playbtn{
+  color: #fff;
+  height: 33px;
+  padding-left: 2px;
+}
+.playbutton:hover{
+  transform: scale(1.1);
+}
+/*Style*/
+.part1{
+  height: 100vh;
+  background-color: #0b0f17;
+  display: flex;
+  align-items: center;
+}
+#part1spacer{
+  height: 20vh;
+  width: 100vw;
+  background: #0b0f17;
+}
+.part1 .grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row: auto;
+  align-items: center;
+}
+.part1 .logisch{
+  font-size: 22vw;
+  line-height: 19vw;
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  font-weight: 800;
+  text-align: center;
+}
+.part1 .eins{
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+  align-self: baseline;
+  font-size: 5vw;
+  line-height: 5vw;
+}
+.scrlgrid{
+  grid-template-rows: 15vh;
+}
+.part1 .drei{
+    font-size: 22vw;
+    grid-row: 1 / 2;
+    grid-column: 2 / 12;
+    text-align: center ;
+    line-height: 19vw;
+}
+.part1 .scrolling{
+  position: fixed;
+  left: 0;
+  color: #fff;
+  top: 300px;
+  width: 100%;
+}
+.part1 .scrolling .transparent{
+  opacity: 0;
+}
+.part1 .stopscrolling{
+  display: none;
+}
+.part2{
+  text-align: center;
+  background: #0b0f17;
+  box-shadow: 0px 0px 200px 200px #0b0f17;
+  margin-bottom: 300px;
+  z-index: 99;
+  position: relative;
+}
+.part2 .ichgsedini{
+  max-width: 100%;
+  overflow: hidden;
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+.part2 .highlighted{
+  text-shadow: 0px 0px 4px #fff;
+}
+.part2 .ichgse{
+  text-transform: uppercase;
+  margin:-40px 0;
+  font-size: 8em;
+  background: -webkit-linear-gradient(0deg, #0b0f17, #d8d8d8, #0b0f17);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.part2 .gse1{
+  margin-left: ;
+}
+.part2 .gse3{
+  margin-left: ;
+}
+.binoc-inner{
+  -webkit-mask-image: url(../img/binoc-mask.png);
+  mask-image: url(../img/binoc-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  position: relative;
+  -webkit-mask-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.binoc-inner{
+  height:80vh;
+  background:#fff;
+}
+.logik{
+  font-size: 20em;
+  font-family: 'Staatliches';
+  text-align: center;
+  padding-top:110px;
+}
+.container-binoc{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ichgse{
+
+}
+.part1, .part2{
+  color: #fff;
+}
+.logik1{
+  position: absolute;
+  color: #fff;
+  opacity: 100%;
+  top:0;
+  left: calc(50% - 315px);
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9;
+  color: transparent;
+}
+.logik2{
+  position: absolute;
+  top:-10px;
+  left: calc(50% - 305px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255,0,255,0.5);
+  opacity: 50%;
+}
+.logik3{
+  position: absolute;
+  top:10px;
+  left: calc(50% - 330px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,168,255,0.5);
+  opacity: 50%;
+}
+.logik4{
+  position: absolute;
+  top:5px;
+  left: calc(50% - 305px);
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,255,0,0.5);
+  opacity: 50%;
+}
+.noed{
+  opacity: 0;
+  z-index: 11;
+  color: black;
+  position: relative;
+  top:50px;
+  color: #000000;
+  font-size: 50vw;
+}
+.binoculars{
+  margin-bottom: 20vh;
+  margin-top: 20vh;
+}
+.container-binoc{
+  padding-bottom: 20vh;
+}
+.part3{
+  height: 130vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: -300px;
+  z-index: -1;
+  position: relative;
+}
+.part3 .dumitmir{
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    width: 80vw;
+}
+.part3 .container{
+  position: relative;
+}
+.part3 .dumitmir .du{
+  font-size: 32em;
+  font-weight: 800;
+}
+.part3 .basic:first-child{
+  font-family: 'Staatliches';
+}
+.part3 .mitmir1{
+    margin-top:-100px;
+}
+.part3 .mitmir2{
+    margin-top:-32px;
+}
+.part4{
+  background-color: #fff;
+}
+.part4 .oderohne{
+  width: 100vw;
+  text-align: center;
+}
+.part4 .container{
+  width:100vw;
+}
+.part4 .oder{
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: -100px;
+  margin-top: 50px;
+}
+.part4 .bisch{
+  font-size: 4em;
+  font-weight: 800;
+  margin-top: -120px;
+  margin-bottom: -100px;
+}
+.part4 .ohne{
+  font-size: 32em;
+  font-family: 'Staatliches';
+}
+.part4{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.part4 .shit{
+  font-family: 'Permanent Marker';
+  font-size: 32em;
+  text-shadow:
+    -3px -3px 0 #0b0f17,
+    3px -3px 0 #0b0f17,
+    -3px 3px 0 #0b0f17,
+    3px 3px 0 #0b0f17;
+  color: #fff;
+}
+.part4 .shitglow{
+  position: relative;
+  margin-top: -600px;
+  cursor: url(../img/pointer.png) 65 65, auto;
+}
+.shitglow:hover,
+.shit:hover{
+}
+.part4 .shitmain{
+  z-index: 99;
+  position: relative;
+}
+.part4 .glow1{
+  color: #ac6e00;
+  top:0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  margin-left: -20px;
+  margin-bottom: -15px;
+  text-shadow: none;
+  opacity: 50%;
+}
+.part4{
+  max-width: 100vw;
+  overflow: hidden;
+}

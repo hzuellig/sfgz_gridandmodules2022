@@ -6,12 +6,13 @@
       @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400;700&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Staatliches&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
       body{
         font-family:'Urbanist';
-        color:#0e0d15;
-        background-color:#f1f1f1;
+        color:#ffffff;
+        background: rgb(14,13,28);
+        background: linear-gradient(36deg, rgba(14,13,28,1) 0%, rgba(32,44,73,1) 61%, rgba(29,43,79,1) 100%);
+        height: 100vh;
+        overflow: hidden;
       }
       .intro{
-        height:125px;
-        border-bottom:1px solid black;
         margin-bottom:50px;
       }
       .container{
@@ -19,17 +20,20 @@
         margin:0 auto;
       }
       .element{
-        background-color:#fff;
-        border-radius:6px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        width: 23%;
+        width: 33%;
         margin: 1%;
         position:relative;
         float:left;
+        padding: 25px 20px;
       }
       .element-inner{
-        padding: 20px 20px;
+        padding: 40px 20px;
       }
       h2{
         font-weight:200;
@@ -50,9 +54,20 @@
         text-transform:uppercase;
       }
       .element h4{
-        font-size:22px;
+        font-size:3vh;
         line-height:22px;
         margin:0px;
+        color: #fff;
+      }
+      .element h3{
+        font-size:7vh;
+        line-height:22px;
+        margin:0px;
+        color: #fff;
+      }
+      .process{
+        padding: 0px 15px;
+        width: 20%;
       }
     </style>
     <title>Übersicht</title>
@@ -61,137 +76,23 @@
     <div class="container">
       <div class="intro">
         <h1 style="font-size:60px;">Manuel Lusti</h1>
-        <h4 style="font-size:20px;margin-top:-40px;">Übersicht</h4>
       </div>
 
       <div class="elementen">
-        <h2>Inhalt</h2>
         <!--START element-->
         <div class="element hoverable">
-          <a href="work/lyrics-versions/221201/index.html">
+          <a href="final/index.html">
             <div class="element-inner">
-              <p>Stand 01.12.2022</p>
-              <h4>Lyrics</h4>
+              <h3>Final</h3>
             </div>
           </a>
         </div>
         <!--END element-->
         <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/js-ueb.html">
+        <div class="element hoverable process">
+          <a href="work/index.html">
             <div class="element-inner">
-              <p>Tag 7</p>
-              <h4>Javascript</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/animation.html">
-            <div class="element-inner">
-              <p>Tag 7</p>
-              <h4>Animation</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/transform-plakat.html">
-            <div class="element-inner">
-              <p>Tag 6</p>
-              <h4>Transform Plakat</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/transform.html">
-            <div class="element-inner">
-              <p>Tag 6</p>
-              <h4>Transform</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/lyrics-versions/221117/index.html">
-            <div class="element-inner">
-              <p>Stand 17.11.2022</p>
-              <h4>Lyrics</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/flex-plakat.html">
-            <div class="element-inner">
-              <p>Tag 5</p>
-              <h4>Flexbox Plakat</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/flexbox.html">
-            <div class="element-inner">
-              <p>Tag 5</p>
-              <h4>Flexbox</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/plakat.html">
-            <div class="element-inner">
-              <p>Tag 4</p>
-              <h4>Übung Plakat</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/uebungen/layout-grid-ueb.html">
-            <div class="element-inner">
-              <p>Tag 4</p>
-              <h4>Übung Grid</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/lyrics-versions/221110/index.html">
-            <div class="element-inner">
-              <p>Stand 10.11.22</p>
-              <h4>Lyrics</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="https://www.figma.com/file/r7VnnJZKwwyNevyf51o6M6/LyricsSize?node-id=1%3A15">
-            <div class="element-inner">
-              <p>Tag 3</p>
-              <h4>Schriftgrössen</h4>
-            </div>
-          </a>
-        </div>
-        <!--END element-->
-        <!--START element-->
-        <div class="element hoverable">
-          <a href="work/fonts.html">
-            <div class="element-inner">
-              <p>Tag 1</p>
-              <h4>Font Sammlung</h4>
+              <h4>Process</h4>
             </div>
           </a>
         </div>

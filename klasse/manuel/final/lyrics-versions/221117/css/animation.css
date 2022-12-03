@@ -1,0 +1,62 @@
+@keyframes frogmined {
+  0%{margin-left: 0px;}
+  100%{margin-left: 200px;}
+}
+.part1 .eins{
+  position: relative;
+  animation-name: frogmined;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes logisch {
+  0%{margin-right:-150px;}
+  100%{margin-right:50px;}
+}
+.part1 .logisch{
+  position: relative;
+  animation-name: logisch;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes isch {
+  0%{margin-left:600px;}
+  100%{margin-left:800px;}
+}
+.part1 .drei{
+  position: relative;
+  animation-name: isch;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes flaker {
+  0%{text-shadow: 0px 0px 4px #fff;margin-left:0px;}
+  20%{text-shadow: 0px 0px 3px #ffffff60}
+  50%{text-shadow: 0px 0px 6px #fff}
+  60%{text-shadow: 0px 0px 5px #ffffff60};
+  90%{text-shadow: 0px 0px 7px #fff100}
+  100%{text-shadow: 0px 0px 4px #fff}
+}
+.part2 .ichgsedini .ichgse .highlighted{
+  animation-name: flaker;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+}
+.part2 .ichgsedini .gse1 .highlighted{
+  animation-delay:1s;
+}
+.part2 .ichgsedini .gse2 .highlighted{
+  animation-delay:0s;
+}
+.part2 .ichgsedini .gse3 .highlighted{
+  animation-delay: 2s;
+}
+@keyframes flyin {
+  0%{top:-40px;opacity: 0;}
+  100%{top:0px;opacity: 1;}
+}
+.part2 .ichgsedini .flyin{
+  position: relative;
+  animation-name: flyin;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
