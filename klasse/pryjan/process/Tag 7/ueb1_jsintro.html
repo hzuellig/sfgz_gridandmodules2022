@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .specialbutton {
+        background-color: #44c767;
+        border-radius: 28px;
+        border: 1px solid #18ab29;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        padding: 16px 31px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    .specialbutton:hover {
+        background-color: #5cbf2a;
+    }
+
+    #kreis {
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        border-radius: 50%;
+    }
+    @keyframes anim {
+            0% {
+                box-shadow: 0px 0px 8px 8px #e803ba;
+            }
+            25% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 8px 16px #e8035b;
+                background-color: #03e8ba;
+            }
+            50% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 8px 24px #e85f03;
+                background-color: #038ce8;
+            }
+            75% {
+                box-shadow: 0px 0px 0px 8px #e803ba, 0px 0px 0px 16px #e84803, 0px 0px 0px 24px #e85f03, 0px 0px 8px 32px #e8a303;
+            }
+        }
+
+    #kreis2 {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: #000506;
+            animation-name: anim;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+
+        }
+</style>
+
+<script>
+    alert("Hallow")
+</script>
+
+<body>
+    <button class="specialbutton" onclick="changeProperties()">Klick Mich!</button>
+    <div id=kreis>
+        Hallo kreis
+    </div>
+    <button class="specialbutton" onclick="starteAnimation()">Klick Mich!</button>
+<div id="kreis2"> Hallo
+</div>
+    <script>
+        let=toogle=false;
+        
+        let anzahlklicks = 0;
+        //alert("Hallo mein Name ist");
+        function zaehleKlicks() {
+            anzahlKlicks = anzahlklicks + 1;
+            console.log(anzahlklicks);
+
+        }
+        function changeProperties() {
+            let element = document.getElementById("kreis");
+            //console.log(element);
+            element.style.backgroundColor="rgb(200,88,20)"
+            element.style.border="10px solid black";
+            element.style.Repeat="no-repeat";
+        }
+        function starteAnimation(){
+            var element = document.getElementById("kreis2")
+            element.style.animationPlayState="running";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      justify-content: top;
+      align-items: center;
+      background: greenyellow;
+      font-size: 200px;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 45vh;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      margin: 0;
+      font-weight: 900;
+      overflow: hidden;
+      background: linear-gradient(90deg, #000, rgb(0, 0, 0));
+      background-repeat: no-repeat;
+      background-size: 70%;
+      animation: animate 1s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      text-align: center;
+
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 35vh;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      margin: 0;
+      font-weight: 900;
+      overflow: hidden;
+      text-align: center;
+
+    }
+
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 45vh;
+      padding: 0;
+      margin: 0;
+      font-weight: 900;
+      overflow: hidden;
+      text-align: center;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+      font-size: 2vw;
+      font-weight: 600;
+      color: #1a1229;
+      padding-top: 2%;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+
+      100% {
+        background-position: 500%;
+      }
+    }
+
+    .blink {
+      animation: blinker 200ms linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    span {
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+
+    }
+
+    .veins {
+      background: url("https://media.giphy.com/media/FpKNZ0XPkGa2rTHKPq/giphy.gif");
+      background-size: 405px;
+      background-position: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+    }
+    .calling {
+      background: url("https://media.giphy.com/media/26u49wAh0E8U3S4qA/giphy.gif");
+      background-size: 305px;
+      background-position: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0;
+      margin: 0;
+    }
+
+
+    @-webkit-keyframes emojis-fall {
+      0% {
+        top: -50%
+      }
+
+      100% {
+        top: 100%
+      }
+    }
+
+    @-webkit-keyframes emojis-shake {
+      0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+      }
+
+      50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+      }
+
+      100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+      }
+    }
+
+
+    .emoji {
+      position: fixed;
+      top: -50%;
+      z-index: 9999;
+      -webkit-animation-name: emojis-fall, emojis-shake;
+      -webkit-animation-duration: 10s, 3s;
+      -webkit-animation-timing-function: linear, ease-in-out;
+      -webkit-animation-iteration-count: infinite, infinite;
+      -webkit-animation-play-state: running, running;
+      animation-duration: 10s, 3s;
+    }
+
+    .emoji:nth-of-type(0) {
+      left: 1%;
+      -webkit-animation-delay: 0s, 0s;
+      animation-delay: 0s, 0s
+    }
+
+    .emoji:nth-of-type(1) {
+      left: 10%;
+      -webkit-animation-delay: 1s, 1s;
+      animation-delay: 1s, 1s
+    }
+
+    .emoji:nth-of-type(2) {
+      left: 20%;
+      -webkit-animation-delay: 6s, .5s;
+      animation-delay: 6s, .5s
+    }
+
+    .emoji:nth-of-type(3) {
+      left: 30%;
+      -webkit-animation-delay: 4s, 2s;
+      animation-delay: 4s, 2s
+    }
+
+    .emoji:nth-of-type(4) {
+      left: 40%;
+      -webkit-animation-delay: 2s, 2s;
+      animation-delay: 2s, 2s
+    }
+
+    .emoji:nth-of-type(5) {
+      left: 50%;
+      -webkit-animation-delay: 8s, 3s;
+      animation-delay: 8s, 3s
+    }
+
+    .emoji:nth-of-type(6) {
+      left: 60%;
+      -webkit-animation-delay: 6s, 2s;
+      animation-delay: 6s, 2s
+    }
+
+    .emoji:nth-of-type(7) {
+      left: 70%;
+      -webkit-animation-delay: 2.5s, 1s;
+      animation-delay: 2.5s, 1s
+    }
+
+    .emoji:nth-of-type(8) {
+      left: 80%;
+      -webkit-animation-delay: 1s, 0s;
+      animation-delay: 1s, 0s
+    }
+
+    .emoji:nth-of-type(9) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
+
+    .pop_name {
+      animation: 2s pop_name ease infinite;
+    }
+
+    @keyframes pop_name {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      25% {
+        transform: scale(2);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .loop-holder {
+      display: flex;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .loop-holder-2 {
+      display: flex;
+      white-space: wrap;
+      overflow: hidden;
+    }
+
+    .loop-holder_text {
+      animation: textLoop 10s linear infinite;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 10vh;
+      padding: 0;
+      margin: 0;
+      font-weight: 900;
+      padding-right: .35em;
+    }
+
+
+    @keyframes textLoop {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+      }
+
+      100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+      }
+    }
+    .container
+    {
+      background-color: black;
+    color: aliceblue;
+    }
+    audio
+    {
+      position: relative;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="emoji">
+    ⚡
+  </div>
+  <div class="emoji">
+    🏃
+  </div>
+  <div class="emoji">
+    ⚡
+  </div>
+  <div class="emoji">
+    🏃
+  </div>
+  <div class="emoji">
+    ⚡
+  </div>
+  <div class="emoji">
+    🏃
+  </div>
+  <div class="emoji">
+    ⚡
+  </div>
+  <div class="emoji">
+    🏃
+  </div>
+  <div class="emoji">
+    ⚡
+  </div>
+  <div class="emoji">
+    🏃
+  </div>
+  <section>
+    <p>I CAN FEEL THE</p>
+  </section>
+  <h2 class="blink">POWER</h2>
+  </section>
+  <section>
+    <h1>RUNNIG</h1>
+  </section>
+  <section>
+    <p>THROUGH MY</p>
+  </section>
+  <section>
+    <h3 class="veins">VEINS</h3>
+  </section>
+</section>
+<section>
+  <h3 class="calling">calling</h3>
+</section>
+  <section>
+    <p>OUT MY</p>
+  </section>
+  <div class="container" >
+  <div class="loop-holder">
+    <div class="loop-holder_text">NAME NAME NAME NAME NAME NAME</div>
+    <div class="loop-holder_text">NAME NAME NAME NAME NAME NAME</div>
+    <div class="loop-holder_text">NAME NAME NAME NAME NAME NAME</div>
+  </div>
+</div>
+  <section>
+    <h2 class="pop_name">L📢UDER</h2>
+  </section>
+  <div class="loop-holder-2">
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+    <div class="loop-holder_text">YEAH YEAH YEAH YEAH YEAH YEAH</div>
+  </div>
+
+</body>
+
+</html>

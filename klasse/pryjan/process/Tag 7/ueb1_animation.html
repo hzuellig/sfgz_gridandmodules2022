@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
         .group {
-            display:grid;
-            grid-template-columns: 1fr; 
-            grid-template-rows: 1fr; 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
         }
 
         .not_transformed,
         .transformed {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    height: 400px;
-    width: 400px;
-    }
-            .not_transformed {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            height: 400px;
+            width: 400px;
+        }
+
+        .not_transformed {
             background-color: black;
         }
+
+        .transformed {
+            background-color: black;
+            animation-name: meineAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes meineAnimation {
+            0% {
+                border-radius: 0%;
+                background-color: aqua;
+            }
+
+            100% {
+                border-radius: 50%;
+                background-color: brown;
+            }
+    
+}
         
-    .transformed {
-    background-color: black;
-    animation-name: meineAnimation;
-    animation-duration: 3s;
 
-    }
-
-.group:hover .transformed {
-    background-color: aqua;
-    transform: scale(0.5);
-}
-
-@keyframes meineAniamtion { 
- 0% { 
-    border-radius: 0%;
-    background-color: aqua;
-}
-100% {
-    border-radius: 50%;
-    background-color: brown;
-}
-}
-            </style>
+    </style>
 </head>
+
 <body>
     <section>
         <h1>CSS Animationen</h1>
@@ -59,4 +62,5 @@
         </div>
     </section>
 </body>
+
 </html>

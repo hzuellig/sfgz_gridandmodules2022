@@ -1,0 +1,601 @@
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.parentcontainer {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+    padding-bottom: 6vw;
+    margin-bottom: 6vw;
+
+}
+
+.parentcontainer2 {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+
+}
+
+.parentcontainer3 {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+}
+
+.parentcontainer4 {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+    padding-bottom: 6vw;
+    margin-bottom: 6vw;
+}
+
+.parentcontainer5 {
+    display: grid; 
+    grid-template-columns: repeat(12, 8.3%); 
+    grid-template-rows: repeat(10, 10%); 
+    width: 100%;
+    padding-bottom: 6vw;
+    margin-bottom: 6vw;
+}
+
+.h1 {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 7vw;
+}
+
+
+.h2 {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 25vw;
+
+}
+
+.h3 {
+    font-family: 'Germania One', cursive;
+    color: black;
+    font-size: 3vw;
+    margin-bottom: 1.6vw;
+    letter-spacing: 0.1vw;
+}
+
+.h4 {
+    font-family: 'Germania One', cursive;
+    color: black;
+    font-size: 25vw;
+    letter-spacing: 3vw;
+    animation: fadeIn 5s;
+
+}
+
+.h5 {
+    font-family: 'Germania One', cursive;
+    color: black;
+    font-size: 7vw;
+    margin-bottom: 2.1vw;
+}
+
+
+.h6 {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+
+
+.font_vertical {
+    writing-mode: vertical-rl;
+    margin-left: -7vw;
+    position: relative;
+
+}
+
+
+.row1 {
+    grid-column: 4 / 10;
+    text-align: center;
+
+}
+
+.row2 {
+    grid-column: 4 / 10;
+    text-align: center;
+
+}
+
+/* CONTROL */
+
+.row3 {
+    grid-column: 1 / 13;
+    text-align: center;
+
+}
+
+.row4 {
+    grid-row: 7 / 10;
+}
+
+.row5 {
+    grid-column: 3 / 6;
+    text-align: right;
+    margin-top: 0.6vw;
+    margin-right: 3vw;
+}
+
+.row6 {
+    grid-column: 6 / 8;
+    text-align: center;
+}
+
+.row7 {
+    grid-column: 8 / 12;
+    text-align: left;
+    grid-row: 1/2;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+
+.row8 {
+    grid-row: 2 / 3;
+    grid-column: 2/13;
+
+}
+
+.row9 {
+    grid-row: 2 / 13;
+    grid-column: 9 / 12;
+    align-self: flex-end;
+padding-bottom: 3.9vw;
+
+}
+
+.row10 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 13;
+
+}
+
+
+
+
+.section_orange {
+background-color: rgb(255, 128, 0);
+padding-top: 5vw;
+padding-bottom: 5vw;
+    }
+
+    .section_black {
+        background-color: black;
+        padding-top: 3vw;
+
+            }
+
+
+            .control {
+                display: flex;
+                margin: 0 auto;
+                position: relative;
+                margin-top: -4%;
+            }
+        
+            .control p {
+                margin: 0;
+
+            }
+
+            .control .odd {
+                margin-bottom: -20px;
+                position: relative;
+                top: 10vw;
+            }
+
+
+/* 1.Control */
+@keyframes rotate1 {
+    0% {transform: rotate(0deg) translate(0, 0);}
+    25% {transform: rotate(540deg) translate(0, -10vw);}
+    50% {transform: rotate(1080deg) translate(0, 20vw);}
+    75% {transform: rotate(1740deg) translate(0, -10vw);}
+    100% {transform: rotate(2160deg) translate(0, 0);}
+  }
+  
+  /* The element to apply the animation to */
+ .rotate1 {
+    animation-name: rotate1;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; 
+ } 
+
+
+  @keyframes rotate2 {
+    0% {rotate: 0deg;}
+    50% {rotate: -1080deg;}
+    100% {rotate: -1080deg;}
+  }
+  
+ .rotate2 {
+    animation-name: rotate2;
+    animation-duration: 2s;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;            
+
+  } 
+
+
+  @keyframes rotate3 {
+    0% {rotate: 0deg;}
+    50% {rotate: 1080deg;}
+    100% {rotate: 1080deg;}
+  }
+  
+ .rotate3 {
+    animation-name: rotate3;
+    animation-duration: 2s;
+    animation-delay: 3.3s;
+    animation-iteration-count: infinite;            
+  } 
+
+
+  @keyframes rotate4 {
+    0% {rotate: 0deg;}
+    50% {rotate: 1080deg;}
+    100% {rotate: 2160deg;}
+  }
+  
+ .rotate4 {
+    animation-name: rotate4;
+    animation-duration: 2s;
+    animation-delay: 3.3s;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards;           
+  } 
+
+
+
+/* 2.Control */
+
+/*
+@keyframes drehen1 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    50% {transform:translate(0vw, 0vw) rotate(-1080deg);}
+    100% {transform:translate(0vw, 5vw) rotate(-1080deg);}
+
+  }
+  
+ .drehen1 {
+    animation-name: drehen1;
+    animation-duration: 2s;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear; 
+          
+
+  } 
+
+  @keyframes drehen2 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    50% {transform:translate(0vw, -0vw) rotate(1080deg);}
+    100% {transform:translate(0vw, -5vw) rotate(1080deg);}
+
+  }
+  
+ .drehen2 {
+    animation-name: drehen2;
+    animation-duration: 2s;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear; 
+          
+
+  } 
+
+  @keyframes drehen3 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    50% {transform:translate(0vw, 0vw) rotate(-1080deg);}
+    100% {transform:translate(0vw, 3vw) rotate(-1080deg);}
+
+  }
+  
+ .drehen3 {
+    animation-name: drehen3;
+    animation-duration: 2s;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear; 
+          
+
+  } 
+
+  @keyframes drehen4 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    50% {transform:translate(0vw, 0vw) rotate(-1080deg);}
+    100% {transform:translate(0vw, -3vw) rotate(-1080deg);}
+
+  }
+  
+ .drehen4 {
+    animation-name: drehen4;
+    animation-duration: 2s;
+    animation-delay: 3.2s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear; 
+          
+
+  } 
+*/
+
+  @keyframes drehen1 {
+    0% {transform:scale() rotate(0deg);}
+    70% {transform:scale()  rotate(-1080deg) ;}
+    99% {transform:scale(200%) rotate(-1080deg);}
+    100% {transform:scale(100%) rotate(0deg);}
+
+  }
+  
+ .drehen1 {
+    animation-name: drehen1;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: ease-in;        
+
+  } 
+
+  @keyframes drehen2 {
+    0% {transform:scale() rotate(0deg);}
+    70% {transform:scale() rotate(1080deg);}
+    99% {transform:scale(200%) rotate(1080deg);}
+    100% {transform:scale(100%) rotate(0deg);}
+
+  }
+  
+ .drehen2 {
+    animation-name: drehen2;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: ease-in;        
+
+  } 
+
+  @keyframes drehen3 {
+    0% {transform:scale() rotate(0deg);}
+    70% {transform:scale() rotate(-1080deg);}
+    99% {transform:scale(200%) rotate(-1080deg);}
+    100% {transform:scale(100%) rotate(0deg);}
+
+  }
+  
+ .drehen3 {
+    animation-name: drehen3;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: ease-in;        
+
+  } 
+
+  @keyframes drehen4 {
+    0% {transform:scale() rotate(0deg);}
+    70% {transform:scale() rotate(1080deg);}
+    99% {transform:scale(200%) rotate(1080deg);}
+    100% {transform:scale(100%) rotate(0deg);}
+
+  }
+  
+ .drehen4 {
+    animation-name: drehen4;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;  
+    animation-timing-function: ease-in;        
+
+        
+  } 
+
+
+
+/* down */
+
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+  }
+
+  #fadeIn1 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    animation-iteration-count: 1; 
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#fadeIn2 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 6s;
+    animation-iteration-count: 1; 
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+#fadeIn3 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 7s;
+    animation-iteration-count: 1; 
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+#fadeIn4 {
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-delay: 8s;
+    animation-iteration-count: 1; 
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes devil {
+    0% {
+        text-shadow: 0px 0px 2px #ff6600;
+    }
+    25% {
+        text-shadow: 0px 0px 0.2px 0.2px #ff6600, 0px 0px 0.2px 0.4px #ff5100;
+    }
+    50% {
+        text-shadow: 0px 0px 0.2px 0.2px #ff6600, 0px 0px 0.2px 0.4px #ff5100, 0px 0px 0.2px 0.6px #ff3700;
+    }
+    75% {
+        text-shadow: 0px 0px 0.2px 0.2px #ff6600, 0px 0px 0.2px 0.4px #ff5100, 0px 0px 0.2px 0.6px #ff3700, 0px 0px 0.2px 0.8px #ff0000;
+    }
+}
+.devil {
+    animation-name: devil;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+/* CARDS */
+
+.not_transformed,
+.transformed {
+    font-family: 'Germania One', cursive;
+    color: rgb(255, 128, 0);
+    font-size: 25vw;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    grid-column: 1 / 12;
+    text-align: right;
+    margin-top: -45px;
+    grid-row: 1 / 10;
+}
+
+@keyframes doppelung1 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    10% {transform:translate(-1vw, 0vw) rotate(-2deg);}
+    90% {transform:translate(-1vw, 0vw) rotate(-2deg) ;}
+    100% {transform:translate(0vw, 0vw) rotate(0deg);}
+ }
+
+  
+ .doppelung1 {
+    animation-name: doppelung1;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+  } 
+
+  @keyframes doppelung2 {
+    0% {transform:translate(0px, 0px) rotate(0deg);}
+    10% {transform:translate(-2vw, 0vw) rotate(-4deg);}
+    90% {transform:translate(-2vw, 0vw) rotate(-4deg);}
+    100% {transform:translate(0vw, 0vw) rotate(0deg);}
+
+ }
+  
+ .doppelung2 {
+    animation-name: doppelung2;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+
+  } 
+
+  @keyframes doppelung3 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    10% {transform:translate(-3vw, 0vw) rotate(-6deg);}
+    90% {transform:translate(-3vw, 0vw) rotate(-6deg);}
+    100% {transform:translate(0vw, 0vw) rotate(0deg);}
+
+ }
+  
+ .doppelung3 {
+    animation-name: doppelung3;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+
+  } 
+
+  @keyframes doppelung4 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    10% {transform:translate(-4vw, 0vw) rotate(-8deg);}
+    90% {transform:translate(-4vw, 0vw) rotate(-8deg);}
+    100% {transform:translate(0vw, 0vw) rotate(0deg);}
+
+ }
+  
+ .doppelung4 {
+    animation-name: doppelung4;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+
+  } 
+
+  @keyframes doppelung5 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    10% {transform:translate(-5vw, 0vw) rotate(-10deg);}
+    90% {transform:translate(-5vw, 0vw) rotate(-10deg);}
+    100% {transform:translate(0vw, 0vw) rotate(0deg);}
+
+ }
+  
+ .doppelung5 {
+    animation-name: doppelung5;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+
+  } 
+
+  @keyframes doppelung6 {
+    0% {transform:translate(0vw, 0vw) rotate(0deg);}
+    10% {transform:translate(-6vw, 0vw) rotate(-12deg);}
+    90% {transform:translate(-6vw, 0vw) rotate(-12deg);}
+    100% {transform:translate(0vw, 0vw) rotate(0deg);}
+
+ }
+  
+ .doppelung6 {
+    animation-name: doppelung6;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+
+  } 
+
+
+
+  
+ 

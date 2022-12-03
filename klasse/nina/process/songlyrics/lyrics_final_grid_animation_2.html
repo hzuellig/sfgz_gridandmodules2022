@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songlyrics – Versuch 7 – Grid</title>
+    <link rel="stylesheet" href="stylesheet_final_2.css">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="section_orange">
+        <div class="parentcontainer4">
+
+            <span class="row12 h8 blink"> SUFFOCATE</span>
+            <span class="row12 h3 "> by Bad Omens</span>
+
+
+        </div>
+    </div>
+
+
+    <div class="section_black">
+
+        <div class="parentcontainer">
+            <div class="row1 h1">And as i spin</div>
+            <div class="row2 h1">out of </div>
+
+            <div class="row3 h2 control">
+                <p class="drehen1"> C</p>
+                <p class="odd drehen2">O</p>
+                <p class="drehen3"> N</p>
+                <p class="odd drehen1">T</p>
+                <p class="drehen2"> R</p>
+                <p class="odd drehen4">O</p>
+                <p class="drehen1">L</p>
+            </div>
+        </div>
+
+        <div class="section_orange">
+            <div class="parentcontainer2">
+
+                <br>
+                <span class="row5 h3"> every second <br> takes me <br> further</span>
+                <span class="row6">
+                    <p class="h4 font_vertical " id="fadeIn1">D</p>
+                    <p class="h4 font_vertical " id="fadeIn2">O</p>
+                    <p class="h4 font_vertical " id="fadeIn3">W</p>
+                    <p class="h4 font_vertical " id="fadeIn4">N</p>
+
+
+                </span>
+                <br>
+
+                <span class="row7 h5"> the <br> rabbit hole</span>
+
+            </div>
+        </div>
+
+
+        <div class="section_black">
+            <div class="parentcontainer3">
+
+                <br>
+                <div class="row10 h6"> the</div>
+                <div class="row8 h7"> DEVIL</div>
+                <div class="row9 h6">now holds all the</div>
+            </div>
+            <div class="parentcontainer4">
+                <div class="not_transformed">CARDS</div>
+                <div class="transformed doppelung1 ">CARDS</div>
+                <div class="transformed doppelung2 ">CARDS</div>
+                <div class="transformed doppelung3 ">CARDS</div>
+                <div class="transformed doppelung4 ">CARDS</div>
+                <div class="transformed doppelung5 ">CARDS</div>
+                <div class="transformed doppelung6 ">CARDS</div>
+
+            </div>
+        </div>
+
+
+        <audio id="audio" controls>
+            <source src="/process/song/suffocate.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+
+
+    </div>
+    </div>
+
+    <script>
+        setInterval(() => {
+            console.log("starte prozedur");
+
+            let element = document.getElementById("fadeIn1");
+            element.style.animation = "none";
+            element = document.getElementById("fadeIn2");
+            element.style.animation = "none";
+            element = document.getElementById("fadeIn3");
+            element.style.animation = "none";
+            element = document.getElementById("fadeIn4");
+            element.style.animation = "none";
+
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+            //element.style.animation = "8s 5s 1 forwards fadeIn"
+            setTimeout(() => {
+                element = document.getElementById("fadeIn1");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationDelay = "2s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+
+                element = document.getElementById("fadeIn2");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationDelay = "3s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+
+                element = document.getElementById("fadeIn3");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationDelay = "4s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+
+                element = document.getElementById("fadeIn4");
+                element.style.animationName = "fadeIn";
+                element.style.animationDuration = "8s";
+                element.style.animationDelay = "5s";
+                element.style.animationFillMode = "forwards";
+                element.style.animationPlayState = "running";
+            }, 100);
+
+        }, 16000);
+
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+
+        function changeState() {
+            var play = document.getElementById("play");
+            play.classList.toggle("active");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

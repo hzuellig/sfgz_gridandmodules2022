@@ -9,57 +9,100 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+        integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
 
 <body>
 
-
+    <div id="invertedcursor"></div>
 
     <div class="outtercontainer beigebg">
 
         <div class="parentcontainer">
-            <div class="row1 playfairitalic2">What's wrong with the</div>
-            <div class="line-right"></div>
+            <div class="dot-outter">
+                <div id="dot"></div>
+            </div>
+            <div class="row1 playfairitalic2" id="slideinr1">What's wrong with the</div>
+            <div class="line-right" id="slideinr1"></div>
             <div class="row3" id="world">WORLD</div>
-            <div class="line-left"></div>
-            <div class="row4 playfairitalic2">mama</div>
+            <div class="line-left" id="slideinl1"></div>
+            <div class="row4 playfairitalic2" id="slideinl1">mama</div>
         </div>
+
+        <div class="smallcontainer"></div>
 
     </div>
 
     <div class="outtercontainer blackbg">
 
-        <div class="parentcontainer">
-            <div class="row5 playfairitalic2beige">people livin like they got no</div>
-            <div class="line-right2"></div>
+        <div class="parentcontainer dot2">
+
+            <div class="row5 playfairitalic2beige" id="slideinr2">people livin like they got no</div>
+
+            <svg version="1.1" id="Ebene_1" class="line-right2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 538.76 56.43"
+                xml:space="preserve">
+                <path class="st0" d="M537.72,37.1c0,0-60.5-27.5-108.5-25.5s-79,28-111,35s-82.29-16.21-71.15-35.1s51.18-5.72,45.16,18.19
+                c-6.02,23.91-29.5,30.47-82.26,18.19S129.71,29.6,95.47,37.1s-95.16,0-95.16,0" />
+            </svg>
             <div class="row6 roboto6white">MAMAS</div>
+            <div class="dot-outter">
+                <div id="dot2"></div>
+            </div>
         </div>
+
+        <div class="smallcontainer"></div>
 
     </div>
 
     <div class="outtercontainer whitebg">
 
-        <div class="parentcontainer">
-            <div class="row5right playfairitalic2red">I think the whole world's addicted to the</div>
-            <div class="line-left2"></div>
+        <div class="parentcontainer dot3">
+            <div class="row5right playfairitalic2red" id="slideinl2">I think the whole world's addicted to the</div>
+
+            <svg version="1.1" id="Ebene_2" class="line-left2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 538.76 56.43"
+                xml:space="preserve">
+                <path class="st0" d="M537.72,37.1c0,0-60.5-27.5-108.5-25.5s-79,28-111,35s-82.29-16.21-71.15-35.1s51.18-5.72,45.16,18.19
+                c-6.02,23.91-29.5,30.47-82.26,18.19S129.71,29.6,95.47,37.1s-95.16,0-95.16,0" />
+            </svg>
             <div class="row6right roboto6">DRAMA</div>
+            <div class="dot-outter">
+                <div id="dot3"></div>
+            </div>
         </div>
+
+        <div class="smallcontainer"></div>
 
     </div>
 
     <div class="outtercontainer brownbg">
 
-        <div class="parentcontainer">
-            <div class="row5 playfairitalic2">Only attracted to things that'll bring you</div>
-            <div class="line-right3"></div>
+        <div class="parentcontainer dot4">
+            <div class="row5 playfairitalic2" id="slideinr3">Only attracted to things that'll bring you</div>
+
+            <svg version="1.1" id="Ebene_3" class="line-right3" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 538.76 56.43"
+                xml:space="preserve">
+                <path class="st0" d="M537.72,37.1c0,0-60.5-27.5-108.5-25.5s-79,28-111,35s-82.29-16.21-71.15-35.1s51.18-5.72,45.16,18.19
+                c-6.02,23.91-29.5,30.47-82.26,18.19S129.71,29.6,95.47,37.1s-95.16,0-95.16,0" />
+            </svg>
             <div class="row6 roboto6beige">TRAUMA</div>
+            <div class="dot-outter">
+                <div id="dot4"></div>
+            </div>
         </div>
+
+        <div class="smallcontainer"></div>
 
     </div>
 
@@ -69,17 +112,24 @@
             <div class="row8 playfairitalic2red">Overseas,</div>
             <div class="line-right4"></div>
             <div class="row9 roboto10">YEAH</div>
+            <div class="dot-outter">
+                <div id="dot5"></div>
+            </div>
         </div>
 
     </div>
 
-    <div class="outtercontainer beigebg">
+    <div class="outtercontainer beigebg dot5">
 
         <section class="row10">
             <div class="playfair4italic">We tryna stop terrorirsm</div>
 
         </section>
+        <div class="dot-outter">
+            <div id="dot5"></div>
+        </div>
 
+        <div class="smallcontainer"></div>
 
     </div>
 
@@ -106,15 +156,232 @@
 
     </div>
 
+    <audio id="audio" controls>
+        <source src="whereisthelove.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+
+
     <script>
-        /* window.addEventListener("scroll", starteAnimation);
 
+    document.body.onmousemove = function(e) {
+    document.documentElement.style.setProperty (
+        '--x', (
+        e.clientX+window.scrollX
+        )
+        + 'px'
+    );
+    document.documentElement.style.setProperty (
+        '--y', (
+        e.clientY+window.scrollY
+        ) 
+        + 'px'
+    );
+    }
+
+
+        window.addEventListener("scroll", starteAnimation);
         function starteAnimation() {
-            let element = document.getElementById('world');
+            let element = document.getElementById('slideinr1');
             element.style.animationPlayState = "running";
-        }*/
+        }
 
-       gsap.registerPlugin(ScrollTrigger);
+        document.addEventListener("scroll", listen);
+        function listen() {
+            let element = document.getElementById('Ebene_1');
+            let rect = element.getBoundingClientRect();
+            if (rect.y > 0 && rect.y < (window.innerHeight - 200)) {
+                console.log('Element sichtbar');
+                /* Hier kann die Animation gestartet werden */
+                element.style.animationPlayState = "running";
+            }
+        }
+
+        document.addEventListener("scroll", listen2);
+        function listen2() {
+            let element = document.getElementById('slideinr2');
+            let rect = element.getBoundingClientRect();
+            if (rect.y > 0 && rect.y < (window.innerHeight - 200)) {
+                console.log('Element sichtbar');
+                /* Hier kann die Animation gestartet werden */
+                element.style.animationPlayState = "running";
+            }
+        }
+
+        document.addEventListener("scroll", listen3);
+        function listen3() {
+            let element = document.getElementById('Ebene_2');
+            let rect = element.getBoundingClientRect();
+            if (rect.y > 0 && rect.y < (window.innerHeight - 200)) {
+                console.log('Element sichtbar');
+                /* Hier kann die Animation gestartet werden */
+                element.style.animationPlayState = "running";
+            }
+        }
+
+        document.addEventListener("scroll", listen4);
+        function listen4() {
+            let element = document.getElementById('Ebene_3');
+            let rect = element.getBoundingClientRect();
+            if (rect.y > 0 && rect.y < (window.innerHeight - 200)) {
+                console.log('Element sichtbar');
+                /* Hier kann die Animation gestartet werden */
+                element.style.animationPlayState = "running";
+            }
+        }
+
+        document.addEventListener("scroll", listen5);
+        function listen5() {
+            let element = document.getElementById('slideinr3');
+            let rect = element.getBoundingClientRect();
+            if (rect.y > 0 && rect.y < (window.innerHeight - 200)) {
+                console.log('Element sichtbar');
+                /* Hier kann die Animation gestartet werden */
+                element.style.animationPlayState = "running";
+            }
+        }
+
+        document.addEventListener("scroll", listen6);
+        function listen6() {
+            let element = document.getElementById('slideinl2');
+            let rect = element.getBoundingClientRect();
+            if (rect.y > 0 && rect.y < (window.innerHeight - 200)) {
+                console.log('Element sichtbar');
+                /* Hier kann die Animation gestartet werden */
+                element.style.animationPlayState = "running";
+            }
+        }
+
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("#dot", {
+            scale: 0,
+            backgroundColor: "#1E1E1E",
+            scrollTrigger: {
+                trigger: ".parentcontainer",
+                start: "top",
+                end: "+200",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        })
+        gsap.to("#dot", {
+            scale: 2500,
+            backgroundColor: "#1E1E1E",
+            scrollTrigger: {
+                trigger: ".parentcontainer",
+                start: "+200",
+                end: "+400",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        });
+
+
+        gsap.from("#dot2", {
+            scale: 0,
+            backgroundColor: "white",
+            scrollTrigger: {
+                trigger: ".dot2",
+                start: "top",
+                end: "+200",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        })
+        gsap.to("#dot2", {
+            scale: 2500,
+            backgroundColor: "white",
+            scrollTrigger: {
+                trigger: ".dot2",
+                start: "+200",
+                end: "+400",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        });
+
+        gsap.from("#dot3", {
+            scale: 0,
+            backgroundColor: "#C97D68",
+            scrollTrigger: {
+                trigger: ".dot3",
+                start: "top",
+                end: "+200",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        })
+        gsap.to("#dot3", {
+            scale: 2500,
+            backgroundColor: "#C97D68",
+            scrollTrigger: {
+                trigger: ".dot3",
+                start: "+200",
+                end: "+400",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        });
+
+        gsap.from("#dot4", {
+            scale: 0,
+            backgroundColor: "#EADED5",
+            scrollTrigger: {
+                trigger: ".dot4",
+                start: "top",
+                end: "+200",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        })
+        gsap.to("#dot4", {
+            scale: 2500,
+            backgroundColor: "#EADED5",
+            scrollTrigger: {
+                trigger: ".dot4",
+                start: "+200",
+                end: "+400",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        });
+
+
+        gsap.from("#dot5", {
+            scale: 0,
+            backgroundColor: "#1E1E1E",
+            scrollTrigger: {
+                trigger: ".dot5",
+                start: "-200",
+                end: "top",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        })
+        gsap.to("#dot5", {
+            scale: 2500,
+            backgroundColor: "#1E1E1E",
+            scrollTrigger: {
+                trigger: ".dot5",
+                start: "+top",
+                end: "+200",
+                scrub: true,
+                markers: false,
+                id: "scrub"
+            }
+        });
 
         gsap.to(".row12", {
             x: "-35vw",
@@ -123,7 +390,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -135,7 +402,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -147,7 +414,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -159,7 +426,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -171,7 +438,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -183,7 +450,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -195,7 +462,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -207,7 +474,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -220,7 +487,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -232,7 +499,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -244,7 +511,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -256,7 +523,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -268,7 +535,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -280,7 +547,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -292,7 +559,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -304,7 +571,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -316,7 +583,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -328,7 +595,7 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -340,7 +607,7 @@
                 start: "+0",
                 end: "+400",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
@@ -352,12 +619,15 @@
                 start: "+400",
                 end: "+800",
                 scrub: true,
-                markers: true,
+                markers: false,
                 id: "scrub"
             }
         });
 
+
     </script>
+
+
 </body>
 
 </html>

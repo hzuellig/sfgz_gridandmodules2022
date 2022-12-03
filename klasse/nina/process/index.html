@@ -13,81 +13,152 @@
         rel="stylesheet">
 
     <style>
+        body {
+            background-color: black;
+            margin: 1vw;
+            padding: 1vw;
+        }
+
         h1 {
             font-family: 'Zilla Slab', serif;
             font-weight: 100;
             color: rgba(255, 255, 255, 0.815);
-            font-size: 50px;
-            margin: 40px;
+            font-size: 3vw;
+            margin-left: 2.5vw;
+            margin-top: 3vw;
         }
 
-        h4 {
-            font-family: 'Zilla Slab', serif;
-            font-weight: 200;
-            font-size: 25px;
-            color: rgba(255, 255, 255, 0.815);
-            margin: 40px;
-        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+                margin-left: 1.5rem;
+                margin-top: 2rem;
 
 
-        body {
-            background-color: black;
-            margin: 20px;
-            padding: 20px;
+            }
         }
 
         h2 {
             font-family: 'Zilla Slab', serif;
             font-weight: 200;
-            font-size: 25px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-            border: 5px double rgb(250, 175, 53);
-            background-color: rgb(250, 175, 53);
-            padding: 15px;
+            font-size: 1.5vw;
+            margin: 0.5vw;
 
         }
 
-        li {
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
-
-        a:hover {
-            color: rgba(255, 255, 255, 0.815);
+        @media screen and (max-width: 768px) {
+            h2 {
+                font-size: 1.5rem;
+                margin-left: 1.5rem;
+            }
         }
 
         h3 {
             font-family: 'Zilla Slab', serif;
             color: rgba(255, 255, 255, 0.815);
             font-weight: 400;
-            font-size: 20px;
-            margin: 40px;
+            font-size: 1.5vw;
+            margin: 2.5vw;
             letter-spacing: 0.1vw;
-
         }
+
+        @media screen and (max-width: 768px) {
+            h3 {
+
+                font-size: 1.5rem;
+                margin: 1.5rem;
+
+            }
+        }
+
+
+        h4 {
+            font-family: 'Zilla Slab', serif;
+            font-weight: 200;
+            font-size: 1.5vw;
+            color: rgba(255, 255, 255, 0.815);
+            margin: 2.5vw;
+        }
+
+        @media screen and (max-width: 768px) {
+            h4 {
+
+                font-size: 1.5rem;
+                margin: 1.5rem;
+            }
+        }
+
+
+
+
+        a {
+            color: black;
+            text-decoration: none;
+            border: 0.5vw double rgb(255, 132, 44);
+            background-color: rgb(255, 132, 44);
+            padding: 1vw;
+        }
+
+
+        li {
+            margin-top: 3vw;
+            margin-bottom: 5vw;
+            list-style-type: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            li {
+                padding: 0.1rem;
+                /*   margin-bottom: 0.5rem;
+            margin-top: 0.5rem; */
+                margin-left: -2.5rem;
+
+            }
+        }
+
+        a:hover {
+            color: rgba(255, 255, 255, 0.815);
+        }
+
+
 
         .parentcontainer {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(10, 10%);
+            grid-template-columns: repeat(12, 8.3vw);
             width: 100%;
         }
 
+        @media screen and (max-width: 768px) {
+            div.parentcontainer {
+                grid-template-columns: repeat(6, 16vw);
+            }
+        }
+
+
+
         .parentcontainer2 {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(10, 10%);
+            grid-template-columns: repeat(12, 8.3vw);
             width: 100%;
         }
+
+        @media screen and (max-width: 768px) {
+            div.parentcontainer2 {
+                grid-template-columns: repeat(6, 16vw);
+            }
+        }
+
 
 
         .tag2 {
             grid-column: 1/3;
             grid-row: 1/2;
+        }
+
+        @media screen and (max-width: 768px) {
+            div.tag2 {
+                grid-column: 1/3;
+            }
         }
 
         .tag4 {
@@ -96,10 +167,23 @@
 
         }
 
+        @media screen and (max-width: 768px) {
+            div.tag4 {
+                grid-column: 3/6;
+            }
+        }
+
         .tag5 {
             grid-column: 5/7;
             grid-row: 1/2;
 
+        }
+
+        @media screen and (max-width: 768px) {
+            div.tag5 {
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
         }
 
         .tag6 {
@@ -108,19 +192,86 @@
 
         }
 
-        .figma {
-            grid-column: 1/4;
+        @media screen and (max-width: 768px) {
+            div.tag6 {
+                grid-column: 3/6;
+                grid-row: 2/3;
+            }
+        }
+
+        .tag7 {
+            grid-column: 1/3;
             grid-row: 2/3;
         }
 
-        .statisch {
-            grid-column: 5/7;
+        @media screen and (max-width: 768px) {
+            div.tag7 {
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+        }
+
+        .tag8 {
+            grid-column: 3/5;
             grid-row: 2/3;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            div.tag8 {
+                grid-column: 3/6;
+                grid-row: 3/4;
+
+            }
+        }
+
+        .figma {
+            grid-column: 1/5;
+            grid-row: 2/3;
+        }
+
+        @media screen and (max-width: 768px) {
+            div.figma {
+                grid-column: 1/6;
+                grid-row: 3/4;
+            }
+        }
+
+        .statisch {
+            grid-column: 5/8;
+            grid-row: 2/3;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            div.statisch {
+                grid-column: 1/6;
+                grid-row: 4/5;
+            }
         }
 
         .bewegt {
             grid-column: 8/11;
             grid-row: 2/3;
+        }
+
+        @media screen and (max-width: 768px) {
+            div.bewegt {
+                grid-column: 1/6;
+                grid-row: 5/6;
+            }
+        }
+
+        .endprodukt {
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+
+        @media screen and (max-width: 768px) {
+            div.figma {
+                grid-column: 1/6;
+                grid-row: 3/4;
+            }
         }
     </style>
 
@@ -135,106 +286,25 @@
 
     <br>
 
-    <h1>Übungen</h1>
-
-    <div class="parentcontainer">
-
-        <div class="tag2">
-
-            <h4>Tag 2</h1>
-                <ul>
-                    <li>
-                        <h2>
-                            <a href="291022_tag1/uebung1.html"> Übung 1</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="291022_tag1/uebung2.html"> Übung 2</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="291022_tag1/uebung3.html"> Übung 3</a>
-                        </h2>
-                    </li>
-                </ul>
-
-        </div>
-
-        <div class="tag4">
-
-            <h4>Tag 4</h1>
-                <ul>
-                    <li>
-                        <h2>
-                            <a href="51122_tag4/uebung1_grid_basics.html"> Übung 4</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="51122_tag4/uebung2_grid_plakat.html"> Übung 5</a>
-                        </h2>
-                    </li>
-                </ul>
-
-        </div>
-
-        <div class="tag5">
-
-            <h4>Tag 5</h1>
-                <ul>
-                    <li>
-                        <h2>
-                            <a href="111122_tag5/uebung1_flexbox_basics.html"> Übung 6</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="111122_tag5/uebung2_plakat_flex.html"> Übung 7</a>
-                        </h2>
-                    </li>
-                </ul>
-
-        </div>
-
-        <div class="tag6">
-
-            <h4>Tag 6</h1>
-                <ul>
-                    <li>
-                        <h2>
-                            <a href="181122_tag6/uebung1_2d_transforms.html"> Übung 8</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="181122_tag6/uebung2_plakat_thesmiths.html"> Übung 9</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="181122_tag6/uebung3_transitions.html"> Übung 10</a>
-                        </h2>
-                    </li>
-                    <li>
-                        <h2>
-                            <a href="181122_tag6/uebung4_lyrics_transition.html"> Übung 11</a>
-                        </h2>
-                    </li>
-                </ul>
-
-        </div>
-
-    </div>
-
-
-
-    <br>
-
     <h1>Songlyrics</h1>
 
-    <div class="parentcontainer">
+    <div class="parentcontainer2">
+
+        <div class="endprodukt">
+
+            <h4>Endprodukt</h4>
+
+            <ul>
+                <li>
+                    <h2>
+                        <a
+                            href="songlyrics/lyrics_final_grid_animation_2.html">
+                            Suffocate – Bad Omens</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
 
         <div class="figma">
 
@@ -320,8 +390,146 @@
                 </li>
             </ul>
 
+            <ul>
+                <li>
+                    <h2>
+                        <a href="songlyrics/lyrics_versuch7_grid_animation.html"> Versuch 3</a>
+                    </h2>
+                </li>
+            </ul>
+
         </div>
 
+        <br>
+
+    </div>
+
+    <h1>Übungen</h1>
+
+    <div class="parentcontainer">
+
+        <div class="tag2">
+
+            <h4>Tag 2</h4>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="291022_tag1/uebung1.html"> Übung 1</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="291022_tag1/uebung2.html"> Übung 2</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="291022_tag1/uebung3.html"> Übung 3</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="tag4">
+
+            <h4>Tag 4</h4>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="51122_tag4/uebung1_grid_basics.html"> Übung 4</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="51122_tag4/uebung2_grid_plakat.html"> Übung 5</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="tag5">
+
+            <h4>Tag 5</h4>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="111122_tag5/uebung1_flexbox_basics.html"> Übung 6</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="111122_tag5/uebung2_plakat_flex.html"> Übung 7</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="tag6">
+
+            <h4>Tag 6</h4>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="181122_tag6/uebung1_2d_transforms.html"> Übung 8</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="181122_tag6/uebung2_plakat_thesmiths.html"> Übung 9</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="181122_tag6/uebung3_transitions.html"> Übung 10</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="181122_tag6/uebung4_lyrics_transition.html"> Übung 11</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="tag7">
+
+            <h4>Tag 7</h4>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="261122_tag7/uebung1_animation.html"> Übung 12</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="261122_tag7/uebung2_thesmiths_animation.html"> Übung 13</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <a href="261122_tag7/uebung3_js_intro.html"> Übung 14</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="tag8">
+
+            <h4>Tag 8</h4>
+            <ul>
+                <li>
+                    <h2>
+                        <a href="21222_tag8/uebung1_media_querie.html"> Übung 15</a>
+                    </h2>
+                </li>
+            </ul>
+
+        </div>
 
     </div>
 
