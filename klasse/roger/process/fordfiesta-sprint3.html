@@ -234,6 +234,12 @@
             }
         }
 
+        let animated = document.getElementById("O")
+        animated.addEventListener("animationend", () => {
+            let element = document.getElementById("O2");
+            element.style.animationPlayState = "running";
+        });
+        
         function BGcolor() {
 let percent = scrollEnd/100
 let scrollpos = window.scrollY/percent
@@ -254,11 +260,7 @@ document.getElementById("body").style.backgroundColor="rgb("+rWert+","+gWert+","
         window.addEventListener("scroll", BGcolor);
 
 
-        let animated = document.getElementById("O")
-        animated.addEventListener("animationend", () => {
-            let element = document.getElementById("O2");
-            element.style.animationPlayState = "running";
-        });
+
         let r = 247
         let g = 115
         let b = 41
