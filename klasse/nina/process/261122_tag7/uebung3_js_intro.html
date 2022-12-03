@@ -21,6 +21,13 @@
         color: antiquewhite;
     }
 
+    .specialbutton3 {
+        background-color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3vw;
+        color: antiquewhite;
+    }
+
     #kreis {
 width: 400px;
 height: 400px;
@@ -64,6 +71,19 @@ justify-content: center;
             
         }
 
+        #kreis3 {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            background-color: #000506;
+            animation-name: anim;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            
+        }
+
 </style>
 
 </head>
@@ -84,8 +104,8 @@ justify-content: center;
         <div id="kreis2"> </div>
         <button class="specialbutton2" onclick="stoppeAnimation()">Stoppe den Kreis</button>
 
-        <button class="specialbutton2" onclick="toggleAnimation()">Animiere & stoppe den Kreis</button>
-        <div id="kreis2"> </div>
+        <button class="specialbutton3" onclick="toggleAnimation()">Animiere & stoppe den Kreis</button>
+        <div id="kreis3"> </div>
 
     
 
@@ -124,7 +144,7 @@ justify-content: center;
         let toggle=false;
 
         function toggleAnimation() {
-            let element=document.getElementById('kreis2')[0];
+            let element=document.getElementById('kreis3')[0];
             if (toggle=false) {
                 element.style.animationPlayState="running";
                 toggle=true;

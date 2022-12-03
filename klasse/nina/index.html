@@ -9,42 +9,73 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+
         body {
             background-color: black;
-            margin: 20px;
-            padding: 20px;
+            margin: 1vw;
+            padding: 1vw;
         }
-        
+
+
+
         h2 {
             font-family: 'Zilla Slab', serif;
             font-weight: 100;
-            font-size: 45pt;
+            font-size: 4vw;
             color: black;
-            background-color: rgb(250, 175, 53);
-            padding: 10pt;
+            background-color: rgb(255, 132, 44);
+            padding: 1vw;
             background-size: 110%;
             width: fit-content;
+            margin-top: auto;
+            
         }
-        
+
+        @media screen and (max-width: 768px) {
+            h2 {
+
+                font-size: 3rem;
+                margin: 1.5rem;
+                margin-left: 1rem;
+
+            }
+        }
+
         h3 {
             font-family: 'Zilla Slab', serif;
             color: rgba(255, 255, 255, 0.815);
             font-weight: 400;
-            font-size: 20px;
-            padding: 10pt;
+            font-size: 1.5vw;
+            margin: 2.5vw;
             letter-spacing: 0.1vw;
-            margin-left: 1.3vw;
         }
-        
+
+        @media screen and (max-width: 768px) {
+            h3 {
+
+                font-size: 1.5rem;
+                margin: 1.5rem;
+                margin-left: 3rem;
+
+            }
+        }
+
+
+
         a {
             color: black;
             text-decoration: none;
+
         }
-        
+
         a:hover {
             color: rgba(255, 255, 255, 0.815);
             text-decoration: none;
@@ -57,7 +88,8 @@
 <body>
 
     <h3> Grid & Modules – Nina Karli
-        <br> Song: Suffocate by Bad Omens
+        <br>
+        Song: Suffocate by Bad Omens
     </h3>
     <br>
     <ul>
