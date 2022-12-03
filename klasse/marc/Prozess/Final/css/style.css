@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+.firstcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(10, 10vh);
+    font-size: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.firstcontainer .child:nth-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw;
+    color: rgb(255, 255, 255);
+    grid-row: 2 / 3;
+    grid-column: 2/10;
+    align-self: center;
+    animation-name: slide-left;
+    width: 100%;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: normal;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 200%;
+        opacity: 0%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 100%;
+    }
+}
+
+
+.firstcontainer .child:nth-of-type(2) {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    grid-row: 4 / 10;
+    grid-column: 5/10;
+    animation-name: slide-left;
+    width: 100%;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-direction: normal;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+
+.firstcontainer .child:nth-of-type(3) {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 6vw;
+    grid-row: 5 / 6;
+    grid-column: 3 / 10;
+    animation-name: slide-left;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+.firstcontainer .child:nth-of-type(4) {
+    font-family: 'Keania One', cursive;
+    color: aquamarine;
+    font-size: 25vw;
+    grid-row: 5 /8;
+    grid-column: 2/10;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-direction: normal;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        font-size: 0vw;
+        opacity: 0%;
+    }
+
+    to {
+        font-size: 25vw;
+        opacity: 100%;
+    }
+}
+
+.secondcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(10, 10vh);
+    font-size: 100vw;
+    background-color: aquamarine;
+
+}
+
+.secondcontainer .child:nth-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw;
+    color: rgb(255, 255, 255);
+    grid-row: 4/ 6;
+    grid-column: 2/10;
+    animation: waviy 1s ease 1s infinite running;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+    0% {
+        transform: translatex(0)
+    }
+
+    25% {
+        transform: translatex(-80px)
+    }
+
+    50% {
+        transform: translatex(0)
+    }
+
+    100% {
+        transform: translatex(0)
+    }
+}
+
+.secondcontainer .child:nth-of-type(2) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vw;
+    color: rgb(255, 255, 255);
+    grid-row: 5/ 7;
+    grid-column: 2/10;
+    margin-top: 80px;
+
+}
+
+.secondcontainer .child:nth-of-type(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    grid-row: 6/ 7;
+    grid-column: 2/10;
+    margin-top: 160px;
+
+}
+
+.secondcontainer .child:nth-of-type(4) {
+    font-family: 'Keania One', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 10vw;
+    grid-row: 4 /6;
+    grid-column: 9/10;
+    animation: bang 0.5s ease 2s infinite running;
+    width: 100%;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    opacity: 100%;
+}
+
+@keyframes bang {
+    from {
+        margin-left: -300%;
+        width: 100%;
+        opacity: 0%;
+    }
+
+    to {
+        margin-left: 500%;
+        width: 100%;
+        opacity: 100%;
+    }
+}
+
+.thirdcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(10, 10vh);
+    font-size: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.thirdcontainer .child:nth-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    grid-row: 2 / 3;
+    grid-column: 2/10;
+    align-self: center;
+}
+
+.thirdcontainer .child:nth-of-type(2) {
+    font-family: 'Keania One', cursive;
+    font-size: 20vw;
+    color: rgb(255, 255, 255);
+    grid-row: 4 / 4;
+    grid-column: 2/10;
+    align-self: center;
+
+}
+
+.thirdcontainer .child:nth-of-type(2):hover {
+    font-family: 'Keania One', cursive;
+    font-size: 22vw;
+    color: aquamarine;
+    grid-row: 4 / 4;
+    grid-column: 2/10;
+    align-self: center;
+}
+
+.thirdcontainer .child:nth-of-type(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    grid-row: 6 / 6;
+    grid-column: 8/12;
+    align-self: center;
+    text-align: right;
+}
+
+.thirdcontainer .child:nth-of-type(4) {
+    font-family: 'Keania One', cursive;
+    font-size: 7.5vw;
+    color: rgb(255, 255, 255);
+    grid-row: 8 / 8;
+    grid-column: 1/12;
+    align-self: center;
+    text-align: right;
+    animation: 4s linear 0s infinite running slidein2;
+    animation-delay: 2s;
+    opacity: 0%;
+}
+
+.thirdcontainer .child:nth-of-type(5) {
+    font-family: 'Keania One', cursive;
+    font-size: 7.5vw;
+    color: aquamarine;
+    grid-row: 8 / 8;
+    grid-column: 1/12;
+    align-self: center;
+    text-align: right;
+    animation: 4s linear 0s infinite running slidein;
+    opacity: 0%;
+}
+
+@keyframes slidein {
+    from {
+        transform: translatex(100%);
+        opacity: 100%;
+    }
+
+    to {
+        transform: translatex(-100%);
+    }
+}
+
+@keyframes slidein2 {
+    from {
+        transform: translatex(100%);
+        opacity: 100%;
+    }
+
+    to {
+        transform: translatex(-100%);
+    }
+}
+
+.fourthcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(10, 10vh);
+    font-size: 100vw;
+    background-color: aquamarine;
+}
+
+.fourthcontainer .child:nth-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    grid-row: 2 / 3;
+    grid-column: 3/12;
+    align-self: center;
+    text-align: right;
+}
+
+.fourthcontainer .child:nth-of-type(2) {
+    font-family: 'Keania One', cursive;
+    font-size: 17vw;
+    color: rgb(0, 0, 0);
+    grid-row: 4 / 3;
+    grid-column: 2/12;
+    align-self: center;
+    text-align: right;
+    text-transform: uppercase;
+    background-image: linear-gradient(-100deg,
+            #ffffff 20%,
+            #000000 20%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+.fourthcontainer .child:nth-of-type(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    grid-row: 6 / 6;
+    grid-column: 2/10;
+    align-self: center;
+}
+
+.fourthcontainer .child:nth-of-type(4) {
+    font-family: 'Keania One', cursive;
+    font-size: 17vw;
+    color: rgb(0, 0, 0);
+    grid-row: 7 / 8;
+    grid-column: 2/10;
+    align-self: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(-100deg,
+            #ffffff 20%,
+            #000000 20%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#play-pause-button {
+    font-size: 30px;
+    cursor: pointer;
+    color: aquamarine;
+    background-color: rgba(47, 47, 47, 0.544);
+    padding: 15px;
+    position: fixed;
+    border-radius: 20%;
+    top: 25px;
+    right: 25px;
+}
+
+#play-pause-button:hover {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(127, 255, 212, 0.585);
+    background-color: rgba(171, 171, 171, 0.544);
+    padding: 15px;
+    position: fixed;
+    border-radius: 20%;
+    top: 25px;
+    right: 25px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
