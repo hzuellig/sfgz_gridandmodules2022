@@ -88,7 +88,6 @@
         color: rgb(216, 58, 5);
         align-self: center;
         letter-spacing: 0.03rem;
-        ;
     }
     
     li.word span,
@@ -117,7 +116,7 @@
         0% {
             transform: translateY(-20vw);
         }
-        100 {
+        100% {
             transform: translateY(0);
         }
     }
